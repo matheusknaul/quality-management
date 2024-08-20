@@ -2,4 +2,4 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-    return render('home.html')
+    return render(request, 'quality_managements/home.html')
