@@ -2,16 +2,20 @@ from flask import Flask,redirect,url_for,render_template,request
 
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy # type: ignore
+from flask_migrate import Migrate
 
 # Criação do objeto SQLAlchemy
-db = SQLAlchemy()
+
 
 app=Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mydatabase.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
+db = SQLAlchemy()
 db.init_app(app)
+
+migrate = Migrate(app, db)
 
 @app.route('/',methods=['GET','POST'])
 def home():
