@@ -6,16 +6,15 @@ from flask_migrate import Migrate
 
 # Criação do objeto SQLAlchemy
 
-
 app=Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mydatabase.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-db = SQLAlchemy()
-db.init_app(app)
-
+db = SQLAlchemy(app)
 migrate = Migrate(app, db)
+
+from models import Supplier, Category
 
 @app.route('/',methods=['GET','POST'])
 def home():

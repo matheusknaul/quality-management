@@ -5,7 +5,7 @@ class Supplier(db.Model): #Fornecedores
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
     email = db.Column(db.String(100), nullable=False)
-    cnpj = db.Column(db.Sring(14), unique=True, nullable=False)
+    cnpj = db.Column(db.String(14), unique=True, nullable=False)
     address = db.Column(db.Text, nullable=False)
 
     category_id = db.Column(db.Integer, db.ForeignKey('category.id'), nullable=False)
