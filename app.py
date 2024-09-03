@@ -1,4 +1,4 @@
-from flask import Flask, Response, request
+from flask import Flask, Response, request, render_template
 from flask_sqlalchemy import SQLAlchemy
 from routes.home import home_route
 from routes.norma import norma_route

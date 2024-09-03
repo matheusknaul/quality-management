@@ -1,0 +1,30 @@
+<form class="c-form"
+        {% if norma %}
+            action="{{url_for('norma.atualizar_norma', norma_id=norma.id)}}" 
+        {% else %}
+            action="{{url_for('norma.inserir_norma')}}" 
+        {% endif %}
+
+        method="{% if norma %}PUT{% else %}POST{% endif %}"
+
+        {%if norma%}
+            c-swap="#norma-{{norma.id}}"
+        {%else%}
+            c-append="#lista-normas"
+        {%endif%}
+        
+        c-reload-container="true">
+
+    <div class="mb-3">
+      <label class="form-label">Código</label>
+      <input type="text" class="form-control" name="codigo" {%if norma%}value="{{norma.codigo}}"{%endif%}>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Descrição</label>
+        <input type="text" class="form-control" name="descricao" {%if norma%}value="{{norma.descricao}}"{%endif%}>
+      </div>
+
+    <button type="submit" class="btn btn-primary">
+        {%if norma%}Salvar{%else%}Adicionar{%endif%}
+    </button>
+  </form>

@@ -1,0 +1,10 @@
+<tr id="norma-{{norma.id}}">
+    <th scope="row">{{norma.id}}</th>
+    <td>{{norma.codigo}}</td>
+    <td>{{norma.descricao}}</td>
+    <td>
+        <button class="btn btn-secondary" c-get="{{url_for('norma.detalhe_norma', norma_id=norma.id)}}" c-target="#exibir-norma" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver</button>
+        <button class="btn btn-primary" c-get="{{url_for('norma.editar_norma', norma_id=norma.id)}}" c-target="#form-norma">Editar</button>
+        <button class="btn btn-danger" c-delete="{{url_for('norma.deletar_norma', norma_id=norma.id)}}" c-remove-closest="tr">Deletar</button>
+    </td>
+</tr>
