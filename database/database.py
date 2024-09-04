@@ -1,3 +1,3 @@
 from peewee import *
 
-db = SqliteDatabase('gestaonormas.db')
+db = SqliteDatabase('gestaoqualidade.db')

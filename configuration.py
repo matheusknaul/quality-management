@@ -1,7 +1,9 @@
 from routes.home import home_route
 from routes.norma import norma_route
+from routes.fornecedor import fornecedor_route
 from database.database import db
 from database.models.norma import Norma
+from database.models.fornecedor import Fornecedor
 
 def configure_all(app):
     configure_routes(app)
@@ -10,6 +12,7 @@ def configure_all(app):
 def configure_routes(app):
     app.register_blueprint(home_route)
     app.register_blueprint(norma_route, url_prefix='/normas')
+    app.register_blueprint(fornecedor_route, url_prefix='/fornecedores')
 
 def configure_db():
     db.connect()

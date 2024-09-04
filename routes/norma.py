@@ -1,5 +1,4 @@
 from flask import Blueprint, render_template, request
-from database.norma import NORMAS
 from database.models.norma import Norma
 
 norma_route = Blueprint('norma', __name__)
