@@ -1,11 +1,9 @@
 from flask import Flask, Response, request, render_template
 from flask_sqlalchemy import SQLAlchemy
-from routes.home import home_route
-from routes.norma import norma_route
+from configuration import configure_all
 
 app = Flask(__name__)
 
-app.register_blueprint(home_route)
-app.register_blueprint(norma_route, url_prefix='/normas')
+configure_all(app)
 
 app.run(debug=True)

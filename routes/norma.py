@@ -1,23 +1,25 @@
 from flask import Blueprint, render_template, request
 from database.norma import NORMAS
+from database.models.norma import Norma
 
 norma_route = Blueprint('norma', __name__)
 
 @norma_route.route('/')
 def lista_normas():
-    return render_template('lista_normas.html', normas=NORMAS)
+    normas = Norma.select()
+    return render_template('lista_normas.html', normas=normas)
 
 @norma_route.route('/', methods=["POST"])
 def inserir_norma():
+
     data = request.json
 
-    nova_norma = {
-        "id": len(NORMAS) + 1,
-        "codigo": data['codigo'],
-        "descricao":data['descricao']
-    }
-
-    NORMAS.append(nova_norma)
+    nova_norma = Norma.create(
+        codigo = data['codigo'],
+        descricao = data['descricao'],
+        ano_norma = 0,
+        situacao = 0,
+    )
 
     return render_template('item_norma.html', norma=nova_norma)
 
@@ -27,33 +29,30 @@ def form_norma():
 
 @norma_route.route('/<int:norma_id>')
 def detalhe_norma(norma_id):
-    norma = list(filter(lambda n: n['id'] == norma_id, NORMAS))[0]
+
+    norma = Norma.get_by_id(norma_id)
+
     return render_template('norma.html', norma=norma)
 
 @norma_route.route('/<int:norma_id>/edit')
 def editar_norma(norma_id):
-    norma = None
-    for n in NORMAS:
-        if n['id'] == norma_id:
-            norma = n
+    norma = Norma.get_by_id(norma_id)
 
     return render_template('form_norma.html', norma=norma)
 
 @norma_route.route('/<int:norma_id>/update', methods=['PUT'])
 def atualizar_norma(norma_id):
-    norma_editada = None
     data = request.json
+    norma_editada = Norma.get_by_id(norma_id)
 
-    for n in NORMAS:
-        if n['id'] == norma_id:
-            n['codigo'] = data['codigo']
-            n['descricao'] = data['descricao']
-
-            norma_editada = n
+    norma_editada.codigo = data['codigo']
+    norma_editada.descricao = data['descricao']
+    norma_editada.save()
+    
     return render_template('item_norma.html', norma=norma_editada)
 
 @norma_route.route('/<int:norma_id>/delete', methods=['DELETE'])
 def deletar_norma(norma_id):
-    global NORMAS
-    NORMAS= [ n for n in NORMAS if n['id'] != norma_id ]
+    norma = Norma.get_by_id(norma_id)
+    norma.delete_instance()
     return{'deleted': 'ok'}
