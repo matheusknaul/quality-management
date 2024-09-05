@@ -1,0 +1,87 @@
+.banner-container{
+    padding: 100px;
+    background-color: #831316;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-cards{
+    display: flex;
+    flex-direction: row;
+}
+
+.cardx{
+    padding: 40px;
+    background-color: #AC191E;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.box-icon{
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.icon-card img{
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.title-card{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.info-card{
+    font-size: 10px;
+    font-weight: 300;
+    color: #D9D9D9;
+}
+
+.section-user{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.section-user .pic-user img{
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.title-user{
+    display: flex;
+    flex-direction: column;
+}
+
+.name-user{
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.cargo-user{
+    margin-top: -50px;
+    margin: 0;
+    color: #D9D9D9;
+    font-size: 16px;
+}
+
+.main-container{
+    background-color: #D9D9D9;
+}
+
+.navbar{
+    background-color: #831316;
+    border-bottom: 3px solid white;
+}
+/* 
+.nav-item .active{
+    border-bottom: 2px solid white;
+} */
