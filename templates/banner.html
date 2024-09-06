@@ -1,0 +1,24 @@
+
+<div class="banner-container">
+
+    <div class="section-user">
+      <div class="pic-user">
+        <img src="{{url_for('static', filename='img/file.jpeg')}}" alt="">
+      </div>
+      <div class="title-user">
+        <div class="name-user">
+          <p>Matheus K.</p>
+        </div>
+        <div class="cargo-user">
+          <p>Metrologista</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-cards">
+        {%for i in range(3)%}
+            {% include 'card.html' %}
+        {%endfor%}
+    </div>
+
+</div>

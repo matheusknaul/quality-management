@@ -6,7 +6,7 @@ fornecedor_route = Blueprint('fornecedor', __name__)
 @fornecedor_route.route('/')
 def listar_fornecedores():
     fornecedores = Fornecedor.select()
-    return render_template('lista_fornecedores.html', fornecedores=fornecedores)
+    return render_template('fornecedores/index.html', fornecedores=fornecedores)
 
 @fornecedor_route.route('/', methods=["POST"])
 def inserir_fornecedor():
