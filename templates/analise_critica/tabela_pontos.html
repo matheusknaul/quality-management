@@ -10,6 +10,9 @@
         </tr>
     </thead>
     <tbody id="pontos">
+        {% for ponto in range(5) %}
+            {% include 'analise_critica/lista_ponto.html' %}
+        {% endfor %}
     </tbody>
 </table>
 

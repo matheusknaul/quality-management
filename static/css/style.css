@@ -1,3 +1,13 @@
+*{
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    color: #831316;
+}
+
 .banner-container{
     padding: 100px;
     background-color: #831316;
@@ -85,3 +95,18 @@
 .nav-item .active{
     border-bottom: 2px solid white;
 } */
+
+.btnx{
+    padding: 5px 14px;
+    background-color: #831316;
+    color: #fff;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#analise{
+    background-color: #fff;
+    color: #831316;
+}
