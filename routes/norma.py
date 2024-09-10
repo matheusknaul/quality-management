@@ -19,7 +19,6 @@ def inserir_norma():
         ano_norma = 0,
         situacao = 0,
     )
-
     return render_template('item_norma.html', norma=nova_norma)
 
 @norma_route.route('/new')

@@ -144,6 +144,17 @@ thead{
     color: #831316;
 }
 
+/* Manual */
+
+#nome_faixa, #quantidade_pontos{
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #831316;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+}
+
 /* Automática */
 
 .fornecedor-select{
