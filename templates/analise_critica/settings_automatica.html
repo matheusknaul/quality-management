@@ -1,17 +1,25 @@
 <div class="settings-container">
-    <h2>Análise Crítica Automática</h2>
+    <h2 class="analys-title">Análise Crítica Automática</h2>
     <div class="select-certificate">
         <label for="">Selecionar certificado</label>
         <input type="file" placeholder="Selecione">
     </div>
 
-    <h2>Informações da Análise</h2>
+    <h2 class="analys-title">Informações da Análise</h2>
     <div class="info-calibration">
-        <label for="select">Fornecedor</label>
-        <select>
-            <option value="" disabled selected>Selecione</option>
-            <option value="manual">Manual</option>
-            <option value="automatica">Automática</option>
+        <select class="fornecedor-select">
+            <option value="" disabled selected>Fornecedor</option>
+            <option value="1">RSL Científica</option>
+            <option value="2">Visomes</option>
+            <option value="3">Instruqual</option>
         </select>
+        <div class="definicao-criterio">
+            <input type="text" placeholder="Critério">
+            <select>
+                <option value="" disabled selected>%?</option>
+                <option value="1">Sim</option>
+                <option value="2">Não</option>
+            </select>
+        </div>
     </div>
 </div>
