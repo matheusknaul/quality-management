@@ -11,7 +11,8 @@
             <input type="text" placeholder="Nome da Faixa" id="nome_faixa">
         </div>
         <div class="qntd-pontos">
-            <input type="text" placeholder="Quantidade de pontos" id="quantidade_pontos">
+            <label for="numRows"></label>
+            <input type="number" placeholder="Quantidade de pontos" id="numRows" min="1" value="1">
         </div>
         <div class="definicao-criterio">
             <input type="text" placeholder="Critério">
@@ -22,4 +23,5 @@
             </select>
         </div>
     </div>
+    <button onclick="updateTable()">Set</button>
 </div>

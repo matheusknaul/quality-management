@@ -1,18 +1,18 @@
-<table class="table">
+<table class="table" id="pointsTable">
     <thead class="cabecalho">
         <tr>
-           <th >Valor lido</th>
-           <th >Valor de referência</th> 
-           <th >Incerteza</th>
-           <th >Erro</th>  
-           <th >Erro total</th> 
-           <th >Situação</th> 
+           <th scope="col">#</th>
+           <th scope="col">Valor lido</th>
+           <th scope="col">Valor de referência</th> 
+           <th scope="col">Incerteza</th>
+           <th scope="col">Erro</th>  
+           <th scope="col">Erro total</th> 
+           <th scope="col">Situação</th> 
         </tr>
     </thead>
     <tbody id="pontos">
-        {% for ponto in range(5) %}
-            {% include 'analise_critica/lista_ponto.html' %}
-        {% endfor %}
+
     </tbody>
 </table>
+<script>src="{{url_for('static', filename='js/settings_manual.js')}}"</script>
 

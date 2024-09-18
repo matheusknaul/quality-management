@@ -116,6 +116,19 @@ thead{
     background-color: #831316;
 }
 
+.input-line{
+
+    padding: 5px 10px;
+    border-radius: 30px;
+    text-align: center;
+    max-width: 150px;
+    color: #831316;
+}
+
+.input-line, input{
+    border: none;
+}
+
 .select-certificate{
     padding: 5px 10px;
     background-color: #fff;
@@ -146,7 +159,7 @@ thead{
 
 /* Manual */
 
-#nome_faixa, #quantidade_pontos{
+#nome_faixa, #numRows{
     padding: 5px 10px;
     background-color: #fff;
     color: #831316;
