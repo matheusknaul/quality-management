@@ -11,8 +11,9 @@
         </tr>
     </thead>
     <tbody id="pontos">
-
+        {% comment %} {% for ponto in range(5) %}
+            {% include 'analise_critica/lista_ponto.html' %}
+        {% endfor %} {% endcomment %}
     </tbody>
 </table>
 <script>src="{{url_for('static', filename='js/settings_manual.js')}}"</script>
-
