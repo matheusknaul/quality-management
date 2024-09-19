@@ -24,23 +24,23 @@ def inserir_fornecedor():
         categoria = data['categoria']
     )
 
-    return render_template('item_fornecedor.html', fornecedor=novo_fornecedor)
+    return render_template('fornecedores/item_fornecedor.html', fornecedor=novo_fornecedor)
 
 @fornecedor_route.route('/new')
 def form_fornecedor():
-    return render_template('form_fornecedor.html')
+    return render_template('fornecedores/form_fornecedor.html')
 
 @fornecedor_route.route('/<int:fornecedor_id>')
 def visualizar_fornecedor(fornecedor_id):
 
     fornecedor = Fornecedor.get_by_id(fornecedor_id)
 
-    return render_template('fornecedor.html', fornecedor=fornecedor)
+    return render_template('fornecedores/fornecedor.html', fornecedor=fornecedor)
 
 @fornecedor_route.route('/<int:fornecedor_id>/edit')
 def editar_fornecedor(fornecedor_id):
     fornecedor = Fornecedor.get_by_id(fornecedor_id)
-    return render_template('form_fornecedor.html', fornecedor=fornecedor)
+    return render_template('fornecedores/form_fornecedor.html', fornecedor=fornecedor)
 
 @fornecedor_route.route('/<int:fornecedor_id>/update', methods=['PUT'])
 def atualizar_fornecedor(fornecedor_id):
@@ -59,7 +59,7 @@ def atualizar_fornecedor(fornecedor_id):
 
     fornecedor_editado.save()
 
-    return render_template('item_fornecedor.html', fornecedor=fornecedor_editado)
+    return render_template('fornecedores/item_fornecedor.html', fornecedor=fornecedor_editado)
 
 @fornecedor_route.route('/<int:fornecedor_id>/update', methods=['DELETE'])
 def deletar_fornecedor(fornecedor_id):
