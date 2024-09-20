@@ -3,10 +3,10 @@ from database.models.norma import Norma
 
 norma_route = Blueprint('norma', __name__)
 
-@norma_route.route('/')
+@norma_route.route('/', methods=["GET"])
 def lista_normas():
     normas = Norma.select()
-    return render_template('normas/index.html', normas=normas)
+    return render_template('normas/lista_normas.html', normas=normas)
 
 @norma_route.route('/', methods=["POST"])
 def inserir_norma():

@@ -4,12 +4,26 @@
     padding: 0;
 }
 
+/* Header */
+
+.activate{
+    display: block;
+}
+
 .container-main{
     background-color: #D9D9D9;
 }
 
 h2{
     color: #831316;
+}
+
+#content-normas{
+    display: none;
+}
+
+#content-fornecedores{
+    display: none;
 }
 
 .banner-container{

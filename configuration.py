@@ -12,7 +12,7 @@ def configure_all(app):
     configure_db()
 
 def configure_routes(app):
-    app.register_blueprint(home_route)
+    app.register_blueprint(home_route, url_prefix = "/")
     app.register_blueprint(management_route, url_prefix = "/management")
     app.register_blueprint(norma_route, url_prefix='/normas')
     app.register_blueprint(fornecedor_route, url_prefix='/fornecedores')

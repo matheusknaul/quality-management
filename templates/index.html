@@ -1,0 +1,29 @@
+{%extends 'base.html'%}
+
+{%block title%}Normas{%endblock%}
+
+{%block content%}
+
+<div class="container" id="content-fornecedores">
+    <h1 class="text-center">Lista de Fornecedores</h1>
+    <div id="form-fornecedor" c-container="{{url_for('fornecedor.form_fornecedor')}}"></div>
+    <div c-container="{{url_for('fornecedor.listar_fornecedores')}}"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="{{url_for('static', filename='js/cru.js')}}"></script>
+</div>
+
+<div class="container" id="content-normas">
+    <h1 class="text-center">Gestão de Normas</h1>
+
+    <div id="form-norma" c-container="{{url_for('norma.form_norma')}}"></div>
+
+    <div c-container="{{url_for('norma.lista_normas')}}"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="{{url_for('static', filename='js/cru.js')}}"></script>
+</div>
+<script src="{{url_for('static', filename='js/renderize.js')}}"></script>
+{%endblock%}
