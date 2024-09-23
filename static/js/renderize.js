@@ -1,5 +1,5 @@
 function showActiveContent() {
-    const contentContainers = document.querySelectorAll('#content-normas, #content-fornecedores');
+    const contentContainers = document.querySelectorAll('#content-normas, #content-fornecedores', '#content-analise-critica');
     
     // Esconde todos os containers
     contentContainers.forEach(container => {
@@ -38,6 +38,12 @@ document.getElementById('normas-link').addEventListener('click', function(event)
 document.getElementById('fornecedores-link').addEventListener('click', function(event) {
     event.preventDefault();
     toggleActive('content-fornecedores'); // Ativa o conteúdo de Fornecedores
+});
+
+// Adiciona o evento de clique ao link de "Análise Crítica"
+document.getElementById('analys-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    toggleActive('content-analise-critica'); // Ativa o conteúdo de Fornecedores
 });
 
 // Chama a função no início para garantir que o conteúdo certo apareça
