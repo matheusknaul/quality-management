@@ -1,0 +1,1522 @@
+<html class="js t-ff t-ff130 sizes websockets customelements history postmessage webworkers picture pointerevents webanimations webgl srcset flexbox cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth no-csscolumns-breakbefore no-csscolumns-breakafter no-csscolumns-breakinside" lang="pt-br"><head><meta charset="utf-8"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="description" content="ABNT Catalogo"><meta name="viewport" content="width=device-width, initial-scale=1"><meta property="og:title" content="ABNT Catalogo"><meta property="og:type"><meta property="og:url"><meta property="og:image"><meta name="facebook-domain-verification" content="qq0rkuyrp1b8r1zlsz8senvoysn2om"><link rel="icon" type="image/x-icon" href="assets/imgs/theme/favico.png"><link rel="shortcut icon" type="image/x-icon" href="assets/imgs/theme/favico.png"><link href="assets/css/main.css" rel="stylesheet"><link href="assets/css/share.css" rel="stylesheet"><link href="assets/css/contraste.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/EGbODne6buzpTnWrrBprcfAY/recaptcha__pt_br.js" crossorigin="anonymous" integrity="sha384-QCwnW7k1TM2WIjFJer5hltr10RK2K/dhC5xuDlF2JdJ+H5j5f6kdDSafSJowNz9F"></script><script type="text/javascript" src="assets/js/validator.js"></script>
+    <script type="text/javascript" src="assets/js/acessivel.js"></script>
+
+    <style type="text/css">
+        .cookie-alert {
+          position: fixed;
+          bottom: 15px;
+          right: 15px;
+          width: 90%;
+          margin: 0 !important;
+          z-index: 999;
+          opacity: 0;
+          transform: translateY(100%);
+          transition: all 500ms ease-out;
+        }
+
+        .cookie-alert.show {
+          opacity: 1;
+          transform: translateY(0%);
+          transition-delay: 1000ms;
+        }
+        
+    </style>
+
+    <title>
+	ABNT Catálogo
+</title>
+
+    <script type="text/javascript">
+        (function (global, undefined) {
+            var demo = {};
+
+            function alertCallBackFn(arg) {
+            }
+
+            global.alertCallBackFn = alertCallBackFn;
+            global.$dialogsDemo = demo;
+        })(window); 
+
+        function GoPreview() {
+            var txt = document.getElementById('cphPagina_txtAcesso');
+            if (txt == null)
+                txt = document.getElementById('ctl00_cphPagina_txtAcesso')
+
+            if (txt.value == '') {
+                window.location = 'lgn.aspx';
+            }
+            else if (txt.value == 'ASSOCIADO') {
+                window.alert('Serviço de pré-visualização apenas para Associados ABNT. Entre em contato através do email: associados@abnt.org.br e solicite sua filiação.');
+            }
+            else {
+                newWindow = window.open('vf/viewer.aspx?Q=' + txt.value, 'newWin', 'top=0,left=0,width=' + String(screen.width) + ',height=' + String(screen.height) + ', statusbar=no, toolbar=no, addressbar=no, location=no, menubar=no')
+            }
+        }
+
+        function GoFree() {
+            var txt = document.getElementById('cphPagina_txtAcesso');
+            if (txt == null)
+                txt = document.getElementById('ctl00_cphPagina_txtAcesso')
+
+            newWindow = window.open('vf/viewer.aspx?Q=' + txt.value, 'newWin', 'top=0,left=0,width=' + String(screen.width) + ',height=' + String(screen.height) + ', statusbar=no, toolbar=no, addressbar=no, location=no, menubar=no')            
+        }
+
+        function GoHistorico() {
+            const element = document.getElementById("acHistorico");
+            element.scrollIntoView();
+            window.location.hash = 'hideH';
+        }
+        
+    </script>
+
+    <link href="assets/css/prod.css" rel="stylesheet">
+    <link href="assets/css/timelime.css" rel="stylesheet">
+    <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit" async="" defer=""></script>
+
+    <style type="text/css">
+
+        .flex{
+            display: flex;
+            flex-wrap: wrap;
+            -webkit-align-content: space-between; 
+            align-content: space-between;
+            align-items: center;
+        }
+
+        .flex-item{
+            flex: 1 1 100px;
+        }
+
+        .text-vertical {
+              position: absolute;
+              top: 40%;
+              left: 0%;
+              transform: rotate(315deg);
+              margin: 0;
+              padding: 0;
+              color: red;
+              font-weight: bold;
+              font-size: 5em;
+              font-family :Quicksand, sans-serif;
+              z-index: 9999;
+              }
+
+        .norma-alert {
+            padding: 20px;
+            background-color: #ffcfcc;
+            border: 1px solid #f44336;
+            border-left: 9px solid #f44336;
+            color: #f44336;
+            opacity: 0.83;
+            transition: opacity 0.6s;
+            margin-bottom: 15px;
+            margin-top: 15px;
+            border-radius: 6px;
+            font-size: 18px;       
+        }
+     </style>
+
+<link href="/WebResource.axd?d=urCACUaUZeT6oPoIZXShbhyaE7LVYWOXa_KjDtUg1h8ZAvpKaT8AV-A1Vh2IbPL0OAzRXlTTeoqEm7tfQ81bZUzrWJRZ7TEh3gr2urviRDlCQXfufNAW9n05G92uBmzn0&amp;t=638587144566952996" type="text/css" rel="stylesheet" class="Telerik_stylesheet"><link href="/WebResource.axd?d=grn4njdz1PFT8FJRl5HMDYWIoWxlVhrF5-hJJ4qSzLEttCp5pfaXtrj1xMhhSXglzIR6uGMVSt8am0B2U3UScbdUVefjT3z7y62f5zBDJ8m9jtbjqZAyeDQkoq1BdlvBZI-yl79EXJ-nIRE5A5TgKahrO8hrjRlC5Eedc8YJOZo1&amp;t=638587144580390435" type="text/css" rel="stylesheet" class="Telerik_stylesheet"><link href="/WebResource.axd?d=VdPoLqp1pEU6N0-IfFplZPwcFYil3s6YotYAOJTZmGgensx00-qgoZpiav4aaMhsqd9LSiBBGWXQM-22B9lV4qbYjj4YEvX3-cV1tmwjezeIrp42rHD2rCsMFIkdKVOdbmS0ImSDZehXRW4wrIrR1Q2&amp;t=638587144566952996" type="text/css" rel="stylesheet" class="Telerik_stylesheet"><link href="/WebResource.axd?d=6d0ORl_GDQ8il0vfaye5Yel_fe15WZAR3qb3wFsvHvkhxOG64usqJPau6eEZOZWOzPZLpSqB9il1ksc_aoCN8KtiU592Fq4R7CG9Pl1z7vHkJNC0g9cLf5v5LY1epaIYyisS9qdR91S7e4SPZWWBdw2&amp;t=638587144566952996" type="text/css" rel="stylesheet" class="Telerik_stylesheet"><link href="/WebResource.axd?d=U4fmqBE__aLMLwH7DJyJBAp13DTGgeUu8QrpH1cVy_mRAtGIubOutUY4Bsfpmgi-E2ePl3jM1r1g_j0gCP1XB-shjD7NumKZyKz2_j-jqiDHnlYx2HqYKpz8xhVGZTu2sWlB8jmaI0lOp9C_uZEP7w2&amp;t=638587144566952996" type="text/css" rel="stylesheet" class="Telerik_stylesheet"><link href="/WebResource.axd?d=OCeXsoOGHt8E5oeDdHDzDwZRTnueS1-WZ-U1MSOS9Lqw01jIG5xhWakl-usa9_j76ADY9Rh2x0O14NoLBy1MkHYqBt19ByMYvntuDY7h7Mu2XPqq2FrW8DFuP7X3gPFmn3lMWkh8qcOSBuWYXBCGt3YVupGgy6f0Fi8S77Ow5Bw1&amp;t=638587144580390435" type="text/css" rel="stylesheet" class="Telerik_stylesheet"><link href="/WebResource.axd?d=ki1n1Eahlh7Hg67y-z8gJnWIO-sEif6CxT0D40GdC-k58XmdYCNi5nFdjcoOeX-Xlp5VdRNdUDxyTx98CNlXm23j6ie61fQ1xP0NQ_Yt1E_6B6JjwhM3drBfyG-BwtnX_-Aw73VCc3QWqctLTpupYQ2&amp;t=638587144566952996" type="text/css" rel="stylesheet" class="Telerik_stylesheet"><link href="/WebResource.axd?d=3oh7WFTvsp4iW44P6r3_gvQTBw4eDAwmY_nU8zj7_rBvv1U1X4tsxLEdmQW5kvXPgzkOa3kaTG3wAwCQxLgPaN6Hd_6euXtX_Okp4Rs2xHC6fbt3rrMwfkn_rUWgTvSlS_4mKgKA7cnbrElrMKlidd9PwUlhcP9BX1di3RYomzc1&amp;t=638587144580390435" type="text/css" rel="stylesheet" class="Telerik_stylesheet"><style>[vw] [vw-access-button]{display:none;flex-direction:row-reverse;width:40px;height:40px;cursor:pointer;overflow:hidden;position:absolute;border-radius:8px;transition:all .5s ease;right:0;left:auto}[vw] [vw-access-button] img{max-height:40px;transition:all .5s ease;border-radius:8px;opacity:1 !important;visibility:visible !important}[vw] [vw-access-button] .access-button{width:40px;height:40px;z-index:1}[vw] [vw-access-button] .pop-up{position:absolute;height:40px;min-width:150px;z-index:0;left:0;right:auto}[vw] [vw-access-button]:hover{width:200px}[vw] [vw-access-button].isLeft{flex-direction:row;left:0;right:auto}[vw] [vw-access-button].isLeft .pop-up{left:auto;right:0}[vw] [vw-access-button].isTopOrBottom:hover{bottom:-20px;top:0;margin-right:-80px}[vw] [vw-access-button].active{display:flex}
+</style><style>[vw].left [vw-plugin-wrapper]{float:left}[vw] [vw-plugin-wrapper]{position:relative;display:none;width:300px;height:100%;float:right;background:white;-webkit-box-shadow:0px 0px 15px rgba(0,0,0,0.2);-moz-box-shadow:0px 0px 15px rgba(0,0,0,0.2);box-shadow:0px 0px 15px rgba(0,0,0,0.2);border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px}[vw] [vw-plugin-wrapper].active{display:-webkit-flex;display:flex;flex-direction:column;-webkit-flex-direction:column;height:450px;max-width:100%;min-height:100%}
+</style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
+</style></head>
+<body style="overflow: visible;"><div class="body-overlay-1"></div>
+    <form method="post" action="./pnm.aspx?Q=R1JtejluaFYzZGs1Nk1xUGFzeERUdWZiM29xYkh2dWFEVi8xR21rdHpkMD0%3d" onsubmit="javascript:return WebForm_OnSubmit();" id="Form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZMfTUIVIJ2Y1tyHTg085KP3CcP5O_ntbWj-OkWKWg__Scx9iUKLeNXAtN1KcdTWYnA2&amp;t=638285971360000000" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=nv7asgRUU0tRmHNR2D6t1PCPMnVkQ5OStVuhqvDliM2-UWgRD93rEDY8YhsmIBZg0J4vJvYH7WZMu5VGIFSdboT5DJ9ovaZy7CXV7m3UNpA6ehOHbVqNTCbVybj18R-iccf0YNa3YFCv1t5Gn81siw2&amp;t=ffffffffefdc468a" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=NJmAwtEo3Ipnlaxl6CMhvgVn_4oooRQwdh__kWjTM2HNLntIGduhswSq6ih6wyrBYOLpswaDyngdpuHNZi1F2QWgJuRXW79GHK2M2_vOSdnjbMvi7FTL9cMuCbWNJ_UFNRw9pykS9-3z1AK2z-6EfxjZUjVRU8GAMyOzKDp3uE01&amp;t=13798092" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=dwY9oWetJoJoVpgL6Zq8OFQeStBQMizUTtf9CxFRCqbsp5fGbpWNtoplQ6dXaQ4qixmdvS34DrSpHqVtwZhVxiSiGGw07yS2NaCuRKRSykplU3FeR9U5j7n83IGSoSELV8vlOQIxb_EYGk7A7zncr680wT-DJJ1UIdweWWQGT1Q1&amp;t=13798092" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=TDVjdgRbdvNAY3tnbizUcN1IgZhtjKxABELRKkHrqpdw_2NYwfxH4L8mjZSl1-lmoc87yUq6hMyazlTtKSKSf4rgmJgtiRNOxxyc85k5HpLzlLbsYW8r7olISGd6YAly0&amp;t=ffffffffdcacc22b" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=mbGZm65DzNC0tMTq0ElbcQwvc6ZWhLn10Ym7dsEiVSOzqeAx862FPwAzMfZmWpdW_C37vFhalsPqe4jZ-zkVuWn6NSCf_p-Xsd_Fm5oN_fIaWKabaFbxy09YWQCEeiWdQlI6QKHD40-JVjTJiwZiBw2&amp;t=ffffffffdcacc22b" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=sF8Y0c2qLAfpveBK9gLo7O-vEjIB-IoBTaISHdx5d1cFn33SoKCnshL28TmC9qCeqjrsvVEEiw7shY2D1fQsFNzdOkvtHOUzAfCiiyUx8lWX5PS8xl0ASN_fb0i2DB3e0&amp;t=ffffffffdcacc22b" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=uZyysmNAhs23bID72ZUaSpPXgUgzVonenuLgWd6pYBXqFh1ggllMk9zG1dUezE61L84UCjKukCY8Et1cJESx0e4X_7JmZaxf8Rumk0JXo33JJYg1h7X7GAO_Z_oA8I3f4sJ-zUrVD6TtPycNuQE50xwntkqnnzMV39Vr-FFGI_c1&amp;t=ffffffffdcacc22b" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=cmIcXiVJ__exjjpjrN730rjgQqDL5hZGfSUK9BeDo6KBdzdAkOJzgnRnqMOazu3mkO7DqSQnMkTYeCdGobSC6RYzxdBC-wEf_mGuMC0fslSzRos2n5d72ncbIRZf3aDc0JfqZf5StiLymCaEOOFqGA2&amp;t=ffffffffdcacc22b" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=aoSSiMnLNTC20U5L7LFIKmEe403gUok_yPcBBCcWB5LpIY64Cod8zoSAGxVKAJIWdpj5zXTbpUEiYi5iJGQD6DV1LNd1BfJz5fxPizj5QFz6w6EC-DxNdfOP2kpVL_VOPPKGSQByH48KIf33fEviMlHwKJmxe0MIuP9IvTry8Zo1&amp;t=ffffffffdcacc22b" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=GUyLPMOEFhffuIMm6XZ0oHDEqwkWO7oQJKBfCAjnnOJnvvdk0e5SfDcUObW15i_HfyDcO2Mz_dcrL1OFJuQvHG1JGojkpvjbWoaDMcdKKZgsFNjUIf_yZT8QG4n014g9WmKBMQoaN9TdpMaS3vdOcWw12kfVPF60G_uJzJwzVS41&amp;t=ffffffffdcacc22b" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=A22-SyJgKhJ5FWUJePaPlL2L1oqJiHpt-Zp_4rICmX5knesiKjdaq2s1t3n08QGlSGX4QxQIv3q98pz0d40MzsPsEzOHH9a1uyCyM7JRl6zs8BE71qlZHG8nL5H--eD7GIG8SPg4tZy__lj7-oWvCg2&amp;t=ffffffffdcacc22b" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=mxxObI9nroQxDBLgf-QlAhUNw-jHTF0ObBK80y2sv0JFupbaYQvfSIgCObJ3UogjMzKC9bKeXeeJixJ94CX9V9LPBBRf6W1__vLLgMduBBfRnAZoDpQKXONlCLMU6M0ksduB47p9iCJNIiMidHLiFsGwC-D7jhSpdE66xRT-Q9w1&amp;t=ffffffffdcacc22b" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=utaAJrK4EroNO-KNr3p19HBAxD4hxSqu7TjFLlIFhGdsS7Zse4EWySY3Z25aHIvVYU5PzBHtZ7vZ-X3F_Urpydxfw1XHFs443H18slrHZ4SH1SanD-CS6L7v7mvFkC2pUsA3vf6BBMeu1wYOioH74Q2&amp;t=ffffffffdcacc22b" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=ei_BvuPu_kfWuvcXX4wAOEHwI7U3LDx-XmF0EQPqwMTuM0b3CMYA_3BBz9PuVfBIyey4btQOQDRK8wgDw0CsUsAntMtVqkIn6zZnlXRHE3BI3nKf84psSQB67BEOIhV2_MKdCR7yNhlNpa8lgnBJlg2&amp;t=ffffffffdcacc22b" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=qsRpKh5Y3Y02fhrPxQCAxXuBBiCng36ruMlgisz4MKMxjI0weRyc35WSX5PwZfrH7gY8KzW0np7Zu62Hc30pPblDtl6z-ty6zHU1i4ce4xEOZ3OakGf5MrrV8JSN4BBgNnaSxZMi1au5oAQpzIVIzA2&amp;t=ffffffffdcacc22b" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=LxjRs3XOu8Cy2bbYGMzbCjfsMIrAxC7P6mdQO_6BEGr4vYNag1JDLRWuwF5-Ec_UfUq947_yLyLno1_uenq2TAh6_q8nQuqZZlg8lJ6n9DwPpXPszQ5fF6Ke9aPCfyW7Y9_AA9PdVXmFl1Ps-UTUYfzsglZvcfjnqhGsghHv088dPTccghZqhrUrxbZnWRDm0&amp;t=ffffffffdcacc22b" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=86EhAqQjfuMKlbK4FWyenBmhZ0-aPQlCeqMkJJLGLT2gLDMjPv0aLlpvvd3o7FdvRtdSgw6IlNpfD04lH9-SHa02c3lYBjzf_UX64Xcijb6y8X_ZvQ3JWcN3r4XQTm5X4OKNI99iCjSrUUsrkv-rgDaofatCjCwUQj7C7O6OWXw1&amp;t=ffffffffdcacc22b" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=wl5RKBCXTWDacHhxsSq8Q12XYjix6BoBFxx6ELKB9j4xAEZur9WqCQbVIQVi2duSkRrg88b6tr1TEC8CU3F6ZV0uTvHK3J_-ovOrBdkD0nduUVRAV7ZobdT8Gm7PmWqEX-MMwkXFki57p8g9_R7HIw2&amp;t=ffffffffdcacc22b" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=OhiQVM8i2feYV04aiMKgwjxEI0poVRl9t9ZrndLHRSkUjlVfm1UYVirHnOHz9Nb4qXbUZpXqhqzNfzVikGGLYzNpqZWHgr7h-EU6HMbjjL4hmiRn2mb3b7PPUtjfrJW2vAGqYrNlzGahs94bB7ghtw2&amp;t=ffffffffdcacc22b" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=CKWp3hTbfUbZoJvrOz6P-5RKBZ039jSo6yOcX1GdNeyxBmM9k9b87mI4dFhJJ0YjDV2hCl_2oJD0xk2uy6704AO--XW3IlDEM3D0vIUs2D_zdMQ6FtPtAA3ESESNAeTtJM1KRiP_j_coTP7McyiBEA2&amp;t=ffffffffdcacc22b" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=wWj0thAM9OxZD79o9A96CXjd-S72ugV-Y6xudMBXithJY8PkIqf16LbnJnmfSAoBOuHnLIdLJJ-v2Tl4UuN_6ngArGH1YQklbo6E_I8SfUeaahjKcme8n7DEFL-cPsLkEmLhhH90_0AvlwQxeyr4CTVZgfYRFUgINKVOaoTuIs81&amp;t=ffffffffdcacc22b" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="3EF3C167">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="6EN2XOQiG7jv9hA/Bn5u/I4Kd9y0oC/7NtOenfVe8s2zWqLhJUyjTpMrFWn1vpIwEoIaddU4e8ri0caxWiZTvmXHky04VZvjBAttdUHHLAiEz9G+Sw7JEtYx9rnifBP67jHdKnw7L5fOp76MyivRpOpOzwbVxHMmwVf6Ks66swUmR5PPdOT+AkwTyqTSnDmvPukU1d5XJci65wxJ/rp/7ZfevXX1obyc155cQC7Mt/y4/48gUu02DCeCBFSUza/XE5DlJ7Bdfs8quSZKetuY7EWWa5WXYLrNUbZNtpq/HyrZvTQ1wHpM/55xoAIPe4iAnVgzr5JPfj0LKrLKm8hNEI7QOMo8ggIEwW7PwdHPuNah/M/QgGzgTAkRLSK5bPgfe8gQb0+IxLp6puVpBfwuxmoebtEJsYr+qBEvHjM9+v2zeIjBi9RSlBW4hVzasatNJItZV57ns8kZCMTYfuoOQsU/t8xF4fWHB/S8spAIGV4M/tFG3IQK3WKSDfqvEdHbFkksLpUMUj8rRLMD5X7kRoGAA227HdfRWilcqOouFBaIlFD1WqMHBcCmwa6mw8lzm94gwu+8Cm9QexE8nJpRr8876AKhLw/jt7162pAlRA0U4w8hR71X5HzGBrVtpigYjaJAzpOI7LZZlXDfmhwoU3RJNvCRpaz+6/ZmeO69AbXYMdihXvXZdWlrkJz62qEXKtaqES4VBQ/8qWQop1D0bTS/coEJTiE4cDBFH6gTIxAz2WQ+aL9Bq6K5Eknx2iedOccF80+iVApbwv7qAZVN7quxtwUxncbyTw2sM+Wo83DToqjpI3k/c4Pv3n1ONwdy1ctm+0/Arqna9wJU1wcMAw==">
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$script1', 'Form1', ['tctl00$ctl00$pnlaPesquisaPanel','','tctl00$ctl00$pnlaPesquisaMobilePanel','','tctl00$ctl00$pnlCatalogoPanel',''], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        <div id="loadCatalogo" class="RadAjax RadAjax_Bootstrap" style="display:none;">
+	<div class="raDiv">
+
+	</div><div class="raColor raTransp">
+
+	</div>
+</div>
+        <div class="RadAjaxPanel" id="ctl00_ctl00_pnlCatalogoPanel">
+	<div id="ctl00_pnlCatalogo">
+		<!-- 2024.3.805.462 -->
+            <div id="ctl00_msg" style="display:none;">
+			<div id="ctl00_msg_alerttemplate" style="display:none;">
+        <div class="rwDialog rwAlertDialog">
+            <div class="rwDialogContent">
+                <div class="rwDialogMessage">{1}</div>
+            </div>
+            <div class="rwDialogButtons">
+                <button type="button" class="rwOkBtn" onclick="$find('{0}').close(true); return false;">##LOC[OK]##</button>
+            </div>
+        </div>
+        </div><div id="ctl00_msg_prompttemplate" style="display:none;">
+        <div class="rwDialog rwPromptDialog">
+            <div class="rwDialogContent">
+                <div class="rwDialogMessage">{1}</div>
+                <div class="rwPromptInputContainer">
+                    <script type="text/javascript">
+                        function RadWindowprompt_detectenter(id, ev, input) {
+                            if (!ev) ev = window.event;
+                            if (ev.keyCode == 13) {
+                                var but = input.parentNode.parentNode.parentNode.getElementsByTagName("button")[0];
+                                if (but) {
+                                    if (but.click) {
+                                        but.click();
+                                    }
+                                    else if (but.onclick) {
+                                        but.focus();
+                                        var click = but.onclick;
+                                        but.onclick = null;
+                                        if (click) click.call(but);
+                                    }
+                                }
+                                return false;
+                            }
+                            else return true;
+                        }
+                    </script>
+                    <input title="Enter Value" aria-label="input" onkeydown="return RadWindowprompt_detectenter('{0}', event, this);" type="text" class="rwPromptInput radPreventDecorate" value="{2}">
+                </div>
+            </div>
+            <div class="rwDialogButtons">
+                <button type="button" class="rwOkBtn" onclick="$find('{0}').close(this.parentNode.parentNode.getElementsByTagName('input')[0].value); return false;">##LOC[OK]##</button>
+                <button type="button" class="rwCancelBtn" onclick="$find('{0}').close(null); return false;">##LOC[Cancel]##</button>
+            </div>
+        </div>
+        </div><div id="ctl00_msg_confirmtemplate" style="display:none;">
+        <div class="rwDialog rwConfirmDialog">
+            <div class="rwDialogContent">
+                <div class="rwDialogMessage">{1}</div>
+            </div>
+            <div class="rwDialogButtons">
+                <button type="button" class="rwOkBtn" onclick="$find('{0}').close(true); return false;">##LOC[OK]##</button>
+                <button type="button" class="rwCancelBtn" onclick="$find('{0}').close(false); return false;">##LOC[Cancel]##</button>
+            </div>
+        </div>
+        </div><input id="ctl00_msg_ClientState" name="ctl00_msg_ClientState" type="hidden">
+		</div>
+
+            <header class="header-area header-height-2">
+                <div style="height: 2px; width: 100%; background-color: #ffd800"></div>
+
+                <div class="header-top header-top-ptb-1 d-none d-lg-block">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-xl-5 col-lg-5">
+                                <div class="header-info">
+                                    <ul>
+                                        <li><i class="fa fa-envelope mr-5"></i> atendimento.sp@abnt.org.br</li>
+                                        <li><a id="lnkPolitica" href="pol.aspx"><i class="fa fa-lock"></i> Política de Privacidade</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4">
+                                <div class="text-center">
+                                    <div class="text-center">
+                                        <a href="#" class="tamfonte" onclick="javascript:mudaTamanho('body', 1); return false;" title="Aumentar Tamanho do Texto">A+</a>
+                                        <a href="#" class="tamfonte" onclick="javascript:mudaTamanho('body', -1); return false;" title="Tamanho do Texto Normal"> A-</a>
+                                        <span style="margin-left: 30px; margin-right: 10px; display:inline;">Contraste</span><a href="#" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()"><img id="imgContraste" src="/assets/imgs/alto_contraste.png" alt="Alto Contraste" title="Selecionar alto contraste" style="margin-right: 5px; border:none; vertical-align:middle;"></a>                                        
+                                    </div>
+                                    <span id="lblSlogan" style="font-size: medium; display: none">Pensou Normas Técnicas, Pensou ABNT</span>                                
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3">
+                                <div class="header-info header-info-right">
+                                    <ul>
+                                        <li>
+                                            <a class="language-dropdown-active" href="#"><i class="fa fa-sitemap"></i><span id="lblSiteABNT"></span><i class="fa fa-chevron-down"></i></a>
+                                            <ul class="language-dropdown">
+                                                <li><a id="lnkInstitucional" href="https://www.abnt.org.br" target="_blank">Site Institucional</a></li>
+                                                <li><a id="lnkColecao" href="https://www.abntcolecao.com.br" target="_blank">ABNT Coleção</a></li>
+                                                <li><a id="lnkEducacao" href="https://www.abnteducacao.com.br" target="_blank">ABNT Educação</a></li>
+                                                <li><a id="lnkConsultaNacional" href="https://www.abntonline.com.br/consultanacional" target="_blank">Consulta Nacional</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a class="language-dropdown-active" href="#"> 
+                                                <i class="fa fa-globe-americas"></i> 
+                                                <span id="lblIdiomaAtual">Português</span>
+                                                <i class="fa fa-chevron-down"></i>
+                                            </a>
+                                            <ul class="language-dropdown">
+                                                <li><a id="cmdIngles" href="javascript:__doPostBack('ctl00$cmdIngles','')">English</a></li>
+                                                <li><a id="cmdPortugues" href="javascript:__doPostBack('ctl00$cmdPortugues','')">Português</a></li>
+                                            </ul>
+                                        </li>
+                                    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-middle d-none d-lg-block mt-10">
+                    <div class="container">
+                        <div class="header-wrap header-space-between">
+                            <div class="logo logo-width-1">
+                                <a href="default.aspx"><img src="assets/imgs/theme/logo.png" alt="ABNT Catálogo"></a>
+                            </div>
+                            <div class="search-style-2">
+                                <div id="loadPesquisa" class="RadAjax RadAjax_Bootstrap" style="display:none;">
+			<div class="raDiv">
+
+			</div><div class="raColor raTransp">
+
+			</div>
+		</div>
+                                <div class="RadAjaxPanel" id="ctl00_ctl00_pnlaPesquisaPanel">
+			<div id="ctl00_pnlaPesquisa">
+				
+                                    <div id="pnlPesquisa" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'cmdPesquisa')">
+					
+                                        <select name="ctl00$cboProduto" id="cboProduto" class="select-active select2-hidden-accessible" data-select2-id="cboProduto" tabindex="-1" aria-hidden="true">
+						<option value="0" data-select2-id="2">Todos Produtos</option>
+						<option value="1" data-select2-id="3">Normas</option>
+						<option value="3" data-select2-id="4">Certificação</option>
+
+					</select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="5" style="width: 170px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-cboProduto-container"><span class="select2-selection__rendered" id="select2-cboProduto-container" role="textbox" aria-readonly="true" title="Todos Produtos">Todos Produtos</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                        <input name="ctl00$txtPesquisa" type="text" id="txtPesquisa" placeholder="Procure por produtos ABNT…">
+                                        <span id="rfvPesquisa" style="display:none;"></span>
+                                        <a id="cmdPesquisa" class="searchbutton" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cmdPesquisa&quot;, &quot;&quot;, true, &quot;Pesquisa&quot;, &quot;&quot;, false, true))"><i class="far fa-search"></i></a>
+                                    
+				</div>
+                                
+			</div>
+		</div>
+                            </div>                            
+                            <div class="header-action-right">
+                                <div class="header-action-2">                                
+                                    <div class="header-action-icon-2">
+                                        <a href="fav.aspx">
+                                            <img class="svgInject" alt="Favoritos" src="assets/imgs/theme/icons/icon-heart.svg">
+                                                                                        
+                                        </a>
+                                    </div>
+                                    <div class="header-action-icon-2">
+                                        <a class="mini-cart-icon" href="crn.aspx">
+                                            <img alt="Carrinho" src="assets/imgs/theme/icons/icon-cart.svg">
+                                            <span id="lblCarrinho" class="pro-count blue">0</span>
+                                        </a>
+                                                                                
+                                    </div>
+                                    <div class="header-info" style="padding-left: 20px">
+                                        <ul>
+                                            <li>
+                                                <a id="lnkPerfil" class="perfil-dropdown-active" href="pnl.aspx"> <img alt="Login" src="assets/imgs/theme/icons/icon-user.svg" width="28px" height="28px"> <i class="fa fa-chevron-down"></i></a>
+                                                
+                                                
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                        
+                    </div>
+                </div>
+
+                
+
+                <div class="header-bottom header-bottom-bg-color sticky-bar gray-bg sticky-blue-bg">  
+                    <div style="width: 100%; background-color: #345387">
+                    <div class="container">
+                        <div class="header-wrap header-space-between position-relative">
+                            <div class="logo logo-width-1 d-block d-lg-none">
+                                <a href="default.aspx"><img src="assets/imgs/theme/logo_bco.png" alt="ABNT Catálogo"></a>
+                            </div>
+                            <div class="main-categori-wrap d-none d-lg-block">                        
+                            </div>
+                            <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block main-menu-light-white hover-boder hover-boder-white">
+                                <nav>
+                                    <ul>
+                                        <li>
+                                            <a href="default.aspx"><i class="fa fa-home" style="font-size: 20px"></i></a>                                    
+                                        </li>
+                                        <li>
+                                            <a id="lnkCadastro" href="cad.aspx">Meu Cadastro</a>
+                                        </li>
+                                        <li>
+                                            <a id="lnkPedido" href="pnl.aspx">Meus Pedidos</a>
+                                        </li>
+                                        <li>
+                                            <a id="lnkEducacao2" href="https://www.abnteducacao.com.br" target="_blank">ABNT Educação</a>
+                                        </li>
+                                         <li>
+                                            <a id="lnkPesquisaAv" href="pav.aspx">Pesquisa Avançada</a>
+                                        </li>
+                                        <li>
+                                            <a id="cmdProjeto" href="javascript:__doPostBack('ctl00$cmdProjeto','')">Projetos</a>
+                                        </li>
+                                        <li>
+                                            <a id="lnkFAQ" href="faq.aspx">Perguntas Frequentes</a>
+                                        </li>
+                                        <li>
+                                            <a id="lnkContato" href="fal.aspx">Fale Conosco</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </nav>
+                            </div>
+                        
+                            <div class="hotline d-none d-lg-block">                        
+                            </div>
+
+                            <div class="header-action-right d-block d-lg-none">
+                                <div class="header-action-2">
+                                    <div class="header-action-icon-2">
+                                         <a href="fav.aspx">
+                                            <img class="svgInject" alt="Favoritos" src="assets/imgs/theme/icons/icon-heart-white.svg">
+                                                                                        
+                                        </a>                                        
+                                    </div>
+                                    <div class="header-action-icon-2">
+                                        <a class="mini-cart-icon" href="crn.aspx">
+                                            <img alt="wowy" src="assets/imgs/theme/icons/icon-cart-white.svg">
+                                            <span id="lblCarrinho2" class="pro-count white">0</span>
+                                        </a>
+                                        
+                                    </div>
+                                    <div class="header-info" style="padding-left: 12px">
+                                        <ul>
+                                            <li>
+                                                <a id="lnkPerfil2" class="perfil-dropdown-active"> <img alt="Login" src="assets/imgs/theme/icons/icon-user-white.svg" width="20px" height="20px"> <i class="fa fa-chevron-down" style="color: #fff"></i></a>
+                                                
+                                                
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="header-action-icon-2 d-block d-lg-none">
+                                        <div class="burger-icon burger-icon-white">
+                                            <span class="burger-icon-top"></span>
+                                            <span class="burger-icon-mid"></span>
+                                            <span class="burger-icon-bottom"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div style="height: 2px; width: 100%; background-color: #ffd800"></div>
+                    <div style="height: 1px; width: 100%; background-color: #345387"></div>
+                </div>
+
+            </header>
+
+            <div class="mobile-header-active mobile-header-wrapper-style">
+                <div class="mobile-header-wrapper-inner">
+                    <div class="mobile-header-top">
+                        <div class="mobile-header-logo">
+                            <a href="default.aspx"><img src="assets/imgs/theme/logo.png" alt="ABNT Catálogo"></a>
+                        </div>
+                        <div class="mobile-menu-close close-style-wrap close-style-position-inherit">
+                            <button class="close-style search-close">
+                                <i class="icon-top"></i>
+                                <i class="icon-bottom"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mobile-header-content-area">
+                        
+                        <div class="mobile-search search-mobile mobile-header-border">
+                            <div id="loadPesquisaMobile" class="RadAjax RadAjax_Bootstrap" style="display:none;">
+			<div class="raDiv">
+
+			</div><div class="raColor raTransp">
+
+			</div>
+		</div>
+                            <div class="RadAjaxPanel" id="ctl00_ctl00_pnlaPesquisaMobilePanel">
+			<div id="ctl00_pnlaPesquisaMobile">
+				
+                                <div id="pnlPesquisaMobile" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'cmdPesquisaMobile')">
+					                            
+                                    <input name="ctl00$txtPesquisaMobile" type="text" id="txtPesquisaMobile" placeholder="Pesquise ...">
+                                    <span id="rfvPesquisaMobile" style="display:none;"></span>                                    
+                                    <a id="cmdPesquisaMobile" class="searchbutton" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cmdPesquisaMobile&quot;, &quot;&quot;, true, &quot;PesquisaMobile&quot;, &quot;&quot;, false, true))"><i class="far fa-search"></i></a>
+                                
+				</div>     
+                            
+			</div>
+		</div>
+                        </div>
+                        <div class="mobile-menu-wrap mobile-header-border">                        
+                            <!-- mobile menu start -->
+                            <nav>
+                                <ul class="mobile-menu">
+                                    <li>
+                                        <i class="fa fa-home text-white" style="font-size: 16px"></i> &nbsp; <a id="lnkMobileHome" href="default.aspx">Ínicio</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-address-card text-white" style="font-size: 16px"></i> &nbsp; <a id="lnkMobileCadastro" href="cad.aspx">Meu Cadastro</a>                                   
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-shopping-cart text-white" style="font-size: 16px"></i> &nbsp; <a id="lnkMobilePedido" href="pnl.aspx">Meus Pedidos</a>                                   
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-graduation-cap text-white" style="font-size: 16px"></i> &nbsp; <a id="lnkMobileEducacao" href="https://www.abnteducacao.com.br" target="_blank">ABNT Educação</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-search text-white" style="font-size: 16px"></i> &nbsp; <a id="lnkMobilePesquisaAvancada" href="pav.aspx">Pesquisa Avançada</a>                                    
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-tasks text-white" style="font-size: 16px"></i> &nbsp; <a id="lnkMobileProjeto" href="pav.aspx?O=P">Projetos</a>                                    
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-question-circle text-white" style="font-size: 16px"></i> &nbsp; <a id="lnkMobileFAQ" href="faq.aspx">Perguntas Frequentes</a>                                
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-user-lock text-white" style="font-size: 16px"></i> &nbsp; <a id="lnkMobilePolitica" href="pol.aspx">Política de Privacidade</a>                                   
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-envelope text-white" style="font-size: 16px"></i> &nbsp; <a id="lnkMobileContato" href="fal.aspx">Fale Conosco</a>                                  
+                                    </li>
+                                    <li class="menu-item-has-children"><span class="menu-expand"><i class="far fa-chevron-down"></i></span><span class="menu-expand"></span><a href="#"><i class="fa fa-globe-americas"></i> <span id="lblMobileIdioma">Idioma</span></a>
+                                        <ul class="dropdown" style="display: none;">
+                                            <li><a id="cmdMobileIngles" href="javascript:__doPostBack('ctl00$cmdMobileIngles','')">English</a></li>
+                                            <li><a id="cmdMobilePortugues" href="javascript:__doPostBack('ctl00$cmdMobilePortugues','')">Português</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- mobile menu end -->
+
+                        </div>
+                        <div class="mobile-header-info-wrap mobile-header-border">                                                
+                            <div class="single-mobile-header-info text-white">
+                                <i class="fa fa-phone mr-5"></i> <span id="lblMobileTelefone">(11) 3017-3648 / 3663 / 3610</span>
+                            </div>
+                            <div class="single-mobile-header-info text-white">
+                                <i class="fa fa-at mr-5"></i> <span id="lblMobileEmail">atendimento.sp@abnt.org.br</span>
+                            </div>
+                        </div>
+                        <div class="mobile-social-icon">
+                            <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="tumblr" href="#"><i class="fab fa-tumblr"></i></a>
+                            <a class="instagram" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <main class="main">
+                <div id="pnlTitulo" class="page-header breadcrumb-wrap">
+			            
+                    <div class="container">
+                        <div class="breadcrumb">
+                            <a id="lnkInicio" rel="nofollow">INICIO</a>                        
+                            <span id="lblPagina">Norma Técnica</span>
+                            <span id="lblItem">ABNT NBR ISO/IEC 17025:2017</span>
+                        </div>
+                    </div>
+                
+		</div>
+
+                <div>
+                    
+   
+    <div id="ctl00_cphPagina_RadWindowManager1" style="display:none;">
+			<div id="ctl00_cphPagina_RadWindowManager1_alerttemplate" style="display:none;">
+        <div class="rwDialog rwAlertDialog">
+            <div class="rwDialogContent">
+                <div class="rwDialogMessage">{1}</div>
+            </div>
+            <div class="rwDialogButtons">
+                <button type="button" class="rwOkBtn" onclick="$find('{0}').close(true); return false;">##LOC[OK]##</button>
+            </div>
+        </div>
+        </div><div id="ctl00_cphPagina_RadWindowManager1_prompttemplate" style="display:none;">
+        <div class="rwDialog rwPromptDialog">
+            <div class="rwDialogContent">
+                <div class="rwDialogMessage">{1}</div>
+                <div class="rwPromptInputContainer">
+                    <script type="text/javascript">
+                        function RadWindowprompt_detectenter(id, ev, input) {
+                            if (!ev) ev = window.event;
+                            if (ev.keyCode == 13) {
+                                var but = input.parentNode.parentNode.parentNode.getElementsByTagName("button")[0];
+                                if (but) {
+                                    if (but.click) {
+                                        but.click();
+                                    }
+                                    else if (but.onclick) {
+                                        but.focus();
+                                        var click = but.onclick;
+                                        but.onclick = null;
+                                        if (click) click.call(but);
+                                    }
+                                }
+                                return false;
+                            }
+                            else return true;
+                        }
+                    </script>
+                    <input title="Enter Value" aria-label="input" onkeydown="return RadWindowprompt_detectenter('{0}', event, this);" type="text" class="rwPromptInput radPreventDecorate" value="{2}">
+                </div>
+            </div>
+            <div class="rwDialogButtons">
+                <button type="button" class="rwOkBtn" onclick="$find('{0}').close(this.parentNode.parentNode.getElementsByTagName('input')[0].value); return false;">##LOC[OK]##</button>
+                <button type="button" class="rwCancelBtn" onclick="$find('{0}').close(null); return false;">##LOC[Cancel]##</button>
+            </div>
+        </div>
+        </div><div id="ctl00_cphPagina_RadWindowManager1_confirmtemplate" style="display:none;">
+        <div class="rwDialog rwConfirmDialog">
+            <div class="rwDialogContent">
+                <div class="rwDialogMessage">{1}</div>
+            </div>
+            <div class="rwDialogButtons">
+                <button type="button" class="rwOkBtn" onclick="$find('{0}').close(true); return false;">##LOC[OK]##</button>
+                <button type="button" class="rwCancelBtn" onclick="$find('{0}').close(false); return false;">##LOC[Cancel]##</button>
+            </div>
+        </div>
+        </div><input id="ctl00_cphPagina_RadWindowManager1_ClientState" name="ctl00_cphPagina_RadWindowManager1_ClientState" type="hidden">
+		</div>
+    <input name="ctl00$cphPagina$txtAcesso" type="text" id="cphPagina_txtAcesso" style="display: none">
+
+    <section class="mt-10 mb-10">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="cphPagina_pnlDados">
+			
+                        <div class="product-detail accordion-detail">
+                            
+                            <div class="row mb-15">
+                                <div class="col-md-5 col-sm-12 col-xs-12">
+                                    <div id="cphPagina_pnlImagemZoom" class="detail-gallery">
+				
+                                        <span class="zoom-icon"><i class="fa fa-search-plus"></i></span>
+                                                     
+                                        <div class="product-image-slider slick-initialized slick-slider">
+                                            <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 451px; transform: translate3d(0px, 0px, 0px);"><figure class="border-radius-10 slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 451px;" tabindex="0">
+                                                <img id="cphPagina_imgNorma" src="assets/imgs/norma/NM_a0xrT3Vkd2I3ZXM9.png" alt="ABNT NBR ISO/IEC 17025:2017">
+                                            </figure></div></div>                                            
+                                        </div>
+                                    
+			</div>
+                                                                       
+                                </div>
+                                <div class="col-md-7 col-sm-12 col-xs-12">
+                                    <div class="detail-info">
+                                        <h2 class="title-detail"><span id="cphPagina_lblNormaNumero">ABNT NBR ISO/IEC 17025:2017</span></h2>
+                                        <h4><span id="cphPagina_lblNormaTitulo">Requisitos gerais para a competência de laboratórios de ensaio e calibração</span></h4>
+                                        <h4><span id="cphPagina_lblStatus2" style="color:Red;"></span></h4>
+
+                                        <div class="product-detail-rating">
+                                            <div class="pro-details-brand">
+                                                <span id="cphPagina_lblDataLabel">Data de Publicação :</span>
+                                                <span id="cphPagina_lblNormaData" style="font-weight:bold;">19/12/2017</span>
+                                                <br>
+                                                
+                                                
+                                            </div>
+                                            <div class="product-rate-cover text-end"> 
+                                                <a id="cphPagina_cmdFavorito" class="action-btn favorito hover-up" aria-label="Adicionar aos favoritos" href="javascript:__doPostBack('ctl00$cphPagina$cmdFavorito','')"><i class="far fa-heart"></i></a>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="clearfix product-price-cover">
+                                            <div class="product-price primary-color float-left">
+                                                <ins><span id="cphPagina_lblNormaPreco" class="text-brand">R$294,90</span></ins>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="bt-1 border-color-1 mt-10 mb-10"></div>
+                                        <div class="short-desc mb-10">
+                                            <p><span id="cphPagina_lblNormaResumo">Este documento especifica os requisitos gerais para a competência, imparcialidade e operação consistente de laboratórios.</span></p>
+                                        </div>
+                                        <div class="product_sort_info font-xs mb-20">
+                                            <ul>
+                                                
+                                                <li><i class="far fa-university mr-5 text-brand"></i> 
+                                                    <span id="cphPagina_lblComiteLabel">Comitê Técnico :</span>
+                                                    <span id="cphPagina_lblNormaComite" style="font-weight:bold;">ABNT/CB-025 Qualidade</span>
+                                                </li>                                                
+                                                
+                                                <li><i class="far fa-address-card mr-5 text-brand"></i> 
+                                                    <span id="cphPagina_lblStatusLabel">Status :</span>
+                                                    <span id="cphPagina_lblNormaStatus" style="font-weight:bold;">EM VIGOR</span>
+                                                    <br>
+                                                    
+                                                </li>
+                                                <div id="cphPagina_pnlHistorico">
+				
+                                                    <li><i class="far fa-hourglass-start mr-5 text-brand"></i> 
+                                                        <span id="cphPagina_lblHistorico" onclick="GoHistorico();" style="color:Red;cursor: pointer">Versões Anteriores</span>                                                        
+                                                    </li>
+                                                
+			</div>
+                                            </ul>
+                                        </div>
+
+                                        <div class="row">
+                                            <div id="cphPagina_pnlQuantidade" class="col-lg-2" style="display: inline-block">
+				
+                                                <span id="cphPagina_lblQuantidadeLabel" style="font-weight:bold;">Qtde :</span> <br>
+                                                <div id="ctl00_cphPagina_txtQtde_wrapper" class="riContSpinButtons RadInput RadInput_Bootstrap" style="width:80px;height:40px;margin-top:5px;">
+					<input id="ctl00_cphPagina_txtQtde" name="ctl00$cphPagina$txtQtde" class="riTextBox riEnabled" value="1" type="text"><span class="riSelect"><a class="riUp" href="javascript:void(0)" id="ctl00_cphPagina_txtQtde_SpinUpButton"><span>Spin Up</span></a><a class="riDown" href="javascript:void(0)" id="ctl00_cphPagina_txtQtde_SpinDownButton"><span>Spin Down</span></a></span><input id="ctl00_cphPagina_txtQtde_ClientState" name="ctl00_cphPagina_txtQtde_ClientState" type="hidden" autocomplete="off" value="{&quot;enabled&quot;:true,&quot;emptyMessage&quot;:&quot;&quot;,&quot;validationText&quot;:&quot;1&quot;,&quot;valueAsString&quot;:&quot;1&quot;,&quot;minValue&quot;:1,&quot;maxValue&quot;:70368744177664,&quot;lastSetTextBoxValue&quot;:&quot;1&quot;}">
+				</div>
+                                            
+			</div>
+
+                                            <div id="cphPagina_pnlFormato" class="attr-detail attr-size col-lg-5" style="display: inline-block">
+				
+                                                
+                                                <span id="cphPagina_lblFormatoLabel" style="font-weight:bold;">Formato :</span> <br>
+                                                
+                                                <div class="radio_container">                                                    
+                                                    <input id="cphPagina_optEletronico" type="radio" name="ctl00$cphPagina$Formato" value="optEletronico" checked="checked">                                                
+                                                    <label id="cphPagina_lblEletronicoLabel" for="cphPagina_optEletronico">Eletrônico</label>
+                                                    <input id="cphPagina_optImpresso" type="radio" name="ctl00$cphPagina$Formato" value="optImpresso">                                                
+                                                    <label id="cphPagina_lblImpressoLabel" for="cphPagina_optImpresso">Impresso</label>                                                
+                                                </div>
+                                            
+			</div> 
+
+                                        </div>
+                                        
+                                        <div class="bt-1 border-color-1 mt-20 mb-20"></div>
+
+                                        <div class="row">
+                                            <div class="col-lg-6" style="padding-top: 5px">
+                                                
+                                                <a id="cphPagina_cmdCarrinho" class="botao-carrinho" href="javascript:__doPostBack('ctl00$cphPagina$cmdCarrinho','')"><i class="fas fa-shopping-cart"></i> Comprar</a>
+                                            </div>
+                                            
+                                            <div id="cphPagina_pnlPreview" class="col-lg-6" style="padding-top: 5px">
+				
+                                                <div class="preview" onclick="javascript:GoPreview();">
+                                                    <span id="cphPagina_lblPreview1" class="preview1"><i class="fas fa-eye"></i> Pré-Visualização</span>
+                                                    <span id="cphPagina_lblPreview2" class="preview2"><i class="fas fa-eye"></i> Somente para Associados</span>
+                                                </div>
+                                            
+			</div>
+
+                                                                                    
+                                        </div>
+
+                                        
+                                                                                
+                                        <ul class="font-xs color-grey mt-5" style="border-top: 1px solid #eee">
+                                            <li><span id="cphPagina_lblPalavraLabel">Palavras-Chave :</span> <span id="cphPagina_lblNormaPalavra" style="font-weight:bold;">Ensaio, Competência, Controle de qualidade, Verificação</span> </li>                                            
+                                        </ul>
+                                    </div>
+
+                                    <div class="single-social-share clearfix">
+                                        <p class="mt-5 font-sm"> <i class="fa fa-share-alt mr-5"></i> <span id="cphPagina_lblCompartilheLabel">Compartilhe isto</span> </p>
+                                        <div class="mobile-social-icon wow fadeIn mb-sm-5 mb-md-0 animated" style="visibility: hidden; animation-name: none;">
+                                            <a id="cphPagina_lnkFacebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.abntcatalogo.com.br/pnm.aspx?Q=R1JtejluaFYzZGs1Nk1xUGFzeERUdWZiM29xYkh2dWFEVi8xR21rdHpkMD0=" target="_blank"><img src="assets/imgs/theme/facebook.svg" alt="Facebook"></a>
+                                            <a id="cphPagina_lnkWhatsApp" href="https://wa.me/?text=https://www.abntcatalogo.com.br/pnm.aspx?Q=R1JtejluaFYzZGs1Nk1xUGFzeERUdWZiM29xYkh2dWFEVi8xR21rdHpkMD0=" target="_blank"><img src="assets/imgs/theme/whatsapp.svg" alt="WhatsApp"></a>
+                                            <a id="cphPagina_lnkTwitter" href="https://twitter.com/share?url=https://www.abntcatalogo.com.br/pnm.aspx?Q=R1JtejluaFYzZGs1Nk1xUGFzeERUdWZiM29xYkh2dWFEVi8xR21rdHpkMD0=" target="_blank"><img src="assets/imgs/theme/twitter.svg" alt="Twitter"></a>
+                                            <a id="cphPagina_lnkEmail" href="mailto:?body=https://www.abntcatalogo.com.br/pnm.aspx?Q=R1JtejluaFYzZGs1Nk1xUGFzeERUdWZiM29xYkh2dWFEVi8xR21rdHpkMD0=" target="_blank"><img src="assets/imgs/theme/email.svg" alt="Email"></a>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+
+                            <div class="row" id="acHistorico">
+                                <div class="col-lg-8 m-auto entry-main-content mb-10">
+                                    
+                                                 <div id="cphPagina_rptMensagem_pnlAlerta_0" class="card-alert mt-10 mb-10">
+				
+                                            
+                                                    <div class="card-alert-content">
+                                                        <i class="fas fa-solid fa-exclamation exclamation"></i>
+
+                                                        <div class="message">
+                                                            <span id="cphPagina_rptMensagem_lblAlerta1_0" class="text text-1">Curso disponível</span>
+                                                            <span id="cphPagina_rptMensagem_lblAlerta2_0" class="text text-2">Esta norma possui 1 curso disponível.&nbsp;<a href="https://www.abnteducacao.com.br/crs.aspx?Q=NmtjOTFPUHBRSm5QZzhYakJ2a2hWamt1M3piNUFUcXY5cEo3bGlDa004Yz0=" target="_blank">Clique Aqui</a> para maiores detalhes.</span>
+                                                        </div>
+                                                    </div>
+                                        
+                                                
+			</div>
+
+                                                
+                                            
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-lg-10 m-auto entry-main-content">
+                                    
+                                  <a id="hide1" href="#hide1" class="hide"><h3 class="section-title style-1 mb-30">+ <span id="cphPagina_lblMaisInformacoes_P">Informações Adicionais</span></h3></a>
+                                  <a id="show1" href="#show1" class="show"><h3 class="section-title style-1 mb-30">- <span id="cphPagina_lblMaisInformacoes_M">Informações Adicionais</span></h3></a>
+ 
+                                    <div class="details">                                                                 
+                                        <table class="font-md mb-30">
+                                                <tbody>
+                                                    <tr>
+                                                        <th><span id="cphPagina_lblInfoNumeroLabel">Número :</span></th>
+                                                        <td>
+                                                            <p><span id="cphPagina_lblInfoNumero">ABNT NBR ISO/IEC 17025:2017</span></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th><span id="cphPagina_lblInfoPublicacaoLabel">Data de Publicação :</span></th>
+                                                        <td>
+                                                            <p><span id="cphPagina_lblInfoPublicacao">19/12/2017</span></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th><span id="cphPagina_lblInfoValidaLabel">Válida a partir de :</span></th>
+                                                        <td>
+                                                            <p><span id="cphPagina_lblInfoValida"></span></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th><span id="cphPagina_lblInfoCancelamentoLabel">Data de Cancelamento :</span></th>
+                                                        <td>
+                                                            <p><span id="cphPagina_lblInfoCancelamento"></span></p>
+                                                        </td>
+                                                    </tr>    
+                                                    <tr>
+                                                        <th><span id="cphPagina_lblInfoTituloLabel">Titulo :</span></th>
+                                                        <td>
+                                                            <p><span id="cphPagina_lblInfoTitulo">Requisitos gerais para a competência de laboratórios de ensaio e calibração</span></p>
+                                                        </td>
+                                                    </tr>  
+                                                    <tr>
+                                                        <th><span id="cphPagina_lblInfoTituloSecLabel">Titulo Idioma Secundário :</span></th>
+                                                        <td>
+                                                            <p><span id="cphPagina_lblInfoTituloSec">General requirements for the competence of testing and calibration laboratories</span></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th><span id="cphPagina_lblInfoNotaTituloLabel">Nota de Título :</span></th>
+                                                        <td>
+                                                            <p><span id="cphPagina_lblInfoNotaTitulo"></span></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th><span id="cphPagina_lblInfoComiteLabel">Comitê Técnico :</span></th>
+                                                        <td>
+                                                            <p><span id="cphPagina_lblInfoComite">ABNT/CB-025 Qualidade</span></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th><span id="cphPagina_lblInfoPaginaLabel">Páginas :</span></th>
+                                                        <td>
+                                                            <p><span id="cphPagina_lblInfoPagina">32</span></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th><span id="cphPagina_lblInfoStatusLabel">Status :</span></th>
+                                                        <td>
+                                                            <p><span id="cphPagina_lblInfoStatus">EM VIGOR</span></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th><span id="cphPagina_lblInfoIdiomaLabel">Idioma :</span></th>
+                                                        <td>
+                                                            <p><span id="cphPagina_lblInfoIdioma">Português</span></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th><span id="cphPagina_lblInfoOrganismoLabel">Organismo :</span></th>
+                                                        <td>
+                                                            <p><span id="cphPagina_lblInfoOrganismo">ABNT - Associação Brasileira de Normas Técnicas</span></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th><span id="cphPagina_lblInfoPrecoLabel">Preço (R$) :</span></th>
+                                                        <td>
+                                                            <p><span id="cphPagina_lblInfoPreco">294,90</span></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th><span id="cphPagina_lblInfoISBNLabel">ISBN :</span></th>
+                                                        <td>
+                                                            <p><span id="cphPagina_lblInfoISBN">978-85-07-07368-0</span></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th><span id="cphPagina_lblInfoObjetivoLabel">Objetivo :</span></th>
+                                                        <td>
+                                                            <p><span id="cphPagina_lblInfoObjetivo">Este documento especifica os requisitos gerais para a competência, imparcialidade e operação consistente de laboratórios.</span></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th><span id="cphPagina_lblInfoObjetivoSecLabel">Objetivo Idioma Secundário :</span></th>
+                                                        <td>
+                                                            <p><span id="cphPagina_lblInfoObjetivoSec">This document specifies the general requirements for the competence, impartiality and consistent operation of laboratories.</span></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th><span id="cphPagina_lblInfoPalavraLabel">Palavras-Chave :</span></th>
+                                                        <td>
+                                                            <p><span id="cphPagina_lblInfoPalavra">Ensaio, Competência, Controle de qualidade, Verificação</span></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th><span id="cphPagina_lblInfoICSLabel">ICS :</span></th>
+                                                        <td>
+                                                            <p><span id="cphPagina_lblInfoICS">03.120.20 - Certificação de produtos e de empresas. Avaliação da conformidade</span></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th><span id="cphPagina_lblInfoODSLabel">ODS :</span></th>
+                                                        <td>
+                                                            <p><span id="cphPagina_lblInfoODS"></span></p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>                                    
+                                    </div>
+                                </div>                                
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-10 m-auto entry-main-content">
+                                    <a id="hideH" href="#hideH" class="hide"><h3 class="section-title style-1 mb-30">+ <span id="cphPagina_lblHistorico_P">Versões Anteriores</span></h3></a>
+                                    <a id="showH" href="#showH" class="show"><h3 class="section-title style-1 mb-30">- <span id="cphPagina_lblHistorico_M">Versões Anteriores</span></h3></a>
+                                
+                                     <div class="details">
+                                         <table class="table text-center clean font-md mb-30">
+                                            <thead>
+                                                <tr class="main-heading">
+                                                    <th scope="col"><span id="cphPagina_lblHistorico1">Norma</span></th>
+                                                    <th scope="col"><span id="cphPagina_lblHistorico2">Publicação</span></th>
+                                                    <th scope="col"><span id="cphPagina_lblHistorico3">Cancelamento</span></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                
+                                                        <tr>
+                                                            <td>
+                                                                <a id="cphPagina_rptHistorico_cmdNorma_0" href="javascript:__doPostBack('ctl00$cphPagina$rptHistorico$ctl00$cmdNorma','')">ABNT NBR ISO/IEC 17025:2001</a>
+                                                            </td>
+                                                            <td>
+                                                                <span id="cphPagina_rptHistorico_lblPublicacao_0">30 jan 2001</span>
+                                                            </td>
+                                                            <td>
+                                                                <span id="cphPagina_rptHistorico_lblCancelamento_0">29 set 2005</span>
+                                                            </td>
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            <td>
+                                                                <a id="cphPagina_rptHistorico_cmdNorma_1" href="javascript:__doPostBack('ctl00$cphPagina$rptHistorico$ctl01$cmdNorma','')">ABNT NBR ISO/IEC 17025:2005</a>
+                                                            </td>
+                                                            <td>
+                                                                <span id="cphPagina_rptHistorico_lblPublicacao_1">30 set 2005</span>
+                                                            </td>
+                                                            <td>
+                                                                <span id="cphPagina_rptHistorico_lblCancelamento_1">24 jul 2006</span>
+                                                            </td>
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            <td>
+                                                                <a id="cphPagina_rptHistorico_cmdNorma_2" href="javascript:__doPostBack('ctl00$cphPagina$rptHistorico$ctl02$cmdNorma','')">ABNT NBR ISO/IEC 17025:2005 Versão Corrigida:2006</a>
+                                                            </td>
+                                                            <td>
+                                                                <span id="cphPagina_rptHistorico_lblPublicacao_2">30 set 2005</span>
+                                                            </td>
+                                                            <td>
+                                                                <span id="cphPagina_rptHistorico_lblCancelamento_2">25 set 2006</span>
+                                                            </td>
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            <td>
+                                                                <a id="cphPagina_rptHistorico_cmdNorma_3" href="javascript:__doPostBack('ctl00$cphPagina$rptHistorico$ctl03$cmdNorma','')">ABNT NBR ISO/IEC 17025:2005 Versão Corrigida 2:2006</a>
+                                                            </td>
+                                                            <td>
+                                                                <span id="cphPagina_rptHistorico_lblPublicacao_3">30 set 2005</span>
+                                                            </td>
+                                                            <td>
+                                                                <span id="cphPagina_rptHistorico_lblCancelamento_3">19 dez 2017</span>
+                                                            </td>
+                                                        </tr>
+                                                    
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-30">
+                                <div class="col-12">
+                                    <h3 class="section-title style-1 mb-30"><span id="cphPagina_lblProdutosLabel">Normas Relacionadas</span></h3>
+                                </div>
+                                <div class="row">
+                                    <div class="carausel-6-columns-cover arrow-center position-relative">
+                                        <div id="dvArrow" class="slider-arrow slider-arrow-2 carausel-6-columns-arrow"></div>
+                                        <div id="dvItens" class="carausel-6-columns carausel-arrow-center slick-initialized slick-slider" ref="dvArrow">
+                                            
+                                                    <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 374px; transform: translate3d(0px, 0px, 0px);"><div class="product-cart-wrap small hover-up slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 187px;" tabindex="0">
+                                                        <div class="product-img-action-wrap">
+                                                            <div class="product-img product-img-zoom border radius">
+                                                                <a id="cphPagina_rptProdutoRel_cmdIMG_0" href="javascript:__doPostBack('ctl00$cphPagina$rptProdutoRel$ctl00$cmdIMG','')" tabindex="0"><img id="cphPagina_rptProdutoRel_img1_0" class="default-img" src="assets/imgs/norma/NM_MEg0QkYxRlFwMnM9.png" alt="ISO/IEC 17025:2017"><img id="cphPagina_rptProdutoRel_img2_0" class="hover-img" src="assets/imgs/norma/NM_MEg0QkYxRlFwMnM9.png" alt="ISO/IEC 17025:2017"></a>
+                                                            </div>
+                                                            <div class="product-action-1">
+                                                                <a id="cphPagina_rptProdutoRel_cmdDetalhe_0" class="action-btn hover-up" aria-label="Ver Detalhes" href="javascript:__doPostBack('ctl00$cphPagina$rptProdutoRel$ctl00$cmdDetalhe','')" tabindex="0"><i class="far fa-search"></i></a>
+                                                                <a id="cphPagina_rptProdutoRel_cmdFavorito_0" class="action-btn hover-up" aria-label="Adicionar a Favoritos" href="javascript:__doPostBack('ctl00$cphPagina$rptProdutoRel$ctl00$cmdFavorito','')" tabindex="0"><i class="far fa-heart"></i></a>
+                                                                <a id="cphPagina_rptProdutoRel_lnkCompartilhar_0" class="action-btn hover-up" onclick="javascript:ClickShare('ptbr', 'https://www.abntcatalogo.com.br/pnm.aspx?Q=RjhhRFc3Q1hRRWtsNTROM0VuRGtvbzN2SVZ0aUtzRzZXcHhDTTlhN0d5WT0=')" aria-label="Compartilhar" tabindex="0"><i class="fa fa-share"></i></a>
+                                                            </div> 
+                                                            <div class="product-badges product-badges-position product-badges-mrg">
+                                                                <span id="cphPagina_rptProdutoRel_spnCategoria_0" class="new">IDENTICA</span>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <div class="product-content-wrap">
+                                                            <div style="height: 80px; max-height: 80px; overflow-y:auto" class="style-scroll">
+                                                                <h5 class="text-left">
+                                                                    <a id="cphPagina_rptProdutoRel_cmdNumero_0" class="text-primary" href="javascript:__doPostBack('ctl00$cphPagina$rptProdutoRel$ctl00$cmdNumero','')" tabindex="0">ISO/IEC 17025:2017</a>                                                                        
+                                                                </h5>
+                                                                <h6 class="text-left">
+                                                                    <a id="cphPagina_rptProdutoRel_cmdTitulo_0" href="javascript:__doPostBack('ctl00$cphPagina$rptProdutoRel$ctl00$cmdTitulo','')" style="color:Black;" tabindex="0">General requirements for the competence of testing and calibration laboratories</a>      
+                                                                </h6>                                                        
+                                                            </div>
+                                                            <div class="product-price">
+                                                                <span><span id="cphPagina_rptProdutoRel_lblPreco_0">R$1.359,00</span></span>
+                                                            </div>                                                        
+                                                        </div>
+                                                    </div><div class="product-cart-wrap small hover-up slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 187px;" tabindex="0">
+                                                        <div class="product-img-action-wrap">
+                                                            <div class="product-img product-img-zoom border radius">
+                                                                <a id="cphPagina_rptProdutoRel_cmdIMG_1" href="javascript:__doPostBack('ctl00$cphPagina$rptProdutoRel$ctl01$cmdIMG','')" tabindex="0"><img id="cphPagina_rptProdutoRel_img1_1" class="default-img" src="assets/imgs/norma/NM_M2dkUGJWLzhqalU9.png" alt="ABNT ISO/IEC GUIA 99:2014"><img id="cphPagina_rptProdutoRel_img2_1" class="hover-img" src="assets/imgs/norma/NM_M2dkUGJWLzhqalU9.png" alt="ABNT ISO/IEC GUIA 99:2014"></a>
+                                                            </div>
+                                                            <div class="product-action-1">
+                                                                <a id="cphPagina_rptProdutoRel_cmdDetalhe_1" class="action-btn hover-up" aria-label="Ver Detalhes" href="javascript:__doPostBack('ctl00$cphPagina$rptProdutoRel$ctl01$cmdDetalhe','')" tabindex="0"><i class="far fa-search"></i></a>
+                                                                <a id="cphPagina_rptProdutoRel_cmdFavorito_1" class="action-btn hover-up" aria-label="Adicionar a Favoritos" href="javascript:__doPostBack('ctl00$cphPagina$rptProdutoRel$ctl01$cmdFavorito','')" tabindex="0"><i class="far fa-heart"></i></a>
+                                                                <a id="cphPagina_rptProdutoRel_lnkCompartilhar_1" class="action-btn hover-up" onclick="javascript:ClickShare('ptbr', 'https://www.abntcatalogo.com.br/pnm.aspx?Q=TXVDZTFSV1B5d2lOZ0ROMER4MjJaaHpaVzJzUlNYZHc2eS90R0ltZGxaYz0=')" aria-label="Compartilhar" tabindex="0"><i class="fa fa-share"></i></a>
+                                                            </div> 
+                                                            <div class="product-badges product-badges-position product-badges-mrg">
+                                                                <span id="cphPagina_rptProdutoRel_spnCategoria_1" class="best">COMPLEMENTAR</span>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <div class="product-content-wrap">
+                                                            <div style="height: 80px; max-height: 80px; overflow-y:auto" class="style-scroll">
+                                                                <h5 class="text-left">
+                                                                    <a id="cphPagina_rptProdutoRel_cmdNumero_1" class="text-primary" href="javascript:__doPostBack('ctl00$cphPagina$rptProdutoRel$ctl01$cmdNumero','')" tabindex="0">ABNT ISO/IEC GUIA 99:2014</a>                                                                        
+                                                                </h5>
+                                                                <h6 class="text-left">
+                                                                    <a id="cphPagina_rptProdutoRel_cmdTitulo_1" href="javascript:__doPostBack('ctl00$cphPagina$rptProdutoRel$ctl01$cmdTitulo','')" style="color:Black;" tabindex="0">Vocabulário Internacional de Metrologia - Conceitos fundamentais e gerais e termos associados </a>      
+                                                                </h6>                                                        
+                                                            </div>
+                                                            <div class="product-price">
+                                                                <span><span id="cphPagina_rptProdutoRel_lblPreco_1">R$447,00</span></span>
+                                                            </div>                                                        
+                                                        </div>
+                                                    </div></div></div>
+                                                
+                                                    
+                                                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    
+		</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+    <script type="text/javascript">
+        var pnl = document.getElementById('cphPagina_pnlCaptcha');
+        if (pnl == null)
+            pnl = document.getElementById('ctl00_cphPagina_pnlCaptcha');
+
+        if (pnl != null) {
+            var onloadCallback = function () {
+                grecaptcha.render('dvCaptcha', {
+                    'sitekey': '6Lf1evYcAAAAABCzyhTCZGiGXDcRo-57kVsBvl-O',
+                    'callback': function (response) {
+                        var obj = document.getElementById('cphPagina_txtCaptcha')
+                        if (obj == null)
+                            obj = document.getElementById('ctl00_cphPagina_txtCaptcha')
+
+                        if (obj != null)
+                            obj.value = response;
+
+                        var rfv = document.getElementById('cphPagina_rfvcaptcha')
+                        if (rfv == null)
+                            rfv = document.getElementById('ctl00_cphPagina_rfvcaptcha')
+
+                        if (rfv != null)
+                            rfv.style.display = 'none';
+                    }
+                });
+
+                var txt = document.getElementById('cphPagina_txtIdioma');
+                if (txt == null)
+                    txt = document.getElementById('ctl00_cphPagina_txtIdioma');
+
+                var captcha = document.getElementById('dvCaptcha');
+                setCaptchaLang(captcha, txt.value);
+            };
+        }
+
+        function setCaptchaLang(recaptchaContainer, lang) {
+            lang = lang || "en";
+
+            const iframeGoogleCaptcha = recaptchaContainer.querySelector('iframe');
+            const currentLang = iframeGoogleCaptcha.getAttribute("src").match(/hl=(.*?)&/).pop();
+
+            if (currentLang !== lang) {
+                iframeGoogleCaptcha.setAttribute(
+                    "src",
+                    iframeGoogleCaptcha.getAttribute("src").replace(
+                        /hl=(.*?)&/,
+                        'hl=' + lang + '&'
+                    )
+                );
+            }
+        }
+
+        function ResetCaptcha() {
+            onloadCallback();
+        }
+    </script>
+    
+
+                </div>
+            </main>
+                
+            <footer class="main">
+                <section class="newsletter bg-brand p-30 text-white wow fadeIn animated" style="visibility: hidden; animation-name: none;">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7 mb-md-3 mb-lg-0">
+                                <div class="row align-items-center">                               
+                                    <div class="col flex-horizontal-center">
+                                        <img class="icon-email" src="assets/imgs/theme/icons/icon-email.svg" alt="">
+                                        <h4 class="font-size-20 mb-0 ml-3"><span id="lblRecebeEmail">Deseja receber nossos e-mails</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                
+                                <div id="pnlInscricao" class="form-subcriber d-flex wow fadeIn animated" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'cmdSubscribeHidden')" style="visibility: hidden; animation-name: none;">
+			
+                                    <input name="ctl00$txtSubscribe" type="text" id="txtSubscribe" class="form-control bg-white font-small" placeholder="Informe seu e-mail">
+                                    <button onclick="__doPostBack('ctl00$cmdSubscribe','')" id="cmdSubscribe" class="btn bg-dark text-white"><span id="lblSubscribe">Inscrição</span></button>
+                                    <span id="rfvSenha" style="display:none;"></span>
+                                    <input type="button" name="ctl00$cmdSubscribeHidden" value="" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cmdSubscribeHidden&quot;, &quot;&quot;, true, &quot;Subscribe&quot;, &quot;&quot;, false, true))" id="cmdSubscribeHidden" style="display: none">
+                                
+		</div>
+                                                            
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-padding-30">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-8">
+                                <div class="widget-about font-md mb-md-5 mb-lg-0">                                
+                                    <h4 class="mt-20 mb-10 fw-600 text-grey-4 wow fadeIn animated" style="visibility: hidden; animation-name: none;"><span id="lblContato">Contato</span></h4>                               
+                                    <p class="wow fadeIn animated" style="visibility: hidden; animation-name: none;">
+                                        <span id="lblVendas" style="font-weight:bold;">Aquisição de Normas: </span>
+                                        <i class="fa fa-phone mr- 5"></i> <span id="lblVendaTelefone">(11) 3017-3663</span> | <i class="fa fa-at mr-5"></i> <span id="lblVendaEmail">atendimento.sp@abnt.org.br</span>
+                                    </p>
+                                    <p class="wow fadeIn animated" style="visibility: hidden; animation-name: none;">
+                                        <span id="lblCurso" style="font-weight:bold;">Educação :</span> 
+                                        <i class="fa fa-phone mr-5"></i> <span id="lblCursoTelefone">(11) 3017-3680</span> | <i class="fa fa-at mr-5"></i> <span id="lblCursoEmail">cursos@abnt.org.br</span>
+                                    </p>
+                                    <p class="wow fadeIn animated" style="visibility: hidden; animation-name: none;">
+                                        <span id="lblCertificacao" style="font-weight:bold;">Certificação: </span>
+                                        <i class="fa fa-phone mr-5"></i> <span id="lblCertificacaoTelefone">(11) 3017-3691</span> | <i class="fa fa-at mr-5"></i> <span id="lblCertificacaoEmail">certificacao@abnt.org.br</span>
+                                    </p>
+                                    <p class="wow fadeIn animated" style="visibility: hidden; animation-name: none;">
+                                        <span id="lblCIT" style="font-weight:bold;">Informações técnicas sobre normas:</span>
+                                        <i class="fa fa-phone mr-5"></i> <span id="lblCITTelefone">(11) 3017-3645</span> | <i class="fa fa-at mr-5"></i> <span id="lblCITEmail">cit@abnt.org.br</span>
+                                    </p>
+                                    <p class="wow fadeIn animated" style="visibility: hidden; animation-name: none;">
+                                        <span id="lblSuporte" style="font-weight:bold;">Suporte para visualização de normas: </span>
+                                        <i class="fa fa-phone mr-5"></i> <span id="lblSuporteTelefone">(11) 3017-3621</span> | <i class="fa fa-at mr-5"></i> <span id="lblSuporteEmail">suporte@abnt.org.br</span>
+                                    </p>                               
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4" style="text-align: right">
+                                <h4 class="mb-10 mt-20 fw-600 text-grey-4 wow fadeIn animated" style="visibility: hidden; animation-name: none;"><span id="lblSeguir">Siga a ABNT nas redes sociais</span></h4>
+                                <div class="mobile-social-icon wow fadeIn animated mb-sm-5 mb-md-0" style="visibility: hidden; animation-name: none;">
+                                    <a href="https://www.youtube.com/user/abntweb" target="_blank"><img src="assets/imgs/theme/youtube.svg" alt="Youtube"></a>
+                                    <a href="https://www.facebook.com/ABNTOficial" target="_blank"><img src="assets/imgs/theme/facebook.svg" alt="Facebook"></a>
+                                    <a href="https://www.instagram.com/abnt_oficial/" target="_blank"><img src="assets/imgs/theme/instagram.svg" alt="Facebook"></a>
+                                    <a href="https://www.linkedin.com/company/abnt-associacao-brasileira-de-normas-tecnicas/" target="_blank"><img src="assets/imgs/theme/linkedin.svg" alt="LinkedIn"></a>
+                                    <a href="https://twitter.com/ABNTOFICIAL" target="_blank"><img src="assets/imgs/theme/twitter.svg" alt="Twitter"></a>
+                                    <a href="https://www.tiktok.com/@abnt_oficial" target="_blank"><img src="assets/imgs/theme/tiktok.svg" alt="TikTok"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4" style="display: none">
+                                <h4 class="mb-10 mt-20 fw-600 text-grey-4 wow fadeIn animated animated animated" style="visibility: visible;"><span id="lblDownloadApp">Faça download do nosso aplicativo</span></h4>
+                                
+                                    <div class="download-app wow fadeIn animated animated animated" style="visibility: visible;">
+                                        <a href="#" class="hover-up mb-sm-4"><img src="assets/imgs/theme/app-store.jpg" alt=""></a>
+                                        <a href="#" class="hover-up"><img src="assets/imgs/theme/google-play.jpg" alt=""></a>
+                                    </div>                                
+                            
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="container pb-20 wow fadeIn animated" style="visibility: hidden; animation-name: none;">
+                    <div class="row">
+                        <div class="col-12 mb-20">
+                            <div class="footer-bottom"></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="float-md-left font-sm text-muted mb-0">© 2024 - <strong class="text-brand">ABNT</strong> - Associação Brasileira de Normas Técnicas </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="text-lg-end text-start font-sm text-muted mb-0">
+                                <span id="lblDireitos">Todos os direitos reservados</span>                             
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        
+	</div>
+</div>
+        
+        <div id="preloader-active" style="display: none;">
+            <div class="preloader d-flex align-items-center justify-content-center">
+                <div class="preloader-inner position-relative">
+                    <div class="text-center">
+                        <img class="jump" src="assets/imgs/theme/logo.png" alt="">
+                        <h5 class="mb-5"><span id="lblCarregando">C A R R E G A N D O ...</span></h5>
+                        <div class="loader">
+                            <div class="bar bar1"></div>
+                            <div class="bar bar2"></div>
+                            <div class="bar bar3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+        <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
+        <script src="assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/plugins/slick.js"></script>
+        <script src="assets/js/plugins/jquery.syotimer.min.js"></script>
+        <script src="assets/js/plugins/wow.js"></script>
+        <script src="assets/js/plugins/jquery-ui.js"></script>
+        <script src="assets/js/plugins/perfect-scrollbar.js"></script>
+        <script src="assets/js/plugins/magnific-popup.js"></script>
+        <script src="assets/js/plugins/select2.min.js"></script>
+        <script src="assets/js/plugins/waypoints.js"></script>
+        <script src="assets/js/plugins/counterup.js"></script>
+        <script src="assets/js/plugins/jquery.countdown.min.js"></script>
+        <script src="assets/js/plugins/images-loaded.js"></script>
+        <script src="assets/js/plugins/isotope.js"></script>
+        <script src="assets/js/plugins/scrollup.js"></script>
+        <script src="assets/js/plugins/jquery.vticker-min.js"></script>        
+        <script src="assets/js/plugins/jquery.theia.sticky.js"></script>
+        <script src="assets/js/plugins/jquery.elevatezoom.js"></script>
+
+        <!-- Template  JS -->
+        <script src="assets/js/main.js"></script>
+        <script src="./assets/js/shop.js"></script>
+        
+         <script type="text/javascript">
+            $('.select-active').select2();
+         </script>
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("rfvPesquisa"), document.getElementById("rfvPesquisaMobile"), document.getElementById("rfvSenha"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var rfvPesquisa = document.all ? document.all["rfvPesquisa"] : document.getElementById("rfvPesquisa");
+rfvPesquisa.controltovalidate = "txtPesquisa";
+rfvPesquisa.display = "None";
+rfvPesquisa.validationGroup = "Pesquisa";
+rfvPesquisa.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+rfvPesquisa.initialvalue = "";
+var rfvPesquisaMobile = document.all ? document.all["rfvPesquisaMobile"] : document.getElementById("rfvPesquisaMobile");
+rfvPesquisaMobile.controltovalidate = "txtPesquisaMobile";
+rfvPesquisaMobile.display = "None";
+rfvPesquisaMobile.validationGroup = "PesquisaMobile";
+rfvPesquisaMobile.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+rfvPesquisaMobile.initialvalue = "";
+var rfvSenha = document.all ? document.all["rfvSenha"] : document.getElementById("rfvSenha");
+rfvSenha.controltovalidate = "txtSubscribe";
+rfvSenha.display = "None";
+rfvSenha.validationGroup = "Subscribe";
+rfvSenha.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+rfvSenha.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxLoadingPanel, {"initialDelayTime":0,"isSticky":false,"minDisplayTime":0,"skin":"Bootstrap","uniqueID":"ctl00$loadCatalogo","zIndex":90000}, null, null, $get("loadCatalogo"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindowManager, {"_renderMode":2,"clientStateFieldID":"ctl00_msg_ClientState","enableShadow":true,"formID":"Form1","iconUrl":"","minimizeIconUrl":"","name":"msg","skin":"Bootstrap","windowControls":"[]"}, null, null, $get("ctl00_msg"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxLoadingPanel, {"initialDelayTime":0,"isSticky":false,"minDisplayTime":0,"skin":"Bootstrap","uniqueID":"ctl00$loadPesquisa","zIndex":90000}, null, null, $get("loadPesquisa"));
+});
+
+document.getElementById('rfvPesquisa').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('rfvPesquisa'));
+}
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxPanel, {"clientEvents":{OnRequestStart:"",OnResponseEnd:""},"enableAJAX":true,"enableHistory":false,"links":[],"loadingPanelID":"loadPesquisa","styles":[],"uniqueID":"ctl00$pnlaPesquisa"}, null, null, $get("ctl00_pnlaPesquisa"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxLoadingPanel, {"initialDelayTime":0,"isSticky":false,"minDisplayTime":0,"skin":"Bootstrap","uniqueID":"ctl00$loadPesquisaMobile","zIndex":90000}, null, null, $get("loadPesquisaMobile"));
+});
+
+document.getElementById('rfvPesquisaMobile').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('rfvPesquisaMobile'));
+}
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxPanel, {"clientEvents":{OnRequestStart:"",OnResponseEnd:""},"enableAJAX":true,"enableHistory":false,"links":[],"loadingPanelID":"loadPesquisaMobile","styles":[],"uniqueID":"ctl00$pnlaPesquisaMobile"}, null, null, $get("ctl00_pnlaPesquisaMobile"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindowManager, {"_renderMode":2,"clientStateFieldID":"ctl00_cphPagina_RadWindowManager1_ClientState","enableShadow":true,"formID":"Form1","iconUrl":"","minimizeIconUrl":"","name":"RadWindowManager1","skin":"Bootstrap","windowControls":"[]"}, null, null, $get("ctl00_cphPagina_RadWindowManager1"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadNumericTextBox, {"_displayText":"1","_focused":false,"_initialValueAsText":"1","_postBackEventReferenceScript":"setTimeout(\"__doPostBack(\\\u0027ctl00$cphPagina$txtQtde\\\u0027,\\\u0027\\\u0027)\", 0)","_renderMode":2,"_skin":"Bootstrap","_validationText":"1","clientStateFieldID":"ctl00_cphPagina_txtQtde_ClientState","enabled":true,"incrementSettings":{InterceptArrowKeys:true,InterceptMouseWheel:true,Step:1},"minValue":1,"numberFormat":{"DecimalDigits":0,"DecimalSeparator":".","CultureNativeDecimalSeparator":".","GroupSeparator":",","GroupSizes":3,"NegativePattern":"-n","NegativeSign":"-","PositivePattern":"n","AllowRounding":true,"KeepNotRoundedValue":false,"KeepTrailingZerosOnFocus":false,"NumericPlaceHolder":"n"},"showSpinButtons":true,"styles":{HoveredStyle: ["height:40px;width:80px;", "riTextBox riHover"],InvalidStyle: ["height:40px;width:80px;", "riTextBox riError"],DisabledStyle: ["height:40px;width:80px;", "riTextBox riDisabled"],FocusedStyle: ["height:40px;width:80px;", "riTextBox riFocused"],EmptyMessageStyle: ["height:40px;width:80px;", "riTextBox riEmpty"],ReadOnlyStyle: ["height:40px;width:80px;", "riTextBox riRead"],EnabledStyle: ["height:40px;width:80px;", "riTextBox riEnabled"],NegativeStyle: ["height:40px;width:80px;", "riTextBox riNegative"]}}, null, null, $get("ctl00_cphPagina_txtQtde"));
+});
+
+document.getElementById('rfvSenha').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('rfvSenha'));
+}
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxPanel, {"clientEvents":{OnRequestStart:"",OnResponseEnd:""},"enableAJAX":true,"enableHistory":false,"links":[],"loadingPanelID":"loadCatalogo","styles":[],"uniqueID":"ctl00$pnlCatalogo"}, null, null, $get("ctl00_pnlCatalogo"));
+});
+//]]>
+</script>
+</form><a id="scrollUp" href="#top" style="display: none; position: fixed; z-index: 2147483647;"><i class="fal fa-long-arrow-up"></i></a>
+
+    <div class="card cookie-alert show">
+      <div class="card-body">
+        <h4 class="card-title"><span id="lblCookieTitulo">🍪 POLÍTICA DE USO DE COOKIES</span></h4>
+        <p class="card-text" style="font-size: 16px"><span id="lblCookieCorpo">Usamos cookies para segurança, análises de navegação, melhor experiência e personalização de conteúdo de acordo com a nossa <a href="https://www.abntcatalogo.com.br/pol.aspx" target="_blank">Política de Privacidade</a>.</span></p>
+        <div class="btn-toolbar justify-content-end">
+            <span id="lblCookieAceito" class="btn btn-primary accept-cookies" style="cursor: pointer">ACEITO</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="share-dialog">
+      <header class="share-header">
+        <h3 class="dialog-title"></h3>
+        <a class="close-button"><svg><use href="#close"></use></svg></a>
+      </header>
+      <div class="targets">
+        <a id="aFacebook" class="button" href="" target="_blank">
+            <svg>
+            <use href="#facebook"></use>
+            </svg>
+            <span>Facebook</span>
+        </a>
+    
+        <a id="aTwitter" class="button" href="" target="_blank">
+            <svg>
+            <use href="#twitter"></use>
+            </svg>
+            <span>Twitter</span>
+        </a>
+    
+        <a id="aWhatsapp" class="button" href="" target="_blank">
+            <svg>
+            <use href="#whatsapp"></use>
+            </svg>
+            <span>WhatsApp</span>
+        </a>
+    
+        <a id="aEmail" class="button" href="" target="_blank">
+            <svg>
+            <use href="#email"></use>
+            </svg>
+            <span>Email</span>
+        </a>
+       </div>
+       <div class="link">     
+        <div class="pen-url"></div>
+        <input type="text" id="txtCopy" style="display: none">
+        <a class="copy-link"></a>
+       </div>
+    </div>
+
+    <svg class="hidden">
+      <defs>        
+        <symbol id="facebook" viewBox="0 0 24 24" fill="#3b5998" stroke="#3b5998" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></symbol>
+    
+        <symbol id="twitter" viewBox="0 0 24 24" fill="#1da1f2" stroke="#1da1f2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></symbol>
+    
+        <symbol id="email" viewBox="0 0 24 24" fill="#777" stroke="#fafafa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></symbol>
+    
+        <symbol id="whatsapp" viewBox="0 0 24 24" fill="#a4c639" stroke="#a4c639" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-whatsapp"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></symbol>
+    
+        <symbol id="close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-square"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="9" x2="15" y2="15"></line><line x1="15" y1="9" x2="9" y2="15"></line></symbol>
+      </defs>
+    </svg>
+
+    <script type="text/javascript" src="assets/js/share.js"></script>   
+    <script type="text/javascript">
+        (function () {
+            "use strict";
+
+            var cookieAlert = document.querySelector(".cookie-alert");
+            var acceptCookies = document.querySelector(".accept-cookies");
+
+            cookieAlert.offsetHeight;
+
+            if (!getCookie("ABNTCookies")) {
+                cookieAlert.classList.add("show");
+            }
+
+            acceptCookies.addEventListener("click", function () {
+                setCookie("ABNTCookies", true, 1);
+                cookieAlert.classList.remove("show");
+            });
+        })();
+
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);            
+            var ca = decodedCookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) === ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) === 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+    </script>
+
+    <div vw="" class="enabled" style="left: initial; right: 0px; top: 50%; bottom: initial; transform: translateY(calc(-50% - 10px));">
+        <div vw-access-button="" class="active"><img class="access-button" data-src="assets/access_icon.svg" alt="Conteúdo acessível em Libras usando o VLibras Widget com opções dos Avatares Ícaro, Hosana ou Guga." src="https://vlibras.gov.br/app//assets/access_icon.svg">
+<img class="pop-up" data-src="assets/access_popup.jpg" alt="Conteúdo acessível em Libras usando o VLibras Widget com opções dos Avatares Ícaro, Hosana ou Guga." src="https://vlibras.gov.br/app//assets/access_popup.jpg"></div>
+        <div vw-plugin-wrapper=""><div vp="">
+  <div vp-box=""></div>
+  <div vp-message-box=""></div>
+  <div vp-settings=""></div>
+  <div vp-dictionary=""></div>
+  <div vp-settings-btn=""></div>
+  <div vp-info-screen=""></div>
+  <div vp-suggestion-screen=""></div>
+  <div vp-translator-screen=""></div>
+  <div vp-main-guide-screen=""></div>
+  <div vp-suggestion-button=""></div>
+  <div vp-rate-box=""></div>
+  <div vp-change-avatar=""></div>
+  <div vp-additional-options=""></div>
+  <div vp-controls=""></div>
+  <span vp-click-blocker=""></span>
+</div></div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+
+<div class="zoomContainer" style="-webkit-transform: translateZ(0);position:absolute;left:125px;top:277.20001220703125px;height:637.533px;width:451px;"><div class="zoomWindowContainer" style="width: 400px;"><div style="z-index: 999; overflow: hidden; margin-left: 0px; margin-top: 0px; background-position: 0px 0px; width: 451px; height: 637.533px; float: left; display: none; cursor: crosshair; background-repeat: no-repeat; position: absolute; background-image: url(&quot;assets/imgs/norma/NM_a0xrT3Vkd2I3ZXM9.png&quot;);" class="zoomWindow">&nbsp;</div></div></div></body></html>
