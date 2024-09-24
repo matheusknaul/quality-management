@@ -26,6 +26,10 @@ h2{
     display: none;
 }
 
+#content-analise-critica{
+    display: none;
+}
+
 .banner-container{
     padding: 100px;
     background-color: #831316;

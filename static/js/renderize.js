@@ -1,12 +1,13 @@
 function showActiveContent() {
-    const contentContainers = document.querySelectorAll('#content-normas, #content-fornecedores', '#content-analise-critica');
-    
+    // Seleciona os containers corretamente
+    const contentContainers = document.querySelectorAll('#content-normas, #content-fornecedores, #content-analise-critica');
+
     // Esconde todos os containers
     contentContainers.forEach(container => {
         container.style.display = 'none'; // Esconde todos os containers
     });
 
-    // Exibe apenas os containers com a classe 'activate'
+    // Exibe apenas o container com a classe 'activate'
     const activeContent = document.querySelector('.activate');
     if (activeContent) {
         activeContent.style.display = 'block'; // Exibe o container ativado
@@ -16,7 +17,7 @@ function showActiveContent() {
 // Função para ativar o container correto e desativar os outros
 function toggleActive(containerId) {
     // Remove a classe 'activate' de todos os containers
-    const contentContainers = document.querySelectorAll('#content-normas, #content-fornecedores');
+    const contentContainers = document.querySelectorAll('#content-normas, #content-fornecedores, #content-analise-critica');
     contentContainers.forEach(container => {
         container.classList.remove('activate'); // Remove a classe 'activate' de todos
     });
@@ -43,7 +44,7 @@ document.getElementById('fornecedores-link').addEventListener('click', function(
 // Adiciona o evento de clique ao link de "Análise Crítica"
 document.getElementById('analys-link').addEventListener('click', function(event) {
     event.preventDefault();
-    toggleActive('content-analise-critica'); // Ativa o conteúdo de Fornecedores
+    toggleActive('content-analise-critica'); // Ativa o conteúdo de Análise Crítica
 });
 
 // Chama a função no início para garantir que o conteúdo certo apareça

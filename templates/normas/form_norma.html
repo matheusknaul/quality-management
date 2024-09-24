@@ -5,7 +5,7 @@
             action="{{url_for('norma.inserir_norma')}}" 
         {% endif %}
 
-        method="{% if norma %}PUT{% else %}POST{% endif %}"
+        method="{% if norma %} PUT {% else %} POST {% endif %}"
 
         {%if norma%}
             c-swap="#norma-{{norma.id}}"
