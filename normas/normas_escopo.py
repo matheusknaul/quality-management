@@ -12,6 +12,7 @@ lista_obj_normas = []
 df = pd.DataFrame({
             'TAG PRINCIPAL':[],
             'Numero': [],
+            'Descrição': [],
             'Parte': [],
             'Ano': [],
             'Status': [],
@@ -33,7 +34,7 @@ def verifica_duplicata(obj, data_frame):
 def procura_norma():
     padrao = r"(" + "|".join(lista_das_normas) + r")"
     indice_item = 1
-    with open('escopo\CRL0495.pdf','rb') as f:
+    with open('normas\escopo\CRL0495.pdf','rb') as f:
         pdf = PdfReader(f)
         num_pages = len(pdf.pages)
         lines = []
@@ -53,7 +54,7 @@ def procura_norma():
                 obj = mn(texto_completo)
                 if verifica_duplicata(obj, df):
                     nova_linha(obj, df)
-    df.to_excel('db_excel/dataframe.xlsx', index=False)
+    df.to_excel('normas/db_excel/dataframe.xlsx', index=False)
 
 start_time = datetime.now()
 procura_norma()

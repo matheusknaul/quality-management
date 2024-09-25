@@ -5,7 +5,7 @@ import numpy as np
 from pandas._libs.tslibs.nattype import NaTType
 from Data import Data
 
-_path_db = 'dataframe.xlsx'
+_path_db = 'normas/db_excel/dataframe.xlsx'
 _date = Data()
 _data_frame = pd.read_excel(_path_db)
 _period_valid = 14

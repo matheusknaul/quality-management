@@ -6,7 +6,7 @@ class Norma(BaseModel):
     codigo = CharField()
     descricao = CharField()
     ano_norma = IntegerField()
-    situacao = BooleanField()
+    situacao = CharField()
     data_ultima_verificacao = DateTimeField(default=datetime.datetime.now)
 
 

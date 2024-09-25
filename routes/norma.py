@@ -14,9 +14,11 @@ def inserir_norma():
     nova_norma = Norma.create(
         codigo = data['codigo'],
         descricao = data['descricao'],
-        ano_norma = 0,
-        situacao = 0,
+        ano_norma = data['ano_norma'],
+        situacao = 'Analisar'
     )
+
+    print(data['ano_norma'])
     return render_template('normas/item_norma.html', norma=nova_norma)
 
 @norma_route.route('/new')

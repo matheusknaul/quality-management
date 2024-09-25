@@ -5,7 +5,7 @@
             action="{{url_for('norma.inserir_norma')}}" 
         {% endif %}
 
-        method="{% if norma %} PUT {% else %} POST {% endif %}"
+        method="{% if norma %}PUT{% else %}POST{% endif %}"
 
         {%if norma%}
             c-swap="#norma-{{norma.id}}"
@@ -22,6 +22,10 @@
     <div class="mb-3">
         <label class="form-label">Descrição</label>
         <input type="text" class="form-control" name="descricao" {%if norma%}value="{{norma.descricao}}"{%endif%}>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Ano da norma</label>
+        <input type="text" class="form-control" name="ano_norma" {%if norma%}value="{{norma.ano_norma}}"{%endif%}>
     </div>
     <button type="submit" class="btn btn-primary">
         {%if norma%}Salvar{%else%}Adicionar{%endif%}

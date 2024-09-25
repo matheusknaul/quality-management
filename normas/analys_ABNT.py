@@ -10,9 +10,10 @@ from bs4 import BeautifulSoup
 import requests
 import time
 
+
+
 class DontHaveYear(Exception):
     print('Não tem ano!')
-
 
 pc_casa_gecko = r'C:\Users\matheus.calvet\AppData\Local\Programs\Python\Python312\geckodriver.exe'
 pc_casa_firefox = r'C:\Users\matheus.calvet\AppData\Local\Mozilla Firefox\firefox.exe'
@@ -64,6 +65,10 @@ def clear_checkbox(tag):
         driver.find_element(By.CSS_SELECTOR, '#cphPagina_pnlNorma > div > div:nth-child(1) > div:nth-child(5) > label').click()
         time.sleep(5)        
     return True
+
+def pega_titulo():
+    titulo = driver.find_element(By.ID, '#cphPagina_lblNormaTitulo').text
+    return titulo
 
 def selecionar_tag(tag):
     time.sleep(2)
