@@ -39,6 +39,7 @@ xpath_checkbox = {
 
 result = {
     'RESULTADO': '',
+    'DESCRIPTION': '',
     'WARNING': ''
 }
 
@@ -131,6 +132,8 @@ def analys_profile(tag, number, year, html_of_page_profile_standard):
     year_detailed = year[-2:]
     if tag in titulo_norma and number in titulo_norma and year_detailed == titulo_norma[-2:]:
         #A tag e o número estão dentro do titulo do perfil
+        result['DESCRIPTION'] = soup.find('span', id='cphPagina_lblNormaTitulo').string
+        print(f'Essa é a descrição da norma: {soup.find('span', id='cphPagina_lblNormaTitulo').string}')
         if soup.find('span', id='cphPagina_lblNormaStatus').string == 'ACTIVE' or "EM VIGOR":
             #Ela está ativa
             result['RESULTADO'] = 'ATIVA'

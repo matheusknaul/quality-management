@@ -16,12 +16,14 @@ _cover_result = {
 }
 
 """
+
 AVISOS:
 
 ALGUM MOMENTO, VAI COMEÇAR A DAR CRASH POIS O LIMPA CHECKBOX DE CADA VERIFICAÇÃO
 NÃO POSSUI O XPATH DA ISO PARA PODER VERIFICAR E LIMPAR!
 
 """
+
 def start_read():
     for indice, linha in _data_frame.iterrows():
         if verify_year_nan(linha['Ano']):
@@ -105,6 +107,7 @@ def start_aplication_ISO(tag, number, year, part, indice):
         _data_frame.at[indice, 'Status'] = 'Conforme'
         _data_frame.at[indice, 'Data ultima verificacao'] = f'{_date.data_hoje()}'
         _data_frame.at[indice, 'Link'] = result['LINK']
+        _data_frame.at[indice, 'Descrição'] = result['DESCRIPTION']
         _data_frame.to_excel('dataframe.xlsx',index=False)
         _data_frame.to_excel(r'C:\Users\matheus.calvet\Desktop\teste\dataframe.xlsx', index=False)
     elif result['RESULTADO'] == 'ERROR':
@@ -112,17 +115,20 @@ def start_aplication_ISO(tag, number, year, part, indice):
         _data_frame.at[indice, 'Data ultima verificacao'] = f'{_date.data_hoje()}'
         _data_frame.at[indice, 'Erro status'] = result['WARNING']
         _data_frame.at[indice, 'Link'] = result['LINK']
+        _data_frame.at[indice, 'Descrição'] = result['DESCRIPTION']
         _data_frame.to_excel('dataframe.xlsx',index=False)
         _data_frame.to_excel(r'C:\Users\matheus.calvet\Desktop\teste\dataframe.xlsx', index=False)
     else:
         _data_frame.at[indice, 'Status'] = 'Não conforme'
         _data_frame.at[indice, 'Data ultima verificacao'] = f'{_date.data_hoje()}'
         _data_frame.at[indice, 'Link'] = result['LINK']
+        _data_frame.at[indice, 'Descrição'] = result['DESCRIPTION']
         _data_frame.to_excel('dataframe.xlsx',index=False)
         _data_frame.to_excel(r'C:\Users\matheus.calvet\Desktop\teste\dataframe.xlsx', index=False)
     if result['WARNING'] == 'Parte não está presente':
         _data_frame.at[indice, 'Erro status'] = 'Problema na parte'
         _data_frame.at[indice, 'Link'] = result['LINK']
+        _data_frame.at[indice, 'Descrição'] = result['DESCRIPTION']
         _data_frame.to_excel('dataframe.xlsx',index=False)
         _data_frame.to_excel(r'C:\Users\matheus.calvet\Desktop\teste\dataframe.xlsx', index=False)
 
@@ -134,6 +140,7 @@ def start_aplication_ABNT(tag, number, year, part, indice):
         _data_frame.at[indice, 'Status'] = 'Conforme'
         _data_frame.at[indice, 'Data ultima verificacao'] = f'{_date.data_hoje()}'
         _data_frame.at[indice, 'Link'] = result['LINK']
+        _data_frame.at[indice, 'Descrição'] = result['DESCRIPTION']
         _data_frame.to_excel('dataframe.xlsx',index=False)
         _data_frame.to_excel(r'C:\Users\matheus.calvet\Desktop\teste\dataframe.xlsx', index=False)
     elif result['RESULTADO'] == 'ERROR':
@@ -141,17 +148,20 @@ def start_aplication_ABNT(tag, number, year, part, indice):
         _data_frame.at[indice, 'Data ultima verificacao'] = f'{_date.data_hoje()}'
         _data_frame.at[indice, 'Erro status'] = result['WARNING']
         _data_frame.at[indice, 'Link'] = result['LINK']
+        _data_frame.at[indice, 'Descrição'] = result['DESCRIPTION']
         _data_frame.to_excel('dataframe.xlsx',index=False)
         _data_frame.to_excel(r'C:\Users\matheus.calvet\Desktop\teste\dataframe.xlsx', index=False)
     else:
         _data_frame.at[indice, 'Status'] = 'Não conforme'
         _data_frame.at[indice, 'Data ultima verificacao'] = f'{_date.data_hoje()}'
         _data_frame.at[indice, 'Link'] = result['LINK']
+        _data_frame.at[indice, 'Descrição'] = result['DESCRIPTION']
         _data_frame.to_excel('dataframe.xlsx',index=False)
         _data_frame.to_excel(r'C:\Users\matheus.calvet\Desktop\teste\dataframe.xlsx', index=False)
     if result['WARNING'] == 'Parte não está presente':
         _data_frame.at[indice, 'Erro status'] = 'Problema na parte'
         _data_frame.at[indice, 'Link'] = result['LINK']
+        _data_frame.at[indice, 'Descrição'] = result['DESCRIPTION']
         _data_frame.to_excel('dataframe.xlsx',index=False)
         _data_frame.to_excel(r'C:\Users\matheus.calvet\Desktop\teste\dataframe.xlsx', index=False)
 
@@ -163,6 +173,7 @@ def start_aplication_ASTM(tag, number, year, indice):
         _data_frame.at[indice, 'Status'] = 'Conforme'
         _data_frame.at[indice, 'Data ultima verificacao'] = f'{_date.data_hoje()}'
         _data_frame.at[indice, 'Link'] = result['LINK']
+        _data_frame.at[indice, 'Descrição'] = result['DESCRIPTION']
         _data_frame.to_excel('dataframe.xlsx',index=False)
         _data_frame.to_excel(r'C:\Users\matheus.calvet\Desktop\teste\dataframe.xlsx', index=False)
     elif result['RESULTADO'] == 'ERROR':
@@ -170,17 +181,20 @@ def start_aplication_ASTM(tag, number, year, indice):
         _data_frame.at[indice, 'Data ultima verificacao'] = f'{_date.data_hoje()}'
         _data_frame.at[indice, 'Erro status'] = result['WARNING']
         _data_frame.at[indice, 'Link'] = result['LINK']
+        _data_frame.at[indice, 'Descrição'] = result['DESCRIPTION']
         _data_frame.to_excel('dataframe.xlsx',index=False)
         _data_frame.to_excel(r'C:\Users\matheus.calvet\Desktop\teste\dataframe.xlsx', index=False)
     else:
         _data_frame.at[indice, 'Status'] = 'Não conforme'
         _data_frame.at[indice, 'Data ultima verificacao'] = f'{_date.data_hoje()}'
         _data_frame.at[indice, 'Link'] = result['LINK']
+        _data_frame.at[indice, 'Descrição'] = result['DESCRIPTION']
         _data_frame.to_excel('dataframe.xlsx',index=False)
         _data_frame.to_excel(r'C:\Users\matheus.calvet\Desktop\teste\dataframe.xlsx', index=False)
     if result['WARNING'] == 'Parte não está presente':
         _data_frame.at[indice, 'Erro status'] = 'Problema na parte'
         _data_frame.at[indice, 'Link'] = result['LINK']
+        _data_frame.at[indice, 'Descrição'] = result['DESCRIPTION']
         _data_frame.to_excel('dataframe.xlsx',index=False)
         _data_frame.to_excel(r'C:\Users\matheus.calvet\Desktop\teste\dataframe.xlsx', index=False)
 

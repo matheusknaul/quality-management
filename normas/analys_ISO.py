@@ -39,8 +39,10 @@ xpath_checkbox = {
 
 result = {
     'RESULTADO': '',
+    'DESCRIPTION': '',
     'WARNING': ''
 }
+
 service = Service(executable_path = pc_trabalho_gecko)
 options = Options()
 options.binary_location = pc_trabalho_firefox
@@ -76,8 +78,6 @@ def add_part(part):
         driver.find_element('xpath', '//*[@id="ctl00_cphPagina_txtNM_Parte"]').send_keys(part)
     return part
 
-
-
 def clear_checkbox(tag):
     driver.get(link_abnt)
     time.sleep(10)
@@ -96,7 +96,6 @@ def clear_checkbox(tag):
         driver.find_element(By.CSS_SELECTOR, '#cphPagina_pnlNorma > div > div:nth-child(1) > div:nth-child(5) > label').click()
         time.sleep(5)        
     return True
-
 
 def start_search(tag, number, year, part):
     try:
@@ -134,6 +133,8 @@ def analys_profile(tag, number, year, html_of_page_profile_standard):
     year_detailed = year[-2:]
     if tag in titulo_norma and number in titulo_norma and year_detailed == titulo_norma[-2:]:
         #A tag e o número estão dentro do titulo do perfil
+        result['DESCRIPTION'] = soup.find('span', id='cphPagina_lblNormaTitulo').string
+        print(f'Essa é a descrição da norma: {soup.find('span', id='cphPagina_lblNormaTitulo').string}')
         if soup.find('span', id='cphPagina_lblNormaStatus').string == 'ACTIVE' or "EM VIGOR":
             #Ela está ativa
             result['RESULTADO'] = 'ATIVA'

@@ -1,8 +1,6 @@
 from bs4 import BeautifulSoup
 
-
 #por padrão, todas as tags recebem False = Não precisa ser "deschecada", caso True, significa que a tag precisa ser "deschecada"
-
 
 def read_txt(path_file):
     with open(path_file, "r", encoding="utf-8") as file:
