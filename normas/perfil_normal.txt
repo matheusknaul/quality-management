@@ -1,5 +1,5 @@
-<html class="js t-ff t-ff130 sizes websockets customelements history postmessage webworkers picture pointerevents webanimations webgl srcset flexbox cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth no-csscolumns-breakbefore no-csscolumns-breakafter no-csscolumns-breakinside" lang="pt-br"><head><meta charset="utf-8"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="description" content="ABNT Catalogo"><meta name="viewport" content="width=device-width, initial-scale=1"><meta property="og:title" content="ABNT Catalogo"><meta property="og:type"><meta property="og:url"><meta property="og:image"><meta name="facebook-domain-verification" content="qq0rkuyrp1b8r1zlsz8senvoysn2om"><link rel="icon" type="image/x-icon" href="assets/imgs/theme/favico.png"><link rel="shortcut icon" type="image/x-icon" href="assets/imgs/theme/favico.png"><link href="assets/css/main.css" rel="stylesheet"><link href="assets/css/share.css" rel="stylesheet"><link href="assets/css/contraste.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/EGbODne6buzpTnWrrBprcfAY/recaptcha__pt_br.js" crossorigin="anonymous" integrity="sha384-QCwnW7k1TM2WIjFJer5hltr10RK2K/dhC5xuDlF2JdJ+H5j5f6kdDSafSJowNz9F"></script><script type="text/javascript" src="assets/js/validator.js"></script>
+<html class="js t-ff t-ff131 sizes websockets customelements history postmessage webworkers picture pointerevents webanimations webgl srcset flexbox cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth no-csscolumns-breakbefore no-csscolumns-breakafter no-csscolumns-breakinside" lang="pt-br"><head><meta charset="utf-8"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="description" content="ABNT Catalogo"><meta name="viewport" content="width=device-width, initial-scale=1"><meta property="og:title" content="ABNT Catalogo"><meta property="og:type"><meta property="og:url"><meta property="og:image"><meta name="facebook-domain-verification" content="qq0rkuyrp1b8r1zlsz8senvoysn2om"><link rel="icon" type="image/x-icon" href="assets/imgs/theme/favico.png"><link rel="shortcut icon" type="image/x-icon" href="assets/imgs/theme/favico.png"><link href="assets/css/main.css" rel="stylesheet"><link href="assets/css/share.css" rel="stylesheet"><link href="assets/css/contraste.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/xds0rzGrktR88uEZ2JUvdgOY/recaptcha__pt_br.js" crossorigin="anonymous" integrity="sha384-PHRwSjbJQJ/vYV76DD2yjhtmmkZgKeb5VlpSjqk4pdfIv+Co1hL3XJc99onDdDPI"></script><script type="text/javascript" src="assets/js/validator.js"></script>
     <script type="text/javascript" src="assets/js/acessivel.js"></script>
 
     <style type="text/css">
@@ -122,11 +122,11 @@
 </style><style>div[vw]{position:fixed;max-width:95vw;min-height:40px;min-width:40px;right:0;top:50%;transform:translateY(-50%);z-index:2147483647 !important;display:none;margin:10px !important}div[vw].enabled{display:block}div[vw].active{margin-top:-285px}div[vw].left{left:0;right:initial}
 </style></head>
 <body style="overflow: visible;"><div class="body-overlay-1"></div>
-    <form method="post" action="./pnm.aspx?Q=R1JtejluaFYzZGs1Nk1xUGFzeERUdWZiM29xYkh2dWFEVi8xR21rdHpkMD0%3d" onsubmit="javascript:return WebForm_OnSubmit();" id="Form1">
+    <form method="post" action="./pnm.aspx?Q=eW1yZDRBbUtscWxlU0YrTElZb044VU5XUC9ncjQxdTRieWdUblVPdm0vZz0%3d" onsubmit="javascript:return WebForm_OnSubmit();" id="Form1">
 <div class="aspNetHidden">
 <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
 <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
 </div>
 
 <script type="text/javascript">
@@ -182,7 +182,7 @@ return true;
 <div class="aspNetHidden">
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="3EF3C167">
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="6EN2XOQiG7jv9hA/Bn5u/I4Kd9y0oC/7NtOenfVe8s2zWqLhJUyjTpMrFWn1vpIwEoIaddU4e8ri0caxWiZTvmXHky04VZvjBAttdUHHLAiEz9G+Sw7JEtYx9rnifBP67jHdKnw7L5fOp76MyivRpOpOzwbVxHMmwVf6Ks66swUmR5PPdOT+AkwTyqTSnDmvPukU1d5XJci65wxJ/rp/7ZfevXX1obyc155cQC7Mt/y4/48gUu02DCeCBFSUza/XE5DlJ7Bdfs8quSZKetuY7EWWa5WXYLrNUbZNtpq/HyrZvTQ1wHpM/55xoAIPe4iAnVgzr5JPfj0LKrLKm8hNEI7QOMo8ggIEwW7PwdHPuNah/M/QgGzgTAkRLSK5bPgfe8gQb0+IxLp6puVpBfwuxmoebtEJsYr+qBEvHjM9+v2zeIjBi9RSlBW4hVzasatNJItZV57ns8kZCMTYfuoOQsU/t8xF4fWHB/S8spAIGV4M/tFG3IQK3WKSDfqvEdHbFkksLpUMUj8rRLMD5X7kRoGAA227HdfRWilcqOouFBaIlFD1WqMHBcCmwa6mw8lzm94gwu+8Cm9QexE8nJpRr8876AKhLw/jt7162pAlRA0U4w8hR71X5HzGBrVtpigYjaJAzpOI7LZZlXDfmhwoU3RJNvCRpaz+6/ZmeO69AbXYMdihXvXZdWlrkJz62qEXKtaqES4VBQ/8qWQop1D0bTS/coEJTiE4cDBFH6gTIxAz2WQ+aL9Bq6K5Eknx2iedOccF80+iVApbwv7qAZVN7quxtwUxncbyTw2sM+Wo83DToqjpI3k/c4Pv3n1ONwdy1ctm+0/Arqna9wJU1wcMAw==">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="4TcQrd7eDsrEI1O4sW057Hp4I1yvnMR/Ci7F9/AtTuP6ojXW0SfNptCLxbxppmBlIDYejkzcvbfkLWPMPMAHw7GL1U1rRCQIOmn1UJnYVWmimaqD+GKl2vW05j3wY2c+WkMXW5S0586Op2nbNTmpK9ZnJhEzRyBIE+bKMD08X1Y21nT3JrwhQv0ed+g/NzhJ8KtpWZ0Whl5k1ak1EO6vDWAR2GTsKTfveeAMjvDSu0vvfU+galRXCwakosVMAmFex2y+xSZgmwiSFjxdeL8qMx1RezmjXoVjpg1hmYHrYkL21GyaDvwhEWcdOzPOz4bumGUUkshFI6aTL5oY3w7GgHq80YyIYZDBXfJy6MOpjOoXoxJOOGDYkkxpnfQhD2CPz9V18I2AnOFOOBrsNLi3D+gLbUXSNb+jUW1lnc7h754bynXz8xDv5j/CsYOeh0P9iQzKhS3Y8hgLLs+z5SL97sHrFVntsO8Nnhug0DrLxXl50vDhebqZtkpRMDGD/Xzda6DhNZbzvZ7EzF50W8uqR3Sh1GOf4vaSI2LQGAbe+niAkkoCCYGeHkX3VIZBNEecQoNbQ2gZgB4nOQKEJSqk4F211UXCL9sN0gRnF9yqFN+/meASe5ZCSlVGnGUgfhwtIfDtaB+P+EtzyucIyXNi2w==">
 </div>
         <script type="text/javascript">
 //<![CDATA[
@@ -571,7 +571,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$script1', 'Form1', ['tctl00$c
                         <div class="breadcrumb">
                             <a id="lnkInicio" rel="nofollow">INICIO</a>                        
                             <span id="lblPagina">Norma Técnica</span>
-                            <span id="lblItem">ABNT NBR ISO/IEC 17025:2017</span>
+                            <span id="lblItem">ABNT NBR 15728-3:2009</span>
                         </div>
                     </div>
                 
@@ -654,7 +654,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$script1', 'Form1', ['tctl00$c
                                                      
                                         <div class="product-image-slider slick-initialized slick-slider">
                                             <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 451px; transform: translate3d(0px, 0px, 0px);"><figure class="border-radius-10 slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 451px;" tabindex="0">
-                                                <img id="cphPagina_imgNorma" src="assets/imgs/norma/NM_a0xrT3Vkd2I3ZXM9.png" alt="ABNT NBR ISO/IEC 17025:2017">
+                                                <img id="cphPagina_imgNorma" src="assets/imgs/norma/NM_WHpVMFVDM29CSDQ9.png" alt="ABNT NBR 15728-3:2009">
                                             </figure></div></div>                                            
                                         </div>
                                     
@@ -663,14 +663,14 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$script1', 'Form1', ['tctl00$c
                                 </div>
                                 <div class="col-md-7 col-sm-12 col-xs-12">
                                     <div class="detail-info">
-                                        <h2 class="title-detail"><span id="cphPagina_lblNormaNumero">ABNT NBR ISO/IEC 17025:2017</span></h2>
-                                        <h4><span id="cphPagina_lblNormaTitulo">Requisitos gerais para a competência de laboratórios de ensaio e calibração</span></h4>
+                                        <h2 class="title-detail"><span id="cphPagina_lblNormaNumero">ABNT NBR 15728-3:2009</span></h2>
+                                        <h4><span id="cphPagina_lblNormaTitulo">Implantes para ortopedia — Dispositivos para fixação da coluna vertebral<br>Parte 3: Especificação e avaliação de propriedades estáticas e dinâmicas para placas metálicas</span></h4>
                                         <h4><span id="cphPagina_lblStatus2" style="color:Red;"></span></h4>
 
                                         <div class="product-detail-rating">
                                             <div class="pro-details-brand">
                                                 <span id="cphPagina_lblDataLabel">Data de Publicação :</span>
-                                                <span id="cphPagina_lblNormaData" style="font-weight:bold;">19/12/2017</span>
+                                                <span id="cphPagina_lblNormaData" style="font-weight:bold;">19/08/2009</span>
                                                 <br>
                                                 
                                                 
@@ -682,35 +682,43 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$script1', 'Form1', ['tctl00$c
                                         
                                         <div class="clearfix product-price-cover">
                                             <div class="product-price primary-color float-left">
-                                                <ins><span id="cphPagina_lblNormaPreco" class="text-brand">R$294,90</span></ins>
+                                                <ins><span id="cphPagina_lblNormaPreco" class="text-brand">R$74,70</span></ins>
                                                 
                                             </div>
                                         </div>
                                         <div class="bt-1 border-color-1 mt-10 mb-10"></div>
                                         <div class="short-desc mb-10">
-                                            <p><span id="cphPagina_lblNormaResumo">Este documento especifica os requisitos gerais para a competência, imparcialidade e operação consistente de laboratórios.</span></p>
+                                            <p><span id="cphPagina_lblNormaResumo">Esta parte da ABNT NBR 15728 estabelece especificação para placas para coluna empregadas como elementos longitudinais de dispositivos implantáveis para fixação cirúrgica da coluna vertebral destinados a propiciar a artrodese do sistema esquelético da coluna.</span></p>
                                         </div>
                                         <div class="product_sort_info font-xs mb-20">
                                             <ul>
+                                                <div id="cphPagina_pnlNotaTitulo">
+				
+                                                    <li><i class="far fa-flag mr-5 text-brand"></i> 
+                                                        <span id="cphPagina_lblNotaTituloLabel">Nota de Título :</span>
+                                                        <span id="cphPagina_lblNotaTitulo" style="font-weight:bold;">Confirmada em 08.12.2023</span>
+                                                    </li> 
                                                 
+			</div>
                                                 <li><i class="far fa-university mr-5 text-brand"></i> 
                                                     <span id="cphPagina_lblComiteLabel">Comitê Técnico :</span>
-                                                    <span id="cphPagina_lblNormaComite" style="font-weight:bold;">ABNT/CB-025 Qualidade</span>
+                                                    <span id="cphPagina_lblNormaComite" style="font-weight:bold;">ABNT/CB-026 Odonto-Médico-Hospitalar</span>
                                                 </li>                                                
+                                                <div id="cphPagina_pnlConfirmacao">
+				
+                                                    <li><i class="far fa-calendar-check mr-5 text-brand"></i> 
+                                                        <span id="cphPagina_lblConfirmacaoLabel">Confirmação :</span>
+                                                        <span id="cphPagina_lblConfirmacao" style="font-weight:bold;">08/12/2023</span>
+                                                    </li> 
                                                 
+			</div>
                                                 <li><i class="far fa-address-card mr-5 text-brand"></i> 
                                                     <span id="cphPagina_lblStatusLabel">Status :</span>
                                                     <span id="cphPagina_lblNormaStatus" style="font-weight:bold;">EM VIGOR</span>
                                                     <br>
                                                     
                                                 </li>
-                                                <div id="cphPagina_pnlHistorico">
-				
-                                                    <li><i class="far fa-hourglass-start mr-5 text-brand"></i> 
-                                                        <span id="cphPagina_lblHistorico" onclick="GoHistorico();" style="color:Red;cursor: pointer">Versões Anteriores</span>                                                        
-                                                    </li>
                                                 
-			</div>
                                             </ul>
                                         </div>
 
@@ -763,17 +771,17 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$script1', 'Form1', ['tctl00$c
                                         
                                                                                 
                                         <ul class="font-xs color-grey mt-5" style="border-top: 1px solid #eee">
-                                            <li><span id="cphPagina_lblPalavraLabel">Palavras-Chave :</span> <span id="cphPagina_lblNormaPalavra" style="font-weight:bold;">Ensaio, Competência, Controle de qualidade, Verificação</span> </li>                                            
+                                            <li><span id="cphPagina_lblPalavraLabel">Palavras-Chave :</span> <span id="cphPagina_lblNormaPalavra" style="font-weight:bold;">Implante ortopédico, Placa metálica, Implante de coluna</span> </li>                                            
                                         </ul>
                                     </div>
 
                                     <div class="single-social-share clearfix">
                                         <p class="mt-5 font-sm"> <i class="fa fa-share-alt mr-5"></i> <span id="cphPagina_lblCompartilheLabel">Compartilhe isto</span> </p>
                                         <div class="mobile-social-icon wow fadeIn mb-sm-5 mb-md-0 animated" style="visibility: hidden; animation-name: none;">
-                                            <a id="cphPagina_lnkFacebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.abntcatalogo.com.br/pnm.aspx?Q=R1JtejluaFYzZGs1Nk1xUGFzeERUdWZiM29xYkh2dWFEVi8xR21rdHpkMD0=" target="_blank"><img src="assets/imgs/theme/facebook.svg" alt="Facebook"></a>
-                                            <a id="cphPagina_lnkWhatsApp" href="https://wa.me/?text=https://www.abntcatalogo.com.br/pnm.aspx?Q=R1JtejluaFYzZGs1Nk1xUGFzeERUdWZiM29xYkh2dWFEVi8xR21rdHpkMD0=" target="_blank"><img src="assets/imgs/theme/whatsapp.svg" alt="WhatsApp"></a>
-                                            <a id="cphPagina_lnkTwitter" href="https://twitter.com/share?url=https://www.abntcatalogo.com.br/pnm.aspx?Q=R1JtejluaFYzZGs1Nk1xUGFzeERUdWZiM29xYkh2dWFEVi8xR21rdHpkMD0=" target="_blank"><img src="assets/imgs/theme/twitter.svg" alt="Twitter"></a>
-                                            <a id="cphPagina_lnkEmail" href="mailto:?body=https://www.abntcatalogo.com.br/pnm.aspx?Q=R1JtejluaFYzZGs1Nk1xUGFzeERUdWZiM29xYkh2dWFEVi8xR21rdHpkMD0=" target="_blank"><img src="assets/imgs/theme/email.svg" alt="Email"></a>
+                                            <a id="cphPagina_lnkFacebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.abntcatalogo.com.br/pnm.aspx?Q=eW1yZDRBbUtscWxlU0YrTElZb044VU5XUC9ncjQxdTRieWdUblVPdm0vZz0=" target="_blank"><img src="assets/imgs/theme/facebook.svg" alt="Facebook"></a>
+                                            <a id="cphPagina_lnkWhatsApp" href="https://wa.me/?text=https://www.abntcatalogo.com.br/pnm.aspx?Q=eW1yZDRBbUtscWxlU0YrTElZb044VU5XUC9ncjQxdTRieWdUblVPdm0vZz0=" target="_blank"><img src="assets/imgs/theme/whatsapp.svg" alt="WhatsApp"></a>
+                                            <a id="cphPagina_lnkTwitter" href="https://twitter.com/share?url=https://www.abntcatalogo.com.br/pnm.aspx?Q=eW1yZDRBbUtscWxlU0YrTElZb044VU5XUC9ncjQxdTRieWdUblVPdm0vZz0=" target="_blank"><img src="assets/imgs/theme/twitter.svg" alt="Twitter"></a>
+                                            <a id="cphPagina_lnkEmail" href="mailto:?body=https://www.abntcatalogo.com.br/pnm.aspx?Q=eW1yZDRBbUtscWxlU0YrTElZb044VU5XUC9ncjQxdTRieWdUblVPdm0vZz0=" target="_blank"><img src="assets/imgs/theme/email.svg" alt="Email"></a>
                                         </div>
                                     </div>                                    
                                 </div>
@@ -782,23 +790,6 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$script1', 'Form1', ['tctl00$c
                             <div class="row" id="acHistorico">
                                 <div class="col-lg-8 m-auto entry-main-content mb-10">
                                     
-                                                 <div id="cphPagina_rptMensagem_pnlAlerta_0" class="card-alert mt-10 mb-10">
-				
-                                            
-                                                    <div class="card-alert-content">
-                                                        <i class="fas fa-solid fa-exclamation exclamation"></i>
-
-                                                        <div class="message">
-                                                            <span id="cphPagina_rptMensagem_lblAlerta1_0" class="text text-1">Curso disponível</span>
-                                                            <span id="cphPagina_rptMensagem_lblAlerta2_0" class="text text-2">Esta norma possui 1 curso disponível.&nbsp;<a href="https://www.abnteducacao.com.br/crs.aspx?Q=NmtjOTFPUHBRSm5QZzhYakJ2a2hWamt1M3piNUFUcXY5cEo3bGlDa004Yz0=" target="_blank">Clique Aqui</a> para maiores detalhes.</span>
-                                                        </div>
-                                                    </div>
-                                        
-                                                
-			</div>
-
-                                                
-                                            
                                 </div>
                             </div>
                             
@@ -814,19 +805,19 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$script1', 'Form1', ['tctl00$c
                                                     <tr>
                                                         <th><span id="cphPagina_lblInfoNumeroLabel">Número :</span></th>
                                                         <td>
-                                                            <p><span id="cphPagina_lblInfoNumero">ABNT NBR ISO/IEC 17025:2017</span></p>
+                                                            <p><span id="cphPagina_lblInfoNumero">ABNT NBR 15728-3:2009</span></p>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <th><span id="cphPagina_lblInfoPublicacaoLabel">Data de Publicação :</span></th>
                                                         <td>
-                                                            <p><span id="cphPagina_lblInfoPublicacao">19/12/2017</span></p>
+                                                            <p><span id="cphPagina_lblInfoPublicacao">19/08/2009</span></p>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <th><span id="cphPagina_lblInfoValidaLabel">Válida a partir de :</span></th>
                                                         <td>
-                                                            <p><span id="cphPagina_lblInfoValida"></span></p>
+                                                            <p><span id="cphPagina_lblInfoValida">19/09/2009</span></p>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -838,31 +829,31 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$script1', 'Form1', ['tctl00$c
                                                     <tr>
                                                         <th><span id="cphPagina_lblInfoTituloLabel">Titulo :</span></th>
                                                         <td>
-                                                            <p><span id="cphPagina_lblInfoTitulo">Requisitos gerais para a competência de laboratórios de ensaio e calibração</span></p>
+                                                            <p><span id="cphPagina_lblInfoTitulo">Implantes para ortopedia — Dispositivos para fixação da coluna vertebral</span></p>
                                                         </td>
                                                     </tr>  
                                                     <tr>
                                                         <th><span id="cphPagina_lblInfoTituloSecLabel">Titulo Idioma Secundário :</span></th>
                                                         <td>
-                                                            <p><span id="cphPagina_lblInfoTituloSec">General requirements for the competence of testing and calibration laboratories</span></p>
+                                                            <p><span id="cphPagina_lblInfoTituloSec">Orthopedic implants - Skeletal spinal fixation devices</span></p>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <th><span id="cphPagina_lblInfoNotaTituloLabel">Nota de Título :</span></th>
                                                         <td>
-                                                            <p><span id="cphPagina_lblInfoNotaTitulo"></span></p>
+                                                            <p><span id="cphPagina_lblInfoNotaTitulo">Confirmada em 08.12.2023</span></p>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <th><span id="cphPagina_lblInfoComiteLabel">Comitê Técnico :</span></th>
                                                         <td>
-                                                            <p><span id="cphPagina_lblInfoComite">ABNT/CB-025 Qualidade</span></p>
+                                                            <p><span id="cphPagina_lblInfoComite">ABNT/CB-026 Odonto-Médico-Hospitalar</span></p>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <th><span id="cphPagina_lblInfoPaginaLabel">Páginas :</span></th>
                                                         <td>
-                                                            <p><span id="cphPagina_lblInfoPagina">32</span></p>
+                                                            <p><span id="cphPagina_lblInfoPagina">7</span></p>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -886,37 +877,37 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$script1', 'Form1', ['tctl00$c
                                                     <tr>
                                                         <th><span id="cphPagina_lblInfoPrecoLabel">Preço (R$) :</span></th>
                                                         <td>
-                                                            <p><span id="cphPagina_lblInfoPreco">294,90</span></p>
+                                                            <p><span id="cphPagina_lblInfoPreco">74,70</span></p>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <th><span id="cphPagina_lblInfoISBNLabel">ISBN :</span></th>
                                                         <td>
-                                                            <p><span id="cphPagina_lblInfoISBN">978-85-07-07368-0</span></p>
+                                                            <p><span id="cphPagina_lblInfoISBN">978-85-07-01710-3</span></p>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <th><span id="cphPagina_lblInfoObjetivoLabel">Objetivo :</span></th>
                                                         <td>
-                                                            <p><span id="cphPagina_lblInfoObjetivo">Este documento especifica os requisitos gerais para a competência, imparcialidade e operação consistente de laboratórios.</span></p>
+                                                            <p><span id="cphPagina_lblInfoObjetivo">Esta parte da ABNT NBR 15728 estabelece especificação para placas para coluna empregadas como elementos longitudinais de dispositivos implantáveis para fixação cirúrgica da coluna vertebral destinados a propiciar a artrodese do sistema esquelético da coluna.</span></p>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <th><span id="cphPagina_lblInfoObjetivoSecLabel">Objetivo Idioma Secundário :</span></th>
                                                         <td>
-                                                            <p><span id="cphPagina_lblInfoObjetivoSec">This document specifies the general requirements for the competence, impartiality and consistent operation of laboratories.</span></p>
+                                                            <p><span id="cphPagina_lblInfoObjetivoSec"></span></p>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <th><span id="cphPagina_lblInfoPalavraLabel">Palavras-Chave :</span></th>
                                                         <td>
-                                                            <p><span id="cphPagina_lblInfoPalavra">Ensaio, Competência, Controle de qualidade, Verificação</span></p>
+                                                            <p><span id="cphPagina_lblInfoPalavra">Implante ortopédico, Placa metálica, Implante de coluna</span></p>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <th><span id="cphPagina_lblInfoICSLabel">ICS :</span></th>
                                                         <td>
-                                                            <p><span id="cphPagina_lblInfoICS">03.120.20 - Certificação de produtos e de empresas. Avaliação da conformidade</span></p>
+                                                            <p><span id="cphPagina_lblInfoICS">11.040.40 - Implantes cirúrgicos, próteses e orteses</span></p>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -947,54 +938,6 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$script1', 'Form1', ['tctl00$c
                                             </thead>
                                             <tbody>
                                                 
-                                                        <tr>
-                                                            <td>
-                                                                <a id="cphPagina_rptHistorico_cmdNorma_0" href="javascript:__doPostBack('ctl00$cphPagina$rptHistorico$ctl00$cmdNorma','')">ABNT NBR ISO/IEC 17025:2001</a>
-                                                            </td>
-                                                            <td>
-                                                                <span id="cphPagina_rptHistorico_lblPublicacao_0">30 jan 2001</span>
-                                                            </td>
-                                                            <td>
-                                                                <span id="cphPagina_rptHistorico_lblCancelamento_0">29 set 2005</span>
-                                                            </td>
-                                                        </tr>
-                                                    
-                                                        <tr>
-                                                            <td>
-                                                                <a id="cphPagina_rptHistorico_cmdNorma_1" href="javascript:__doPostBack('ctl00$cphPagina$rptHistorico$ctl01$cmdNorma','')">ABNT NBR ISO/IEC 17025:2005</a>
-                                                            </td>
-                                                            <td>
-                                                                <span id="cphPagina_rptHistorico_lblPublicacao_1">30 set 2005</span>
-                                                            </td>
-                                                            <td>
-                                                                <span id="cphPagina_rptHistorico_lblCancelamento_1">24 jul 2006</span>
-                                                            </td>
-                                                        </tr>
-                                                    
-                                                        <tr>
-                                                            <td>
-                                                                <a id="cphPagina_rptHistorico_cmdNorma_2" href="javascript:__doPostBack('ctl00$cphPagina$rptHistorico$ctl02$cmdNorma','')">ABNT NBR ISO/IEC 17025:2005 Versão Corrigida:2006</a>
-                                                            </td>
-                                                            <td>
-                                                                <span id="cphPagina_rptHistorico_lblPublicacao_2">30 set 2005</span>
-                                                            </td>
-                                                            <td>
-                                                                <span id="cphPagina_rptHistorico_lblCancelamento_2">25 set 2006</span>
-                                                            </td>
-                                                        </tr>
-                                                    
-                                                        <tr>
-                                                            <td>
-                                                                <a id="cphPagina_rptHistorico_cmdNorma_3" href="javascript:__doPostBack('ctl00$cphPagina$rptHistorico$ctl03$cmdNorma','')">ABNT NBR ISO/IEC 17025:2005 Versão Corrigida 2:2006</a>
-                                                            </td>
-                                                            <td>
-                                                                <span id="cphPagina_rptHistorico_lblPublicacao_3">30 set 2005</span>
-                                                            </td>
-                                                            <td>
-                                                                <span id="cphPagina_rptHistorico_lblCancelamento_3">19 dez 2017</span>
-                                                            </td>
-                                                        </tr>
-                                                    
                                             </tbody>
                                         </table>
                                     </div>
@@ -1010,65 +953,35 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$script1', 'Form1', ['tctl00$c
                                         <div id="dvArrow" class="slider-arrow slider-arrow-2 carausel-6-columns-arrow"></div>
                                         <div id="dvItens" class="carausel-6-columns carausel-arrow-center slick-initialized slick-slider" ref="dvArrow">
                                             
-                                                    <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 374px; transform: translate3d(0px, 0px, 0px);"><div class="product-cart-wrap small hover-up slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 187px;" tabindex="0">
+                                                    <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 187px; transform: translate3d(0px, 0px, 0px);"><div class="product-cart-wrap small hover-up slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 187px;" tabindex="0">
                                                         <div class="product-img-action-wrap">
                                                             <div class="product-img product-img-zoom border radius">
-                                                                <a id="cphPagina_rptProdutoRel_cmdIMG_0" href="javascript:__doPostBack('ctl00$cphPagina$rptProdutoRel$ctl00$cmdIMG','')" tabindex="0"><img id="cphPagina_rptProdutoRel_img1_0" class="default-img" src="assets/imgs/norma/NM_MEg0QkYxRlFwMnM9.png" alt="ISO/IEC 17025:2017"><img id="cphPagina_rptProdutoRel_img2_0" class="hover-img" src="assets/imgs/norma/NM_MEg0QkYxRlFwMnM9.png" alt="ISO/IEC 17025:2017"></a>
+                                                                <a id="cphPagina_rptProdutoRel_cmdIMG_0" href="javascript:__doPostBack('ctl00$cphPagina$rptProdutoRel$ctl00$cmdIMG','')" tabindex="0"><img id="cphPagina_rptProdutoRel_img1_0" class="default-img" src="assets/imgs/norma/NM_VHI2TVlRVkg4bDg9.png" alt="ABNT NBR 15728-1:2009"><img id="cphPagina_rptProdutoRel_img2_0" class="hover-img" src="assets/imgs/norma/NM_VHI2TVlRVkg4bDg9.png" alt="ABNT NBR 15728-1:2009"></a>
                                                             </div>
                                                             <div class="product-action-1">
                                                                 <a id="cphPagina_rptProdutoRel_cmdDetalhe_0" class="action-btn hover-up" aria-label="Ver Detalhes" href="javascript:__doPostBack('ctl00$cphPagina$rptProdutoRel$ctl00$cmdDetalhe','')" tabindex="0"><i class="far fa-search"></i></a>
                                                                 <a id="cphPagina_rptProdutoRel_cmdFavorito_0" class="action-btn hover-up" aria-label="Adicionar a Favoritos" href="javascript:__doPostBack('ctl00$cphPagina$rptProdutoRel$ctl00$cmdFavorito','')" tabindex="0"><i class="far fa-heart"></i></a>
-                                                                <a id="cphPagina_rptProdutoRel_lnkCompartilhar_0" class="action-btn hover-up" onclick="javascript:ClickShare('ptbr', 'https://www.abntcatalogo.com.br/pnm.aspx?Q=RjhhRFc3Q1hRRWtsNTROM0VuRGtvbzN2SVZ0aUtzRzZXcHhDTTlhN0d5WT0=')" aria-label="Compartilhar" tabindex="0"><i class="fa fa-share"></i></a>
+                                                                <a id="cphPagina_rptProdutoRel_lnkCompartilhar_0" class="action-btn hover-up" onclick="javascript:ClickShare('ptbr', 'https://www.abntcatalogo.com.br/pnm.aspx?Q=c0JmZlA5a1NsS005UHpMZGJuY1FBNHdLM3RHQTRZUFlEQjhJYjhraGZtMD0=')" aria-label="Compartilhar" tabindex="0"><i class="fa fa-share"></i></a>
                                                             </div> 
                                                             <div class="product-badges product-badges-position product-badges-mrg">
-                                                                <span id="cphPagina_rptProdutoRel_spnCategoria_0" class="new">IDENTICA</span>
+                                                                <span id="cphPagina_rptProdutoRel_spnCategoria_0" class="best">COMPLEMENTAR</span>
                                                             </div>
                                                             
                                                         </div>
                                                         <div class="product-content-wrap">
                                                             <div style="height: 80px; max-height: 80px; overflow-y:auto" class="style-scroll">
                                                                 <h5 class="text-left">
-                                                                    <a id="cphPagina_rptProdutoRel_cmdNumero_0" class="text-primary" href="javascript:__doPostBack('ctl00$cphPagina$rptProdutoRel$ctl00$cmdNumero','')" tabindex="0">ISO/IEC 17025:2017</a>                                                                        
+                                                                    <a id="cphPagina_rptProdutoRel_cmdNumero_0" class="text-primary" href="javascript:__doPostBack('ctl00$cphPagina$rptProdutoRel$ctl00$cmdNumero','')" tabindex="0">ABNT NBR 15728-1:2009</a>                                                                        
                                                                 </h5>
                                                                 <h6 class="text-left">
-                                                                    <a id="cphPagina_rptProdutoRel_cmdTitulo_0" href="javascript:__doPostBack('ctl00$cphPagina$rptProdutoRel$ctl00$cmdTitulo','')" style="color:Black;" tabindex="0">General requirements for the competence of testing and calibration laboratories</a>      
+                                                                    <a id="cphPagina_rptProdutoRel_cmdTitulo_0" href="javascript:__doPostBack('ctl00$cphPagina$rptProdutoRel$ctl00$cmdTitulo','')" style="color:Black;" tabindex="0">Implantes para ortopedia — Dispositivos para fixação da coluna vertebral</a>      
                                                                 </h6>                                                        
                                                             </div>
                                                             <div class="product-price">
-                                                                <span><span id="cphPagina_rptProdutoRel_lblPreco_0">R$1.359,00</span></span>
-                                                            </div>                                                        
-                                                        </div>
-                                                    </div><div class="product-cart-wrap small hover-up slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 187px;" tabindex="0">
-                                                        <div class="product-img-action-wrap">
-                                                            <div class="product-img product-img-zoom border radius">
-                                                                <a id="cphPagina_rptProdutoRel_cmdIMG_1" href="javascript:__doPostBack('ctl00$cphPagina$rptProdutoRel$ctl01$cmdIMG','')" tabindex="0"><img id="cphPagina_rptProdutoRel_img1_1" class="default-img" src="assets/imgs/norma/NM_M2dkUGJWLzhqalU9.png" alt="ABNT ISO/IEC GUIA 99:2014"><img id="cphPagina_rptProdutoRel_img2_1" class="hover-img" src="assets/imgs/norma/NM_M2dkUGJWLzhqalU9.png" alt="ABNT ISO/IEC GUIA 99:2014"></a>
-                                                            </div>
-                                                            <div class="product-action-1">
-                                                                <a id="cphPagina_rptProdutoRel_cmdDetalhe_1" class="action-btn hover-up" aria-label="Ver Detalhes" href="javascript:__doPostBack('ctl00$cphPagina$rptProdutoRel$ctl01$cmdDetalhe','')" tabindex="0"><i class="far fa-search"></i></a>
-                                                                <a id="cphPagina_rptProdutoRel_cmdFavorito_1" class="action-btn hover-up" aria-label="Adicionar a Favoritos" href="javascript:__doPostBack('ctl00$cphPagina$rptProdutoRel$ctl01$cmdFavorito','')" tabindex="0"><i class="far fa-heart"></i></a>
-                                                                <a id="cphPagina_rptProdutoRel_lnkCompartilhar_1" class="action-btn hover-up" onclick="javascript:ClickShare('ptbr', 'https://www.abntcatalogo.com.br/pnm.aspx?Q=TXVDZTFSV1B5d2lOZ0ROMER4MjJaaHpaVzJzUlNYZHc2eS90R0ltZGxaYz0=')" aria-label="Compartilhar" tabindex="0"><i class="fa fa-share"></i></a>
-                                                            </div> 
-                                                            <div class="product-badges product-badges-position product-badges-mrg">
-                                                                <span id="cphPagina_rptProdutoRel_spnCategoria_1" class="best">COMPLEMENTAR</span>
-                                                            </div>
-                                                            
-                                                        </div>
-                                                        <div class="product-content-wrap">
-                                                            <div style="height: 80px; max-height: 80px; overflow-y:auto" class="style-scroll">
-                                                                <h5 class="text-left">
-                                                                    <a id="cphPagina_rptProdutoRel_cmdNumero_1" class="text-primary" href="javascript:__doPostBack('ctl00$cphPagina$rptProdutoRel$ctl01$cmdNumero','')" tabindex="0">ABNT ISO/IEC GUIA 99:2014</a>                                                                        
-                                                                </h5>
-                                                                <h6 class="text-left">
-                                                                    <a id="cphPagina_rptProdutoRel_cmdTitulo_1" href="javascript:__doPostBack('ctl00$cphPagina$rptProdutoRel$ctl01$cmdTitulo','')" style="color:Black;" tabindex="0">Vocabulário Internacional de Metrologia - Conceitos fundamentais e gerais e termos associados </a>      
-                                                                </h6>                                                        
-                                                            </div>
-                                                            <div class="product-price">
-                                                                <span><span id="cphPagina_rptProdutoRel_lblPreco_1">R$447,00</span></span>
+                                                                <span><span id="cphPagina_rptProdutoRel_lblPreco_0">R$43,15</span></span>
                                                             </div>                                                        
                                                         </div>
                                                     </div></div></div>
-                                                
-                                                    
                                                 
                                         </div>
                                     </div>
@@ -1200,7 +1113,11 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$script1', 'Form1', ['tctl00$c
                                     <p class="wow fadeIn animated" style="visibility: hidden; animation-name: none;">
                                         <span id="lblSuporte" style="font-weight:bold;">Suporte para visualização de normas: </span>
                                         <i class="fa fa-phone mr-5"></i> <span id="lblSuporteTelefone">(11) 3017-3621</span> | <i class="fa fa-at mr-5"></i> <span id="lblSuporteEmail">suporte@abnt.org.br</span>
-                                    </p>                               
+                                    </p>  
+                                    <p class="wow fadeIn animated" style="visibility: hidden; animation-name: none;">
+                                        <span id="lblHorarioLabel" style="font-weight:bold;">Horário de Atendimento :</span>
+                                        <i class="fa fa-clock mr-5"></i> <span id="lblHorario">segunda à sexta, das 8:30hs as 17:30hs</span>
+                                    </p>
                                 </div>
                             </div>
 
@@ -1519,4 +1436,4 @@ Sys.Application.add_init(function() {
     </script>
 
 
-<div class="zoomContainer" style="-webkit-transform: translateZ(0);position:absolute;left:125px;top:277.20001220703125px;height:637.533px;width:451px;"><div class="zoomWindowContainer" style="width: 400px;"><div style="z-index: 999; overflow: hidden; margin-left: 0px; margin-top: 0px; background-position: 0px 0px; width: 451px; height: 637.533px; float: left; display: none; cursor: crosshair; background-repeat: no-repeat; position: absolute; background-image: url(&quot;assets/imgs/norma/NM_a0xrT3Vkd2I3ZXM9.png&quot;);" class="zoomWindow">&nbsp;</div></div></div></body></html>
+<div class="zoomContainer" style="-webkit-transform: translateZ(0);position:absolute;left:125px;top:277.70001220703125px;height:638.1px;width:451px;"><div class="zoomWindowContainer" style="width: 400px;"><div style="z-index: 999; overflow: hidden; margin-left: 0px; margin-top: 0px; background-position: 0px 0px; width: 451px; height: 638.1px; float: left; display: none; cursor: crosshair; background-repeat: no-repeat; position: absolute; background-image: url(&quot;assets/imgs/norma/NM_WHpVMFVDM29CSDQ9.png&quot;);" class="zoomWindow">&nbsp;</div></div></div></body></html>

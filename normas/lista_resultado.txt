@@ -1,4 +1,4 @@
-<html class="js t-ff t-ff130 sizes websockets customelements history postmessage webworkers picture pointerevents webanimations webgl srcset flexbox cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth no-csscolumns-breakbefore no-csscolumns-breakafter no-csscolumns-breakinside" lang="pt-br" style="transform: none;"><head><meta charset="utf-8"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="description" content="ABNT Catalogo"><meta name="viewport" content="width=device-width, initial-scale=1"><meta property="og:title" content="ABNT Catalogo"><meta property="og:type"><meta property="og:url"><meta property="og:image"><meta name="facebook-domain-verification" content="qq0rkuyrp1b8r1zlsz8senvoysn2om"><link rel="icon" type="image/x-icon" href="assets/imgs/theme/favico.png"><link rel="shortcut icon" type="image/x-icon" href="assets/imgs/theme/favico.png"><link href="assets/css/main.css" rel="stylesheet"><link href="assets/css/share.css" rel="stylesheet"><link href="assets/css/contraste.css" rel="stylesheet" type="text/css">
+<html class="js t-ff t-ff131 sizes websockets customelements history postmessage webworkers picture pointerevents webanimations webgl srcset flexbox cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth no-csscolumns-breakbefore no-csscolumns-breakafter no-csscolumns-breakinside" lang="pt-br" style="transform: none;"><head><meta charset="utf-8"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="description" content="ABNT Catalogo"><meta name="viewport" content="width=device-width, initial-scale=1"><meta property="og:title" content="ABNT Catalogo"><meta property="og:type"><meta property="og:url"><meta property="og:image"><meta name="facebook-domain-verification" content="qq0rkuyrp1b8r1zlsz8senvoysn2om"><link rel="icon" type="image/x-icon" href="assets/imgs/theme/favico.png"><link rel="shortcut icon" type="image/x-icon" href="assets/imgs/theme/favico.png"><link href="assets/css/main.css" rel="stylesheet"><link href="assets/css/share.css" rel="stylesheet"><link href="assets/css/contraste.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="assets/js/validator.js"></script>
     <script type="text/javascript" src="assets/js/acessivel.js"></script>
 
@@ -42,7 +42,7 @@
 <div class="aspNetHidden">
 <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
 <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
 </div>
 
 <script type="text/javascript">
@@ -96,7 +96,7 @@ return true;
 <div class="aspNetHidden">
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="9BD795F9">
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="ov2DPcc0pVOxLk034sAi2aeXSTTZKYTOJ4r+PGQG5LqwrUaraZk3GUXZQO0XPs0Ua7YqpNt3o36Lv0IRHsTIkt2NUNjgiPMJdDSJ/50bdYgQOGjJ21EjNtXfM7iPEn9oioRSH5m5xGePo3AC7WcKE/XhtwGa6XYL3HBuvLRf4SLUU0xmEsf0+4Y9BJcubZ+PDYEn+9ggx6Fii/BA0ORbOC481Bz5Bdc1/zQtMWw/gUPRCLR6i5XNr53kEIL0pc8u5Tge4XTtyTSrigTYysJKMBhbtbAv2hjIpxF7YMjCkz+/4fFw4HDG5c1Dbab1qzg7EkBuaYkLvsfDQcnH0y/0VpvMBYVdnM30DWDf3nZtsdwgapqyEnQX/F381MGyKD9fVuimFDo7UMgGVqhvonrTXIxWjEeza06H9M+Z+NQ0bRj+Bpd8v6jdPscV1hHRRNU2f2z6qTpLMA9gGP1RuI0odFjNmJLOXSucJgTb3dYVqjDys4Pm+A9m7sAkUCkHxZR1S6eW3Y9c4Qf7V70qSzLqxD8A7uL2FleV4FZ028e/7D8vS59rrpcWM8Xg30W74OUsVM1COWy2AN1bF7j+wGHcsqf0yu0FENxtIxVeb7JLTbIRMNF8lje3ixcyzpDJNBD8ojr3vzitNFaV6qn9G4YXfC50UDvgrKdnJWymr4IKYIvBwSGfJgpsPjJagmHhSna+xBodkpuN3hwsSP2NOzVEloKILW6Mu8qPzJZWIJXYKekxcPavUqrUKUESzVkKuR+YgTWCwjoY4jw40cQX/A0DjonrQskxgKMfOYRy6oaEbw0usS4U2KCfUPklcv6vQTKzsVctfzkYb95Mu0C3O7SW/EQPiPNO+JF5LA13ksOyAUokwcWBlwl76hAg/b7XxUPT8JhbZel8xSrmVi79s+yEJg+d6TnqqtLdWQfU7349BgEKxvNJgkbF+4I2fx00f4+HYxo3UeaWZ2MG0FLvVY1yhsI0JSt+X+LhFp2GWCgifJbkK0DDM8ewTE+pO7RpA8RZai6R9jy0Tmyi8zdQo9n/tJYTOEsFJ5UAN+Xc3WjEl3dtAxIWXhf3Bi275b8nuppsRGc3X9j0z99trOmWV/l+vd8yksG0MYp/pW8TbnWOaUDe5HE6AjSOB7MV7clSCLxqBFo810qUuGARqFdJ4Cy4P04tn7H9UT/vpb81yIQprtsclUVeoZZ8aszboLGzCg+TmyhCBHF8OsGruNhnv5wo5P91bm+XnNmsDjtLN2K6c1sE/J/A0cMGnD6f/9+1LVOIjtz0ai4WSyGAPX7LefKg1UYxsg4OtasWRVF1CNEr9iB4kesm47YxQbAYJNlfNxKe2C+j+4/tnWaDtKWnXAR4Cmcszw4gYT6Utp3tmHSieBaVXFRRtYOqvxJEXv2956SFQGrWzKIWOy1puGaReDurxuTAVVtjvaazRo8oTTzI0+9crySHCAAbsNCL1v79wy+qJppaN44+KtAGWJ1wxXXM0GQIG24lyr9HfXeHQ8MgowqyWySPNre+YZEKY/QvXSYFFgOzAfqWRcpt6J1FAriZgYho5zEZNAH3sviCvSnzNyJxyobmIfEHq3wltTjGWCxo24nYoccc72csHyS7H9SdWIdilDQIqxcgjrPC5ow6hgbqLoRsrSzrBNEN3BkmV6Sjjhvp5si5EBTla4ofAWlLY8pMKZsGz5NcecbYBu8hm7epFab22jw8ysJySHtEI3LT+j6H8lgyeLRG+NcDsoOMe3oE5587e1ST+/6E0P1ldrkfgGxFwlrRjQ317KbXkSy2QhxJ0PE5N5U4BPk2HU9CbQt8MQJQnWHHwgTrAnMrbf7L932TuAzXK2q+fvwusxkCI5u8ZI0DqmNAuf/bGeUtkGzyRWEbYkbJtbqTBPALbVn/QJqT4myv551DlVhCEOL3aZkpzUia0Cp2gkJJnDIvJA==">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="XDMGDPxczH1eJ8n+/Y8KplbyieFz53wRUf6scbG7OmkJbzH3aNNFm5Z017ROsyIv7jsHa984tHzuxa2mpBRvGMYGG7WD6Sb/856fTKWJlbKKe3aegHE/nBREbVTo2STIq0t+CfHSCgxKNJAghpj6RXLBL256iYw9CSFfiXQ/+/qfSIqqTvf5VZCkGVDipsqlgp8o43B+kLnlvGBcp99NkiL31gZxxJuAWZ40p303BUO1ZlLKscCSop9mWJmtt0U2Zn15SwPtqkOuS9xjjePJxNxXn2dZvT0s2fzni6PEk6AWN3B7hbmnXNgzVeu7N1+8sxX+uAmAo0ZaAVFkmsCVNom1VwaUM4e74jL5DMqEO4qtiPa/xsBMpAXZX+75/sYJHLXzxhTCp99DivVp8nqEFQX/aofhl4PB/2Ab8ERbpW/AfDdhacO0DttTxgSG+pxnDdvCiJGSTkoxhujbBsEqqWCL9EV9X3SS34SgZg0Awa7jLYgazwBhKcuOrqCoSdz4n0HGMzb8QEgIuNzLkDwY8WxhFIgGLoJi4x+kVU58xgeOrTmYi36brEKpiw8WsDSW5Zovj0k4jQ/HnAXCTSdcjV3LyLhIMxUbhZCRhw9ZMKnfa5EbUMDm1TWdYOBfsyXe">
 </div>
         <script type="text/javascript">
 //<![CDATA[
@@ -558,14 +558,12 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$script1', 'Form1', ['tctl00$c
                         <div class="shop-product-fillter style-2">
                             <div class="totall-product">
                                 <p> 
-                                    
-                                    </p><div id="cphPagina_pnlPesquisaFrase2">
+                                    </p><div id="cphPagina_pnlPesquisaFrase1">
 			
-                                        <span id="cphPagina_lblPesquisa2P1">Foram encontrados </span>
-                                        <span id="cphPagina_lblPesquisa2Contador" class="text-brand" style="font-weight:bold;">700</span>
-                                        <span id="cphPagina_lblPesquisa2P2">produtos ABNT para você !</span>
+                                        <span id="cphPagina_lblPesquisa1">Foi encontrado 1 produto ABNT para você !</span>
                                     
 		</div>
+                                    
                                 <p></p>
                             </div>
                             
@@ -585,13 +583,13 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$script1', 'Form1', ['tctl00$c
                                                     <h4 style="position: absolute; right: 0px; padding-right:10px"><span id="cphPagina_rptLista_lblCategoria_0">ABNT</span></h4>
                                                 </div>
                                             </div>
-                                            <h2><a id="cphPagina_rptLista_cmdCodigo_0" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl00$cmdCodigo','')">ABNT ISO/IEC TS 17021-13:2022</a></h2>
+                                            <h2><a id="cphPagina_rptLista_cmdCodigo_0" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl00$cmdCodigo','')">ABNT NBR 15728-3:2009</a></h2>
                                             <h5></h5>
-                                            <h5><a id="cphPagina_rptLista_cmdTitulo_0" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl00$cmdTitulo','')">Avaliação da conformidade - Requisitos para organismos que fornecem auditoria e certificação de sistemas de gestão <br>Parte 13: Requisitos de competência para auditoria e certificação de sistemas de gestão de compliance </a></h5>
+                                            <h5><a id="cphPagina_rptLista_cmdTitulo_0" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl00$cmdTitulo','')">Implantes para ortopedia — Dispositivos para fixação da coluna vertebral<br>Parte 3: Especificação e avaliação de propriedades estáticas e dinâmicas para placas metálicas</a></h5>
                                             <div class="product-price">
-                                                <span id="cphPagina_rptLista_lblPreco_0">R$92,20</span>
+                                                <span id="cphPagina_rptLista_lblPreco_0">R$74,70</span>
                                             </div>
-                                            <p class="mt-15"><span id="cphPagina_rptLista_lblResumo_0">Este documento especifica os requisitos de competência para o pessoal envolvido no processo de auditoria e certificação de sistemas de gestão de compliance (SGC). Este documento complementa os requisitos existentes da ABNT NBR ISO/IEC 17021-1. </span></p>
+                                            <p class="mt-15"><span id="cphPagina_rptLista_lblResumo_0">Esta parte da ABNT NBR 15728 estabelece especificação para placas para coluna empregadas como elementos longitudinais de dispositivos implantáveis para fixação cirúrgica da coluna vertebral destinados a propiciar a artrodese do sistema esquelético da coluna.</span></p>
 
                                             <div class="product-action-1 show">
                                                 
@@ -600,285 +598,6 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$script1', 'Form1', ['tctl00$c
                                                 <a id="cphPagina_rptLista_cmdDetalhe_0" class="action-btn hover-up" aria-label="Visualizar Detalhes" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl00$cmdDetalhe','')"><i class="far fa-search"></i>Ver detalhes</a>
                                                 &nbsp;
                                                 <a id="cphPagina_rptLista_cmdFavorito_0" class="action-btn hover-up" aria-label="Adicionar aos Favoritos" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl00$cmdFavorito','')"><i class="far fa-heart"></i></a>
-                                            </div>
-                                        </div>
-                                    
-		</div>
-                                
-                                    <div id="cphPagina_rptLista_pnlProduto_1" class="product-cart-wrap" style="background-color: #f8f8f8">
-			
-                                        <div class="product-content-wrap">
-                                            <div class="product-category row">
-                                                <div class="col-lg-6">
-                                                    <a id="cphPagina_rptLista_cmdTipo_1" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl01$cmdTipo','')">Norma Técnica</a>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <h4 style="position: absolute; right: 0px; padding-right:10px"><span id="cphPagina_rptLista_lblCategoria_1">ABNT</span></h4>
-                                                </div>
-                                            </div>
-                                            <h2><a id="cphPagina_rptLista_cmdCodigo_1" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl01$cmdCodigo','')">ABNT ISO/TR 13121:2023</a></h2>
-                                            <h5></h5>
-                                            <h5><a id="cphPagina_rptLista_cmdTitulo_1" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl01$cmdTitulo','')">Nanotecnologias — Avaliação de riscos de nanomateriais </a></h5>
-                                            <div class="product-price">
-                                                <span id="cphPagina_rptLista_lblPreco_1">R$447,00</span>
-                                            </div>
-                                            <p class="mt-15"><span id="cphPagina_rptLista_lblResumo_1">Este Relatório Técnico descreve um processo para identificar, avaliar, abordar, tomar decisões e comunicar os riscos potenciais do desenvolvimento e uso de nanomateriais manufaturados, a fim de proteger a saúde e a segurança do público, dos consumidores, dos trabalhadores e do meio ambiente. </span></p>
-
-                                            <div class="product-action-1 show">
-                                                
-                                                <a id="cphPagina_rptLista_cmdCarrinho_1" class="action-btn hover-up" aria-label="Adicionar ao Carrinho" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl01$cmdCarrinho','')"><i class="far fa-shopping-bag"></i>Adicionar ao carrinho</a>                                                
-                                                &nbsp;
-                                                <a id="cphPagina_rptLista_cmdDetalhe_1" class="action-btn hover-up" aria-label="Visualizar Detalhes" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl01$cmdDetalhe','')"><i class="far fa-search"></i>Ver detalhes</a>
-                                                &nbsp;
-                                                <a id="cphPagina_rptLista_cmdFavorito_1" class="action-btn hover-up" aria-label="Adicionar aos Favoritos" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl01$cmdFavorito','')"><i class="far fa-heart"></i></a>
-                                            </div>
-                                        </div>
-                                    
-		</div>
-                                
-                                    <div id="cphPagina_rptLista_pnlProduto_2" class="product-cart-wrap">
-			
-                                        <div class="product-content-wrap">
-                                            <div class="product-category row">
-                                                <div class="col-lg-6">
-                                                    <a id="cphPagina_rptLista_cmdTipo_2" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl02$cmdTipo','')">Norma Técnica</a>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <h4 style="position: absolute; right: 0px; padding-right:10px"><span id="cphPagina_rptLista_lblCategoria_2">ABNT</span></h4>
-                                                </div>
-                                            </div>
-                                            <h2><a id="cphPagina_rptLista_cmdCodigo_2" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl02$cmdCodigo','')">ABNT ISO/TR 13570-1:2021</a></h2>
-                                            <h5></h5>
-                                            <h5><a id="cphPagina_rptLista_cmdTitulo_2" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl02$cmdTitulo','')">Cadeiras de rodas <br>Parte 1: Diretrizes para a aplicação da série ABNT NBR ISO 7176 em cadeiras de rodas </a></h5>
-                                            <div class="product-price">
-                                                <span id="cphPagina_rptLista_lblPreco_2">R$484,20</span>
-                                            </div>
-                                            <p class="mt-15"><span id="cphPagina_rptLista_lblResumo_2">O objetivo desta Parte do ABNT ISO/TR 13570 é explicar como podem ser usadas as Normas para selecionar sua próxima cadeira de rodas. As normas em si são muito técnicas e, à primeira vista, talvez não se compreenda como esta informação pode ajudar a selecionar uma cadeira de rodas ou um scooter. </span></p>
-
-                                            <div class="product-action-1 show">
-                                                
-                                                <a id="cphPagina_rptLista_cmdCarrinho_2" class="action-btn hover-up" aria-label="Adicionar ao Carrinho" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl02$cmdCarrinho','')"><i class="far fa-shopping-bag"></i>Adicionar ao carrinho</a>                                                
-                                                &nbsp;
-                                                <a id="cphPagina_rptLista_cmdDetalhe_2" class="action-btn hover-up" aria-label="Visualizar Detalhes" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl02$cmdDetalhe','')"><i class="far fa-search"></i>Ver detalhes</a>
-                                                &nbsp;
-                                                <a id="cphPagina_rptLista_cmdFavorito_2" class="action-btn hover-up" aria-label="Adicionar aos Favoritos" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl02$cmdFavorito','')"><i class="far fa-heart"></i></a>
-                                            </div>
-                                        </div>
-                                    
-		</div>
-                                
-                                    <div id="cphPagina_rptLista_pnlProduto_3" class="product-cart-wrap" style="background-color: #f8f8f8">
-			
-                                        <div class="product-content-wrap">
-                                            <div class="product-category row">
-                                                <div class="col-lg-6">
-                                                    <a id="cphPagina_rptLista_cmdTipo_3" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl03$cmdTipo','')">Norma Técnica</a>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <h4 style="position: absolute; right: 0px; padding-right:10px"><span id="cphPagina_rptLista_lblCategoria_3">ABNT</span></h4>
-                                                </div>
-                                            </div>
-                                            <h2><a id="cphPagina_rptLista_cmdCodigo_3" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl03$cmdCodigo','')">ABNT ISO/TR 13570-2:2019</a></h2>
-                                            <h5></h5>
-                                            <h5><a id="cphPagina_rptLista_cmdTitulo_3" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl03$cmdTitulo','')">Cadeiras de rodas <br>Parte 2: Valores típicos e limites recomendados para dimensões, massa e espaço de manobra como determinado na ABNT NBR ISO 7176-5 </a></h5>
-                                            <div class="product-price">
-                                                <span id="cphPagina_rptLista_lblPreco_3">R$331,90</span>
-                                            </div>
-                                            <p class="mt-15"><span id="cphPagina_rptLista_lblResumo_3">Esta Parte do ABNT ISO/TR 13570 lista os valores típicos e limites recomendados das dimensões obtidas a partir de medições feitas de acordo com a ABNT NBR ISO 7176-5. Esta parte doABNT ISO/TR 13570 lista os valores típicos e limites recomendados das dimensões importantes da cadeira de rodas (pronta para ocupação e dobrada ou desmontada), espaço para giro e reversãoentre paredes limitantes e algumas dimensões que valem para estimar a usabilidade da cadeira de rodas, assim como determinar a massa da cadeira de rodas. Esta Parte do ABNT ISO/TR 13570é destinada ao uso de quem indica, de clínicos, ocupantes de cadeira de rodas ou fabricantes.</span></p>
-
-                                            <div class="product-action-1 show">
-                                                
-                                                <a id="cphPagina_rptLista_cmdCarrinho_3" class="action-btn hover-up" aria-label="Adicionar ao Carrinho" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl03$cmdCarrinho','')"><i class="far fa-shopping-bag"></i>Adicionar ao carrinho</a>                                                
-                                                &nbsp;
-                                                <a id="cphPagina_rptLista_cmdDetalhe_3" class="action-btn hover-up" aria-label="Visualizar Detalhes" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl03$cmdDetalhe','')"><i class="far fa-search"></i>Ver detalhes</a>
-                                                &nbsp;
-                                                <a id="cphPagina_rptLista_cmdFavorito_3" class="action-btn hover-up" aria-label="Adicionar aos Favoritos" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl03$cmdFavorito','')"><i class="far fa-heart"></i></a>
-                                            </div>
-                                        </div>
-                                    
-		</div>
-                                
-                                    <div id="cphPagina_rptLista_pnlProduto_4" class="product-cart-wrap">
-			
-                                        <div class="product-content-wrap">
-                                            <div class="product-category row">
-                                                <div class="col-lg-6">
-                                                    <a id="cphPagina_rptLista_cmdTipo_4" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl04$cmdTipo','')">Norma Técnica</a>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <h4 style="position: absolute; right: 0px; padding-right:10px"><span id="cphPagina_rptLista_lblCategoria_4">ABNT</span></h4>
-                                                </div>
-                                            </div>
-                                            <h2><a id="cphPagina_rptLista_cmdCodigo_4" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl04$cmdCodigo','')">ABNT ISO/TS 13131:2016</a></h2>
-                                            <h5></h5>
-                                            <h5><a id="cphPagina_rptLista_cmdTitulo_4" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl04$cmdTitulo','')">Informática em saúde - Serviços de telessaúde - Diretrizes para o planejamento de qualidade </a></h5>
-                                            <div class="product-price">
-                                                <span id="cphPagina_rptLista_lblPreco_4">R$331,90</span>
-                                            </div>
-                                            <p class="mt-15"><span id="cphPagina_rptLista_lblResumo_4">Um número crescente de iniciativas em vários países em todo o mundo, na maior parte de pequena escala, é descrito como projetos de telessaúde, telemedicina ou saúde móvel. Ainda não é claro quando convém utilizar os termos telessaúde ou telemedicina para descrever tais iniciativas, pois estes termos podem ser descritos e interpretados de diferentes maneiras na ausência de um conceito unificado. </span></p>
-
-                                            <div class="product-action-1 show">
-                                                
-                                                <a id="cphPagina_rptLista_cmdCarrinho_4" class="action-btn hover-up" aria-label="Adicionar ao Carrinho" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl04$cmdCarrinho','')"><i class="far fa-shopping-bag"></i>Adicionar ao carrinho</a>                                                
-                                                &nbsp;
-                                                <a id="cphPagina_rptLista_cmdDetalhe_4" class="action-btn hover-up" aria-label="Visualizar Detalhes" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl04$cmdDetalhe','')"><i class="far fa-search"></i>Ver detalhes</a>
-                                                &nbsp;
-                                                <a id="cphPagina_rptLista_cmdFavorito_4" class="action-btn hover-up" aria-label="Adicionar aos Favoritos" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl04$cmdFavorito','')"><i class="far fa-heart"></i></a>
-                                            </div>
-                                        </div>
-                                    
-		</div>
-                                
-                                    <div id="cphPagina_rptLista_pnlProduto_5" class="product-cart-wrap" style="background-color: #f8f8f8">
-			
-                                        <div class="product-content-wrap">
-                                            <div class="product-category row">
-                                                <div class="col-lg-6">
-                                                    <a id="cphPagina_rptLista_cmdTipo_5" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl05$cmdTipo','')">Norma Técnica</a>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <h4 style="position: absolute; right: 0px; padding-right:10px"><span id="cphPagina_rptLista_lblCategoria_5">ABNT</span></h4>
-                                                </div>
-                                            </div>
-                                            <h2><a id="cphPagina_rptLista_cmdCodigo_5" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl05$cmdCodigo','')">ABNT ISO/TS 13399-100:2024</a></h2>
-                                            <h5></h5>
-                                            <h5><a id="cphPagina_rptLista_cmdTitulo_5" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl05$cmdTitulo','')">Representação e intercâmbio dos dados da ferramenta de corte <br>Parte 100: Definições, princípios e métodos para dicionários de referência </a></h5>
-                                            <div class="product-price">
-                                                <span id="cphPagina_rptLista_lblPreco_5">R$410,10</span>
-                                            </div>
-                                            <p class="mt-15"><span id="cphPagina_rptLista_lblResumo_5">Esta Parte da ISO 13399 determina os princípios e os métodos para a criação de identificações e definições inequívocas dos itens e suas propriedades relativas às ferramentas de corte em dicionários sensíveis ao computador a serem utilizadas como referência pelo modelo de informação determinado na ABNT NBR ISO 13399-1. </span></p>
-
-                                            <div class="product-action-1 show">
-                                                
-                                                <a id="cphPagina_rptLista_cmdCarrinho_5" class="action-btn hover-up" aria-label="Adicionar ao Carrinho" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl05$cmdCarrinho','')"><i class="far fa-shopping-bag"></i>Adicionar ao carrinho</a>                                                
-                                                &nbsp;
-                                                <a id="cphPagina_rptLista_cmdDetalhe_5" class="action-btn hover-up" aria-label="Visualizar Detalhes" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl05$cmdDetalhe','')"><i class="far fa-search"></i>Ver detalhes</a>
-                                                &nbsp;
-                                                <a id="cphPagina_rptLista_cmdFavorito_5" class="action-btn hover-up" aria-label="Adicionar aos Favoritos" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl05$cmdFavorito','')"><i class="far fa-heart"></i></a>
-                                            </div>
-                                        </div>
-                                    
-		</div>
-                                
-                                    <div id="cphPagina_rptLista_pnlProduto_6" class="product-cart-wrap">
-			
-                                        <div class="product-content-wrap">
-                                            <div class="product-category row">
-                                                <div class="col-lg-6">
-                                                    <a id="cphPagina_rptLista_cmdTipo_6" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl06$cmdTipo','')">Norma Técnica</a>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <h4 style="position: absolute; right: 0px; padding-right:10px"><span id="cphPagina_rptLista_lblCategoria_6">ABNT</span></h4>
-                                                </div>
-                                            </div>
-                                            <h2><a id="cphPagina_rptLista_cmdCodigo_6" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl06$cmdCodigo','')">ABNT ISO/TS 13399-150:2024</a></h2>
-                                            <h5></h5>
-                                            <h5><a id="cphPagina_rptLista_cmdTitulo_6" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl06$cmdTitulo','')">Representação e intercâmbio de dados da ferramenta de corte <br>Parte 150: Diretrizes de uso </a></h5>
-                                            <div class="product-price">
-                                                <span id="cphPagina_rptLista_lblPreco_6">R$551,10</span>
-                                            </div>
-                                            <p class="mt-15"><span id="cphPagina_rptLista_lblResumo_6">Esta Parte da ABNT ISO/TS 13399 apresenta diretrizes para a aplicação da ABNT ISO/TS 13399 como um todo, incluindo orientações sobre a instância do esquema EXPRESS, conforme descrito na ABNT NBR ISO 13399-1, e o uso dos dados de referência descritos nas ISO/TS 13399-2, ISO /TS 13399-3, ISO/TS 13399-4, ABNT ISO/TS 13399-5, ABNT ISO/TS 13399-50 e ABNT ISO/TS 13399-60. </span></p>
-
-                                            <div class="product-action-1 show">
-                                                
-                                                <a id="cphPagina_rptLista_cmdCarrinho_6" class="action-btn hover-up" aria-label="Adicionar ao Carrinho" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl06$cmdCarrinho','')"><i class="far fa-shopping-bag"></i>Adicionar ao carrinho</a>                                                
-                                                &nbsp;
-                                                <a id="cphPagina_rptLista_cmdDetalhe_6" class="action-btn hover-up" aria-label="Visualizar Detalhes" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl06$cmdDetalhe','')"><i class="far fa-search"></i>Ver detalhes</a>
-                                                &nbsp;
-                                                <a id="cphPagina_rptLista_cmdFavorito_6" class="action-btn hover-up" aria-label="Adicionar aos Favoritos" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl06$cmdFavorito','')"><i class="far fa-heart"></i></a>
-                                            </div>
-                                        </div>
-                                    
-		</div>
-                                
-                                    <div id="cphPagina_rptLista_pnlProduto_7" class="product-cart-wrap" style="background-color: #f8f8f8">
-			
-                                        <div class="product-content-wrap">
-                                            <div class="product-category row">
-                                                <div class="col-lg-6">
-                                                    <a id="cphPagina_rptLista_cmdTipo_7" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl07$cmdTipo','')">Norma Técnica</a>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <h4 style="position: absolute; right: 0px; padding-right:10px"><span id="cphPagina_rptLista_lblCategoria_7">ABNT</span></h4>
-                                                </div>
-                                            </div>
-                                            <h2><a id="cphPagina_rptLista_cmdCodigo_7" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl07$cmdCodigo','')">ABNT ISO/TS 13399-301:2024</a></h2>
-                                            <h5></h5>
-                                            <h5><a id="cphPagina_rptLista_cmdTitulo_7" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl07$cmdTitulo','')">Representação e intercâmbio de dados da ferramenta de corte <br>Parte 301: Conceito para o projeto em modelos 3D baseados em propriedades, de acordo com a ISO/TS 13399‑3: Modelagem de machos de corte, machos laminadores e cossinetes </a></h5>
-                                            <div class="product-price">
-                                                <span id="cphPagina_rptLista_lblPreco_7">R$248,70</span>
-                                            </div>
-                                            <p class="mt-15"><span id="cphPagina_rptLista_lblResumo_7">Esta Parte da ABNT NBR ISO 13399 especifica um conceito para o projeto da ferramenta, limitado a qualquer tipo de macho e cossinete, juntamente ao uso das propriedades e dos domínios dos valores. </span></p>
-
-                                            <div class="product-action-1 show">
-                                                
-                                                <a id="cphPagina_rptLista_cmdCarrinho_7" class="action-btn hover-up" aria-label="Adicionar ao Carrinho" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl07$cmdCarrinho','')"><i class="far fa-shopping-bag"></i>Adicionar ao carrinho</a>                                                
-                                                &nbsp;
-                                                <a id="cphPagina_rptLista_cmdDetalhe_7" class="action-btn hover-up" aria-label="Visualizar Detalhes" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl07$cmdDetalhe','')"><i class="far fa-search"></i>Ver detalhes</a>
-                                                &nbsp;
-                                                <a id="cphPagina_rptLista_cmdFavorito_7" class="action-btn hover-up" aria-label="Adicionar aos Favoritos" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl07$cmdFavorito','')"><i class="far fa-heart"></i></a>
-                                            </div>
-                                        </div>
-                                    
-		</div>
-                                
-                                    <div id="cphPagina_rptLista_pnlProduto_8" class="product-cart-wrap">
-			
-                                        <div class="product-content-wrap">
-                                            <div class="product-category row">
-                                                <div class="col-lg-6">
-                                                    <a id="cphPagina_rptLista_cmdTipo_8" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl08$cmdTipo','')">Norma Técnica</a>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <h4 style="position: absolute; right: 0px; padding-right:10px"><span id="cphPagina_rptLista_lblCategoria_8">ABNT</span></h4>
-                                                </div>
-                                            </div>
-                                            <h2><a id="cphPagina_rptLista_cmdCodigo_8" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl08$cmdCodigo','')">ABNT ISO/TS 13399-5:2021</a></h2>
-                                            <h5></h5>
-                                            <h5><a id="cphPagina_rptLista_cmdTitulo_8" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl08$cmdTitulo','')">Representação e intercâmbio dos dados da ferramenta de corte<br>Parte 5: Dicionário de referência para itens de montagem</a></h5>
-                                            <div class="product-price">
-                                                <span id="cphPagina_rptLista_lblPreco_8">R$410,10</span>
-                                            </div>
-                                            <p class="mt-15"><span id="cphPagina_rptLista_lblResumo_8">Esta Parte da ABNT ISO/TS 13399 especifica um dicionário de referência para itens de montagem de ferramentas de corte, junto com suas propriedades descritivas e domínios de valores.</span></p>
-
-                                            <div class="product-action-1 show">
-                                                
-                                                <a id="cphPagina_rptLista_cmdCarrinho_8" class="action-btn hover-up" aria-label="Adicionar ao Carrinho" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl08$cmdCarrinho','')"><i class="far fa-shopping-bag"></i>Adicionar ao carrinho</a>                                                
-                                                &nbsp;
-                                                <a id="cphPagina_rptLista_cmdDetalhe_8" class="action-btn hover-up" aria-label="Visualizar Detalhes" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl08$cmdDetalhe','')"><i class="far fa-search"></i>Ver detalhes</a>
-                                                &nbsp;
-                                                <a id="cphPagina_rptLista_cmdFavorito_8" class="action-btn hover-up" aria-label="Adicionar aos Favoritos" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl08$cmdFavorito','')"><i class="far fa-heart"></i></a>
-                                            </div>
-                                        </div>
-                                    
-		</div>
-                                
-                                    <div id="cphPagina_rptLista_pnlProduto_9" class="product-cart-wrap" style="background-color: #f8f8f8">
-			
-                                        <div class="product-content-wrap">
-                                            <div class="product-category row">
-                                                <div class="col-lg-6">
-                                                    <a id="cphPagina_rptLista_cmdTipo_9" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl09$cmdTipo','')">Norma Técnica</a>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <h4 style="position: absolute; right: 0px; padding-right:10px"><span id="cphPagina_rptLista_lblCategoria_9">ABNT</span></h4>
-                                                </div>
-                                            </div>
-                                            <h2><a id="cphPagina_rptLista_cmdCodigo_9" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl09$cmdCodigo','')">ABNT ISO/TS 13399-50:2022</a></h2>
-                                            <h5></h5>
-                                            <h5><a id="cphPagina_rptLista_cmdTitulo_9" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl09$cmdTitulo','')">Representação e intercâmbio dos dados da ferramenta de corte <br>Parte 50: Dicionário de referência para sistemas de conexão, sistemas de referência e recursos comuns </a></h5>
-                                            <div class="product-price">
-                                                <span id="cphPagina_rptLista_lblPreco_9">R$581,60</span>
-                                            </div>
-                                            <p class="mt-15"><span id="cphPagina_rptLista_lblResumo_9">Esta Parte da ISO 13399 especifica um dicionário de referência para sistemas de ferramentas de corte, junto com suas propriedades descritivas e domínios de valores. </span></p>
-
-                                            <div class="product-action-1 show">
-                                                
-                                                <a id="cphPagina_rptLista_cmdCarrinho_9" class="action-btn hover-up" aria-label="Adicionar ao Carrinho" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl09$cmdCarrinho','')"><i class="far fa-shopping-bag"></i>Adicionar ao carrinho</a>                                                
-                                                &nbsp;
-                                                <a id="cphPagina_rptLista_cmdDetalhe_9" class="action-btn hover-up" aria-label="Visualizar Detalhes" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl09$cmdDetalhe','')"><i class="far fa-search"></i>Ver detalhes</a>
-                                                &nbsp;
-                                                <a id="cphPagina_rptLista_cmdFavorito_9" class="action-btn hover-up" aria-label="Adicionar aos Favoritos" href="javascript:__doPostBack('ctl00$cphPagina$rptLista$ctl09$cmdFavorito','')"><i class="far fa-heart"></i></a>
                                             </div>
                                         </div>
                                     
@@ -896,32 +615,8 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$script1', 'Form1', ['tctl00$c
                                                 <a id="cphPagina_rptPaginacao_cmdPagina_0" class="page-link" href="javascript:__doPostBack('ctl00$cphPagina$rptPaginacao$ctl00$cmdPagina','')">1</a>
                                             </li>
                                         
-                                            <li id="cphPagina_rptPaginacao_liPagina_1" class="page-item">
-                                                <a id="cphPagina_rptPaginacao_cmdPagina_1" class="page-link" href="javascript:__doPostBack('ctl00$cphPagina$rptPaginacao$ctl01$cmdPagina','')">2</a>
-                                            </li>
-                                        
-                                            <li id="cphPagina_rptPaginacao_liPagina_2" class="page-item">
-                                                <a id="cphPagina_rptPaginacao_cmdPagina_2" class="page-link" href="javascript:__doPostBack('ctl00$cphPagina$rptPaginacao$ctl02$cmdPagina','')">3</a>
-                                            </li>
-                                        
-                                            <li id="cphPagina_rptPaginacao_liPagina_3" class="page-item">
-                                                <a id="cphPagina_rptPaginacao_cmdPagina_3" class="page-link" href="javascript:__doPostBack('ctl00$cphPagina$rptPaginacao$ctl03$cmdPagina','')">4</a>
-                                            </li>
-                                        
-                                            <li id="cphPagina_rptPaginacao_liPagina_4" class="page-item">
-                                                <a id="cphPagina_rptPaginacao_cmdPagina_4" class="page-link" href="javascript:__doPostBack('ctl00$cphPagina$rptPaginacao$ctl04$cmdPagina','')">5</a>
-                                            </li>
-                                        
-                                            <li id="cphPagina_rptPaginacao_liPagina_5" class="page-item">
-                                                <a id="cphPagina_rptPaginacao_cmdPagina_5" class="page-link" href="javascript:__doPostBack('ctl00$cphPagina$rptPaginacao$ctl05$cmdPagina','')">6</a>
-                                            </li>
-                                        
-                                    <li id="cphPagina_liPaginaProxima" class="page-item">
-                                        <a id="cphPagina_cmdPaginaProxima" class="page-link" href="javascript:__doPostBack('ctl00$cphPagina$cmdPaginaProxima','')">...</a>
-                                    </li>
-                                    <li id="cphPagina_liPaginaUltima" class="page-item">
-                                        <a id="cphPagina_cmdPaginaUltima" class="page-link" href="javascript:__doPostBack('ctl00$cphPagina$cmdPaginaUltima','')">70</a>
-                                    </li>                                    
+                                    
+                                                                        
                                 </ul>
                             </nav>
                         </div>
@@ -944,12 +639,12 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$script1', 'Form1', ['tctl00$c
                                         
                                                 <li class="cat-item text-muted">
                                                     <a id="cphPagina_rptFiltro_cmdProduto_0" href="javascript:__doPostBack('ctl00$cphPagina$rptFiltro$ctl00$cmdProduto','')">+Normas</a>
-                                                    <span id="cphPagina_rptFiltro_lblTotal_0">700</span>
+                                                    <span id="cphPagina_rptFiltro_lblTotal_0">1</span>
                                                     <ul class="categor-list" style="padding-left: 10px">
                                                         
                                                                 <li class="cat-item text-muted">
                                                                     <a id="cphPagina_rptFiltro_rptProduto_0_cmdDetalhe_0" href="javascript:__doPostBack('ctl00$cphPagina$rptFiltro$ctl00$rptProduto$ctl00$cmdDetalhe','')">ABNT</a>
-                                                                    <span id="cphPagina_rptFiltro_rptProduto_0_lblDetalheTotal_0">700</span>
+                                                                    <span id="cphPagina_rptFiltro_rptProduto_0_lblDetalheTotal_0">1</span>
                                                                 </li>
                                                             
                                                     </ul>
@@ -1037,7 +732,11 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$script1', 'Form1', ['tctl00$c
                                     <p class="wow fadeIn animated" style="visibility: hidden; animation-name: none;">
                                         <span id="lblSuporte" style="font-weight:bold;">Suporte para visualização de normas: </span>
                                         <i class="fa fa-phone mr-5"></i> <span id="lblSuporteTelefone">(11) 3017-3621</span> | <i class="fa fa-at mr-5"></i> <span id="lblSuporteEmail">suporte@abnt.org.br</span>
-                                    </p>                               
+                                    </p>  
+                                    <p class="wow fadeIn animated" style="visibility: hidden; animation-name: none;">
+                                        <span id="lblHorarioLabel" style="font-weight:bold;">Horário de Atendimento :</span>
+                                        <i class="fa fa-clock mr-5"></i> <span id="lblHorario">segunda à sexta, das 8:30hs as 17:30hs</span>
+                                    </p>
                                 </div>
                             </div>
 

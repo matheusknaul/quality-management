@@ -8,11 +8,3 @@ class Norma(BaseModel):
     ano_norma = IntegerField()
     situacao = CharField()
     data_ultima_verificacao = DateTimeField(default=datetime.datetime.now)
-
-
-
-
-
-
-
-    
