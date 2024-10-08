@@ -10,8 +10,6 @@ from bs4 import BeautifulSoup
 import requests
 import time
 
-
-
 class DontHaveYear(Exception):
     print('Não tem ano!')
 
@@ -42,7 +40,6 @@ abnt_catalogo = requests.get(link_abnt)
 html = abnt_catalogo.text
 
 soup = BeautifulSoup(html)
-
 
 #Limpar a tag do ISO também!!
 def clear_checkbox(tag):
