@@ -13,6 +13,8 @@ import sys
 import os
 import sys
 import os
+from data_sync import __setData__
+
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
@@ -30,57 +32,181 @@ options.binary_location = pc_trabalho_firefox
 abnt_catalogo = requests.get(link_abnt)
 html = abnt_catalogo.text
 
-# Seção do checkbox
-def iso_checkbox(driver):
-    print('usou a ISO')
-    driver.find_element(By.CSS_SELECTOR, '#cphPagina_pnlNorma > div > div:nth-child(1) > div:nth-child(5) > label').click()
-
-def astm_checkbox(driver):
-    print('usou a ASTM')
-    driver.find_element('xpath', '/html/body/form/div[4]/div/main/div[2]/section/div/div/div/div[2]/div/div/div[1]/div[11]/label').click()
-
-def abnt_checkbox(driver):
-    print('usou a ABNT')
-    driver.find_element('xpath', '/html/body/form/div[4]/div/main/div[2]/section/div/div/div/div[2]/div/div/div[1]/div[2]/label').click()
-
-# Seção do preenchimento
 #[tag_norma, numero_norma, parte_norma, ano_norma]
 
-def iso_fill(driver, norma_info):
+# Seção do checkbox
+
+"""
+    Para analisar os resultados, o mais ideal, é analisar cada card de resultado que o site irá gerar para nós.
+    No entanto, o site da ABNT CATALOGO tem várias variáveis para demonstrar os resultados que, não valerá a pena levantar
+    todas elas.
+
+    Por isso, fui obrigado a fazer um laço indefinido, onde o range não terá rastreio em nenhum variável e ele só irá
+    parar a execução quando achar o "melhor resultado" ou, quando acabar a aparições dos resultados.
+
+    Neste caso, o "melhor resultado", é aquele que está incluso o número da norma e a sua parte (isso significa que é
+    o resultado ideal).
+"""
+
+def iso_check(driver, norma_info):
+
+    # Seção do checkbox
+
+    print('usou a ISO')
+    driver.find_element(By.CSS_SELECTOR, '#cphPagina_pnlNorma > div > div:nth-child(1) > div:nth-child(5) > label').click()
+    time.sleep(2)
+
+    # Seção de preencher as informações da norma
+
     # Número da norma
-    driver.find_element('xpath', '//*[@id="ctl00_cphPagina_txtNM_Numero"]').send_keys(norma_info[1])
+    driver.find_element('xpath', '//*[@id="ctl00_cphPagina_txtNM_Numero"]').send_keys(norma_info[2])
     # Parte da norma
-    driver.find_element('xpath', '//*[@id="ctl00_cphPagina_txtNM_Parte"]').send_keys(norma_info[2])
+    driver.find_element('xpath', '//*[@id="ctl00_cphPagina_txtNM_Parte"]').send_keys(norma_info[3])
     # Scroll pra baixo
     driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
     time.sleep(2)
     # Botão de pesquisar
     driver.find_element('xpath', '//*[@id="cphPagina_cmdNM_Buscar"]').click()
+    time.sleep(2)
 
-def astm_fill(driver, norma_info):
+    # Seção dos resultados
+
+    soup = BeautifulSoup(driver.page_source)
+
+
+def astm_check(driver, norma_info):
+
+    # Seção do checkbox
+
+    print('usou a ASTM')
+    driver.find_element('xpath', '/html/body/form/div[4]/div/main/div[2]/section/div/div/div/div[2]/div/div/div[1]/div[11]/label').click()
+    time.sleep(2)
+
+    # Seção de preencher os resultados
+
     # Número da norma
-    driver.find_element('xpath', '//*[@id="ctl00_cphPagina_txtNM_NumeroUnico"]').send_keys(norma_info[1])
+    driver.find_element('xpath', '//*[@id="ctl00_cphPagina_txtNM_NumeroUnico"]').send_keys(norma_info[2])
     # Scroll pra baixo
     driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
     time.sleep(2)
     # Botão de pesquisar
     driver.find_element('xpath', '//*[@id="cphPagina_cmdNM_Buscar"]').click()
+    time.sleep(2)
 
-def abnt_fill(driver, norma_info):
+    # Seção dos resultados
+
+    #entry = [id, tag, numero, parte, ano]
+    #[id_norma, codigo_norma, descricao_norma, status]
+
+    soup = BeautifulSoup(driver.page_source)
+    if norma_info[3] != 'NULL':
+        verificacao = norma_info[2] + '-' + norma_info[3]
+    else:
+        verificacao = norma_info[2]
+    for resultado in range(999):
+        cardResult = soup.find('div', id=f'cphPagina_rptLista_pnlProduto_{resultado}')
+        if cardResult:
+            h2 = cardResult.find('h2')
+            link = h2.find('a')
+            print(f'Esse aqui é o h2: {h2}')
+            if verificacao in h2.text:
+                driver.find_element(By.ID, f'{link.get('id')}').click()
+                time.sleep(2)
+                break
+
+    # Seção do perfil
+
+    titulo_resultado = driver.find_element('xpath', '//*[@id="cphPagina_lblNormaNumero"]').text
+
+    if norma_info[4] != 'NULL':
+        ano_astm = str(norma_info[4])
+        verificacao = verificacao + ":" + ano_astm[2:]
+        print(f'astm com ano formatado: {verificacao}')
+
+    
+    status_resultado = driver.find_element('xpath', '//*[@id="cphPagina_lblNormaStatus"]').text
+    if status_resultado == "EM VIGOR":
+        status_norma =  "Conforme"
+    else:
+        status_norma = "Não conforme"
+    
+    if verificacao in titulo_resultado:
+        codigo_norma = titulo_resultado
+    else:
+        codigo_norma = titulo_resultado
+        status_norma = "Não conforme"
+        
+    descricao_norma = driver.find_element('xpath', '//*[@id="cphPagina_lblNormaTitulo"]').text
+
+    return [norma_info[0], codigo_norma, descricao_norma, status_norma]
+
+def abnt_check(driver, norma_info):
+
+    # Seção do checkbox
+
+    print('usou a ABNT')
+    driver.find_element('xpath', '/html/body/form/div[4]/div/main/div[2]/section/div/div/div/div[2]/div/div/div[1]/div[2]/label').click()
+    time.sleep(2)
+
+    # Seção de preencher os resultados
+
     # Número da norma
-    driver.find_element('xpath', '//*[@id="ctl00_cphPagina_txtNM_Numero"]').send_keys(norma_info[1])
+    driver.find_element('xpath', '//*[@id="ctl00_cphPagina_txtNM_Numero"]').send_keys(norma_info[2])
     # Parte da norma
-    driver.find_element('xpath', '//*[@id="ctl00_cphPagina_txtNM_Parte"]').send_keys(norma_info[2])
+    driver.find_element('xpath', '//*[@id="ctl00_cphPagina_txtNM_Parte"]').send_keys(norma_info[3])
     # Scroll pra baixo
     driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
     time.sleep(2)
     # Botão de pesquisar
     driver.find_element('xpath', '//*[@id="cphPagina_cmdNM_Buscar"]').click()
+    time.sleep(3)
 
-# Seção dos resultados
+    # Seção dos resultados
 
-# Seção do perfil
+    soup = BeautifulSoup(driver.page_source)
 
+    print(f'Essa é a parte da norma: {norma_info[3]}')
+    if norma_info[3] != 'NULL':
+        verificacao = norma_info[2] + "-" + norma_info[3]
+    else:
+        verificacao = norma_info[2]
+    print(f'Esse foi o fruto do verificacao: {verificacao}')
+    #[tag_norma, numero_norma, parte_norma, ano_norma]
+    for resultado in range(999):
+        cardResult = soup.find('div', id=f'cphPagina_rptLista_pnlProduto_{resultado}')
+        if cardResult:
+            h2 = cardResult.find('h2')
+            link = h2.find('a')
+            print(f'Esse aqui é o h2: {h2}')
+            if verificacao in h2.text:
+                driver.find_element(By.ID, f'{link.get('id')}').click()
+                time.sleep(2)
+                break
+    
+    # Seção do perfil
+
+    titulo_resultado = driver.find_element('xpath', '//*[@id="cphPagina_lblNormaNumero"]').text
+
+    if norma_info[4] != 'NULL':
+        verificacao = verificacao + ":" + str(norma_info[4])
+
+    status_resultado = driver.find_element('xpath', '//*[@id="cphPagina_lblNormaStatus"]').text
+
+    if status_resultado == "EM VIGOR":
+        status_norma = "Conforme"
+    else:
+        status_norma = "Não conforme"
+    if verificacao in titulo_resultado:
+        codigo_norma = titulo_resultado
+    else:
+        status_norma = "Não conforme"
+
+    descricao_norma = driver.find_element('xpath', '//*[@id="cphPagina_lblNormaTitulo"]').text
+    
+    #entry = [id, tag, numero, parte, ano]
+    #[id_norma, codigo_norma, descricao_norma, status]
+    return [norma_info[0], codigo_norma, descricao_norma, status_norma]
+    
 def __main__(list):
     track_list(list)
 
@@ -101,26 +227,18 @@ def search_norma(id_norma, tag_norma, numero_norma, parte_norma, ano_norma):
     """ 
     Parte do search para marcar o checkbox.
     """
-    valid_checkbox = {
-        'ASTM': astm_checkbox,
-        'ABNT': abnt_checkbox,
-        'ISO': iso_checkbox,
+    check_norma = {
+        'ASTM': astm_check,
+        'ABNT': abnt_check,
+        'ISO': iso_check,
     }
-       
-    valid_checkbox[tag_norma](driver)
-    time.sleep(3)
+    try:
+        resultado = check_norma[tag_norma](driver, [id_norma, tag_norma, numero_norma, parte_norma, ano_norma])
 
-    """ 
-    Parte do preenchimento das informações da norma.
-    """
-    norma_fill = {
-        'ASTM': astm_fill,
-        'ABNT': abnt_fill,
-        'ISO': iso_fill
-    }
-
-    norma_fill[tag_norma](driver, [tag_norma, numero_norma, parte_norma, ano_norma])
-    time.sleep(5)
+        __setData__(resultado[0], resultado[1], resultado[2], resultado[3])
+    except Exception as e:
+        __setData__(id_norma, tag_norma + " " + numero_norma, "", "Error")
+    time.sleep(1)
 
     driver.quit()
     print('Drive finalizado')

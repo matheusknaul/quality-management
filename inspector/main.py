@@ -1,4 +1,4 @@
-from data_sync import __getData__, __setData__
+from data_sync import __getData__
 
 keys_entry = __getData__()
 
@@ -8,6 +8,8 @@ keys_entry = __getData__()
 
 # Segundo o GPT, o web driver não possui histórico ou dados de navegação, isso significa que, se conseguirmos dar quit em cada seção, poderemos pular a etapa
 #de validar o checkbox.
+
+#
 
 from check_automation import __main__
 
