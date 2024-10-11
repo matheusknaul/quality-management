@@ -73,6 +73,48 @@ def iso_check(driver, norma_info):
 
     soup = BeautifulSoup(driver.page_source)
 
+    if norma_info[3] != 'NULL':
+        verificacao = norma_info[2] + '-' + norma_info[3]
+    else:
+        verificacao = norma_info[2]
+    print(f'Esse é o verificação da ISO: {verificacao}')
+    for resultado in range(999):
+        cardResult = soup.find('div', id=f'cphPagina_rptLista_pnlProduto_{resultado}')
+        if cardResult:
+            h2 = cardResult.find('h2')
+            link = h2.find('a')
+            print(f'Esse aqui é o h2: {h2}')
+            if verificacao in h2.text:
+                driver.find_element(By.ID, f'{link.get('id')}').click()
+                time.sleep(2)
+                break
+
+    # Seção do perfil
+
+    titulo_resultado = driver.find_element('xpath', '//*[@id="cphPagina_lblNormaNumero"]').text
+
+    if norma_info[4] != 'NULL':
+        ano_astm = str(norma_info[4])
+        verificacao = verificacao + ":" + ano_astm[2:]
+        print(f'astm com ano formatado: {verificacao}')
+
+    
+    status_resultado = driver.find_element('xpath', '//*[@id="cphPagina_lblNormaStatus"]').text
+    if status_resultado == "EM VIGOR":
+        status_norma =  "Conforme"
+    else:
+        status_norma = "Não conforme"
+    
+    if verificacao in titulo_resultado:
+        codigo_norma = titulo_resultado
+    else:
+        codigo_norma = titulo_resultado
+        status_norma = "Não conforme"
+        
+    descricao_norma = driver.find_element('xpath', '//*[@id="cphPagina_lblNormaTitulo"]').text
+
+    return [norma_info[0], codigo_norma, descricao_norma, status_norma]
+
 
 def astm_check(driver, norma_info):
 

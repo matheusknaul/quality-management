@@ -34,8 +34,13 @@ def __getData__():
     # Para cada registro, ele enviará inclusive também, o ID do registro, para facilitar depois o update do resultado.
 
     for norma in normas:
-        key_entries.append([norma.id, norma.tag_main, norma.number_main, norma.part_main, norma.ano_norma])
-
+        # data_atual = datetime.datetime.now()
+        # diferenca = data_atual - norma.data_ultima_verificacao
+        # if diferenca >= 5:
+        #     key_entries.append([norma.id, norma.tag_main, norma.number_main, norma.part_main, norma.ano_norma])
+        if norma.situacao != "Conforme" and norma.situacao != "Não conforme":
+            key_entries.append([norma.id, norma.tag_main, norma.number_main, norma.part_main, norma.ano_norma])
+    
     return key_entries
 
 # O id é o mais importante, é o que a função usará como referência.
