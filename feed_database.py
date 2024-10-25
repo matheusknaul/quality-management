@@ -2,22 +2,10 @@ from types import NoneType
 from database.models.norma import Norma
 
 """
+ATENÇÃO: Utilizar esse código somente quando quiser resetar o banco de dados.
+
 Esse código serve, caso você precise adicionar registros no banco de dados no shell.
 
-"""
-
-# class Norma(BaseModel):
-#     codigo = CharField()
-#     descricao = CharField()
-#     ano_norma = IntegerField()
-#     situacao = CharField()
-#     data_ultima_verificacao = DateTimeField(default=datetime.datetime.now)
-
-# for i in range(10):
-#     new_norma = Norma.create(codigo='ABNT NBR 7206', descricao='Implantes cirurgicos', ano_norma=2013, situacao='Conforme')
-
-""" 
-Para adicionar registros com base em leitura no excel, usaremos o openpyxl.
 """
 
 from openpyxl import load_workbook

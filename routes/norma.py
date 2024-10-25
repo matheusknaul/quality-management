@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request
+from flask import Blueprint, render_template, request, send_file
 from database.models.norma import Norma
 
 norma_route = Blueprint('norma', __name__)
@@ -7,6 +7,31 @@ norma_route = Blueprint('norma', __name__)
 def lista_normas():
     normas = Norma.select()
     return render_template('normas/lista_normas.html', normas=normas)
+
+@norma_route.route('/export_excel')
+def exportar_excel():
+
+    from utils.normas_excel_extract import gerar_excel
+
+    normas = Norma.select(
+        Norma.codigo,
+        Norma.descricao,
+        Norma.ano_norma,
+        Norma.situacao,
+        Norma.data_ultima_verificacao
+    )
+
+    dados = [[
+        norma.codigo,
+        norma.descricao,
+        norma.ano_norma,
+        norma.situacao,
+        norma.data_ultima_verificacao
+    ] for norma in normas]
+
+    gerar_excel(dados)
+
+    return send_file('utils\\normas_verificacao.xlsx', as_attachment=True, download_name="verificacao_normas.xlsx")
 
 @norma_route.route('/', methods=["POST"])
 def inserir_norma():
