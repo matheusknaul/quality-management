@@ -11,3 +11,4 @@ class Norma(BaseModel):
     tag_main = CharField()
     part_main = CharField()
     number_main = CharField()
+    link = CharField()
