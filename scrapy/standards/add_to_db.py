@@ -11,6 +11,9 @@ for cell in worksheet['B']:
     if cell.value:
         lista.append(__separate__(cell.value))
 
+# for item in lista:
+#     if item:
+#         print(item)
 
 import sys
 import os
@@ -32,24 +35,20 @@ from database.models.norma import Norma
 #     number_main = CharField()
 #     link = CharField()
 
-
-
-
-
-
-
-
-
 for item in lista:
     if item:
         print(item, f'your len: {len(item)}')
         if len(item) > 1:
-            
-            else: 
-                for number_element in range(len(item)):
-                    print(item[number_element], "aaaaaaaaaaaaaaaaaaaaa", item[number_element])
-                    new_codigo_norma = item[number_element][1]
-                    Norma.create(codigo = new_codigo_norma, descricao="", ano_norma=item[number_element][0][2], situacao="Analisar", tag_main=item[number_element][0][0], part_main=item[number_element][0][3], number_main=item[number_element][0][1], link="")
+            for element in item:
+                if len(element) > 2:
+                    for indice in range(len(element)):
+                else:
+                    Norma.create
+        else: 
+            for number_element in range(len(item)):
+                print(item[number_element], "aaaaaaaaaaaaaaaaaaaaa", item[number_element])
+                new_codigo_norma = item[number_element][1]
+                Norma.create(codigo = new_codigo_norma, descricao="", ano_norma=item[number_element][0][2], situacao="Analisar", tag_main=item[number_element][0][0], part_main=item[number_element][0][3], number_main=item[number_element][0][1], link="")
         else:
             new_codigo_norma = item[0][1]
             Norma.create(codigo = new_codigo_norma, descricao="", ano_norma=item[0][0][2], situacao="Analisar", tag_main=item[0][0][0], part_main=item[0][0][3], number_main=item[0][0][1], link="")
