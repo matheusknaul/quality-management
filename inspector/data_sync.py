@@ -46,7 +46,7 @@ def __getData__():
 # O id é o mais importante, é o que a função usará como referência.
 # Essa função também possui uma lógica para setar a data da última verificação.
 
-def __setData__(id_norma, codigo_norma, descricao_norma, status_norma):
+def __setData__(id_norma, codigo_norma, descricao_norma, status_norma, link):
     norma = Norma.get(Norma.id == id_norma)
     if status_norma == "Error":
         norma.situacao = status_norma
@@ -57,5 +57,6 @@ def __setData__(id_norma, codigo_norma, descricao_norma, status_norma):
         norma.descricao = descricao_norma
         norma.situacao = status_norma
         norma.data_ultima_verificacao = datetime.datetime.now()
+        norma.link = link
         norma.save()
     print(f"O registro foi alterado com sucesso! ID: {id_norma}")

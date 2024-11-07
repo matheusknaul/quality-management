@@ -48,6 +48,68 @@ html = abnt_catalogo.text
     o resultado ideal).
 """
 
+def iec_check(driver, norma_info):
+    print('usou a IEC')
+    driver.find_element('xpath', '/html/body/form/div[4]/div/main/div[2]/section/div/div/div/div[2]/div/div/div[1]/div[4]/label').click()
+    time.sleep(2)
+    # Número da norma
+    driver.find_element('xpath', '//*[@id="ctl00_cphPagina_txtNM_Numero"]').send_keys(norma_info[2])
+    time.sleep(1)
+    # Parte da norma
+    driver.find_element('xpath', '//*[@id="ctl00_cphPagina_txtNM_Parte"]').send_keys(norma_info[3])
+    time.sleep(1)
+    # Scroll pra baixo
+    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+    time.sleep(2)
+    # Botão de pesquisar
+    driver.find_element('xpath', '//*[@id="cphPagina_cmdNM_Buscar"]').click()
+    time.sleep(2)
+
+    time.sleep(2)
+    soup = BeautifulSoup(driver.page_source)
+
+    if norma_info[3] != 'null':
+        verificacao = norma_info[2] + '-' + norma_info[3]
+    else:
+        verificacao = norma_info[2]
+    print(f'Esse é o verificação da ISO: {verificacao}')
+    for resultado in range(999):
+        cardResult = soup.find('div', id=f'cphPagina_rptLista_pnlProduto_{resultado}')
+        if cardResult:
+            h2 = cardResult.find('h2')
+            link = h2.find('a')
+            print(f'Esse aqui é o h2: {h2}')
+            if verificacao in h2.text:
+                driver.find_element(By.ID, f'{link.get('id')}').click()
+                time.sleep(2)
+                break
+    time.sleep(1)
+    titulo_resultado = driver.find_element('xpath', '//*[@id="cphPagina_lblNormaNumero"]').text
+
+    if norma_info[4] != 'null':
+        verificacao = verificacao + ":" + str(norma_info[4])
+        print(f'verificação com ano: {verificacao}')
+
+    status_resultado = driver.find_element('xpath', '//*[@id="cphPagina_lblNormaStatus"]').text
+
+    if status_resultado == "EM VIGOR":
+        status_norma = "Conforme"
+    else:
+        status_norma = "Não conforme"
+    if verificacao in titulo_resultado:
+        codigo_norma = titulo_resultado
+    else:
+        status_norma = "Não conforme"
+
+    descricao_norma = driver.find_element('xpath', '//*[@id="cphPagina_lblNormaTitulo"]').text
+    
+    #entry = [id, tag, numero, parte, ano]
+    #[id_norma, codigo_norma, descricao_norma, status]
+
+    link = driver.current_url
+
+    return [norma_info[0], codigo_norma, descricao_norma, status_norma, link]
+
 def iso_check(driver, norma_info):
 
     # Seção do checkbox
@@ -60,8 +122,10 @@ def iso_check(driver, norma_info):
 
     # Número da norma
     driver.find_element('xpath', '//*[@id="ctl00_cphPagina_txtNM_Numero"]').send_keys(norma_info[2])
+    time.sleep(1)
     # Parte da norma
     driver.find_element('xpath', '//*[@id="ctl00_cphPagina_txtNM_Parte"]').send_keys(norma_info[3])
+    time.sleep(1)
     # Scroll pra baixo
     driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
     time.sleep(2)
@@ -70,10 +134,10 @@ def iso_check(driver, norma_info):
     time.sleep(2)
 
     # Seção dos resultados
-
+    time.sleep(2)
     soup = BeautifulSoup(driver.page_source)
 
-    if norma_info[3] != 'NULL':
+    if norma_info[3] != 'null':
         verificacao = norma_info[2] + '-' + norma_info[3]
     else:
         verificacao = norma_info[2]
@@ -90,30 +154,32 @@ def iso_check(driver, norma_info):
                 break
 
     # Seção do perfil
-
+    time.sleep(1)
     titulo_resultado = driver.find_element('xpath', '//*[@id="cphPagina_lblNormaNumero"]').text
 
-    if norma_info[4] != 'NULL':
-        ano_astm = str(norma_info[4])
-        verificacao = verificacao + ":" + ano_astm[2:]
-        print(f'astm com ano formatado: {verificacao}')
+    if norma_info[4] != 'null':
+        verificacao = verificacao + ":" + str(norma_info[4])
+        print(f'verificação com ano: {verificacao}')
 
-    
     status_resultado = driver.find_element('xpath', '//*[@id="cphPagina_lblNormaStatus"]').text
+
     if status_resultado == "EM VIGOR":
-        status_norma =  "Conforme"
+        status_norma = "Conforme"
     else:
         status_norma = "Não conforme"
-    
     if verificacao in titulo_resultado:
         codigo_norma = titulo_resultado
     else:
-        codigo_norma = titulo_resultado
         status_norma = "Não conforme"
-        
-    descricao_norma = driver.find_element('xpath', '//*[@id="cphPagina_lblNormaTitulo"]').text
 
-    return [norma_info[0], codigo_norma, descricao_norma, status_norma]
+    descricao_norma = driver.find_element('xpath', '//*[@id="cphPagina_lblNormaTitulo"]').text
+    
+    #entry = [id, tag, numero, parte, ano]
+    #[id_norma, codigo_norma, descricao_norma, status]
+
+    link = driver.current_url
+
+    return [norma_info[0], codigo_norma, descricao_norma, status_norma, link]
 
 
 def astm_check(driver, norma_info):
@@ -139,9 +205,9 @@ def astm_check(driver, norma_info):
 
     #entry = [id, tag, numero, parte, ano]
     #[id_norma, codigo_norma, descricao_norma, status]
-
+    time.sleep(2)
     soup = BeautifulSoup(driver.page_source)
-    if norma_info[3] != 'NULL':
+    if norma_info[3] != 'null':
         verificacao = norma_info[2] + '-' + norma_info[3]
     else:
         verificacao = norma_info[2]
@@ -157,15 +223,14 @@ def astm_check(driver, norma_info):
                 break
 
     # Seção do perfil
-
+    time.sleep(1)
     titulo_resultado = driver.find_element('xpath', '//*[@id="cphPagina_lblNormaNumero"]').text
 
-    if norma_info[4] != 'NULL':
+    if norma_info[4] != 'null':
         ano_astm = str(norma_info[4])
         verificacao = verificacao + ":" + ano_astm[2:]
         print(f'astm com ano formatado: {verificacao}')
 
-    
     status_resultado = driver.find_element('xpath', '//*[@id="cphPagina_lblNormaStatus"]').text
     if status_resultado == "EM VIGOR":
         status_norma =  "Conforme"
@@ -180,7 +245,9 @@ def astm_check(driver, norma_info):
         
     descricao_norma = driver.find_element('xpath', '//*[@id="cphPagina_lblNormaTitulo"]').text
 
-    return [norma_info[0], codigo_norma, descricao_norma, status_norma]
+    link = driver.current_url
+
+    return [norma_info[0], codigo_norma, descricao_norma, status_norma, link]
 
 def abnt_check(driver, norma_info):
 
@@ -204,11 +271,11 @@ def abnt_check(driver, norma_info):
     time.sleep(3)
 
     # Seção dos resultados
-
+    time.sleep(2)
     soup = BeautifulSoup(driver.page_source)
 
     print(f'Essa é a parte da norma: {norma_info[3]}')
-    if norma_info[3] != 'NULL':
+    if norma_info[3] != 'null':
         verificacao = norma_info[2] + "-" + norma_info[3]
     else:
         verificacao = norma_info[2]
@@ -227,10 +294,12 @@ def abnt_check(driver, norma_info):
     
     # Seção do perfil
 
+    time.sleep(1)
     titulo_resultado = driver.find_element('xpath', '//*[@id="cphPagina_lblNormaNumero"]').text
 
-    if norma_info[4] != 'NULL':
+    if norma_info[4] != 'null':
         verificacao = verificacao + ":" + str(norma_info[4])
+        print(f'verificação com ano: {verificacao}')
 
     status_resultado = driver.find_element('xpath', '//*[@id="cphPagina_lblNormaStatus"]').text
 
@@ -247,7 +316,10 @@ def abnt_check(driver, norma_info):
     
     #entry = [id, tag, numero, parte, ano]
     #[id_norma, codigo_norma, descricao_norma, status]
-    return [norma_info[0], codigo_norma, descricao_norma, status_norma]
+
+    link = driver.current_url
+
+    return [norma_info[0], codigo_norma, descricao_norma, status_norma, link]
     
 def __main__(list):
     track_list(list)
@@ -277,9 +349,9 @@ def search_norma(id_norma, tag_norma, numero_norma, parte_norma, ano_norma):
     try:
         resultado = check_norma[tag_norma](driver, [id_norma, tag_norma, numero_norma, parte_norma, ano_norma])
 
-        __setData__(resultado[0], resultado[1], resultado[2], resultado[3])
+        __setData__(resultado[0], resultado[1], resultado[2], resultado[3], resultado[4])
     except Exception as e:
-        __setData__(id_norma, tag_norma + " " + numero_norma, "", "Error")
+        __setData__(id_norma, tag_norma + " " + numero_norma, "", "Error", "")
     time.sleep(1)
 
     driver.quit()
