@@ -1,5 +1,15 @@
-<ul>
-    <li>Código: {{norma.codigo}}</li>
-    <li>Descrição: {{norma.descricao}}</li>
-    <li>Ano: {{norma.ano}}</li>
-</ul>
+
+<p class="main-info">Código: {{norma.codigo}}</p>
+<p class="main-info">Descrição: {{norma.descricao}}</p>
+<p class="main-info">Ano: {{norma.ano_norma}}</p>
+<p class="main-info">Situação: {{norma.situacao}}</p>
+<p class="main-info" id="data-norma">Data última da verificação: {{ norma.data_ultima_verificacao.strftime('%d/%m/%Y às %H:%M') }}</p>
+
+<div class="dev-info">
+    <p class="tag-main">Tag main: {{norma.tag_main}}</p>
+    <p class="part-main">Part main: {{norma.part_main}}</p>
+    <p class="number-main">Number main: {{norma.number_main}}</p>
+    <p class="link-norma">Link: {{norma.link}}</p>
+</div>
+
+

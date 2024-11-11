@@ -4,7 +4,9 @@
 
 {%block content%}
 
+<!-- Modal -->
 <div class="container">
+
     <div id="form-norma" c-container="{{url_for('norma.form_norma')}}"></div>
 
     <div c-container="{{url_for('norma.lista_normas')}}"></div>
@@ -13,5 +15,7 @@
 
     <script src="{{url_for('static', filename='js/cru.js')}}"></script>
 </div>
+
+
 
 {%endblock%}

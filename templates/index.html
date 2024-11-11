@@ -3,6 +3,30 @@
 {%block title%}Normas{%endblock%}
 
 {%block content%}
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Informações</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="exibir-norma">
+                ...
+            </div>
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Dev Info</h1>
+            </div>
+            <div id="exibir-norma-devinfo"></div>
+            <div class="obs">
+                <input type="text">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary">Salvar alterações</button>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="container" id="content-fornecedores">
     <h1 class="text-center">Lista de Fornecedores</h1>
     <div id="form-fornecedor" c-container="{{url_for('fornecedor.form_fornecedor')}}"></div>
@@ -25,4 +49,6 @@
 <script src="{{url_for('static', filename='js/format_date.js')}}"></script>
 <script src="{{url_for('static', filename='js/cru.js')}}"></script>
 <script src="{{url_for('static', filename='js/renderize.js')}}"></script>
+<script src="{{url_for('static', filename='js/viewNormaModal.js')}}"></script>
+<script src="{{url_for('static', filename='js/organizeNormaModal.js')}}"></script>
 {%endblock%}

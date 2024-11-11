@@ -1,1 +1,202 @@
-const $cru=e=>document.querySelector(e),$crus=e=>document.querySelectorAll(e),$cruConfig={prefix_url:"",headers:{"Content-Type":"application/json"},callbacks:{}},$C=(e=!1)=>{if(e)for(let t of Object.keys(e))$cruConfig[t]=e[t];$cruLoadEvents()},$cruLoadEvents=()=>{$cruLoadRequests(),$cruLoadFormIntercept(),$cruLoadAllContainers()},$cruLoadContainer=async e=>{e.classList.add("loaded");const t=e.closest("[c-container]")||e,r=t.getAttribute("c-container"),c=t.getAttribute("c-target")||!1,a=t.getAttribute("c-type")||"html",n=t.getAttribute("c-callback")||!1,o=await fetch($cruConfig.prefix_url+r,{method:"GET",headers:$cruConfig.headers}),s=await $cruTypeResponse(a,o),i=c?$cru(c):t;(c||"off"!=c)&&(c?i.innerHTML=s:"html"==a&&(i.innerHTML=s)),n&&$cruConfig.callbacks[n](s,i),$cruLoadEvents()},$cruLoadAllContainers=async()=>{$crus("[c-container]:not(.loaded)").forEach(async e=>{e.classList.add("loaded"),$cruLoadContainer(e)}),$crus("[c-reload]:not(.loaded)").forEach(async e=>{e.classList.add("loaded"),e.addEventListener("click",t=>$cruLoadContainer(e))})},cruRequest=async(e,t)=>{const r=e.getAttribute(`c-${t}`),c=e.getAttribute("c-type")||"html",a=e.getAttribute("c-reload-container")||!1,n=e.getAttribute("c-remove-closest")||!1,o=e.getAttribute("c-self-remove")||!1,s=e.getAttribute("c-redirect")||!1,i=e.getAttribute("c-swap")||!1,d=e.getAttribute("c-append")||!1,u=e.getAttribute("c-prepend")||!1,l=e.getAttribute("c-callback")||!1,$=e.getAttribute("c-target")||!1,g=await fetch($cruConfig.prefix_url+r,{method:t,headers:$cruConfig.headers}),L=await $cruTypeResponse(c,g),f=!!$&&$cru($);n&&e.closest(n).remove(),o&&e.remove(),i&&($cru(i).outerHTML=L),d&&$cru(d).insertAdjacentHTML("beforeend",L),u&&$cru(u).insertAdjacentHTML("afterbegin",L),a&&$cruLoadContainer(e),f&&(f?f.innerHTML=L:"html"==c&&(e.innerHTML=L)),l&&$cruConfig.callbacks[l](L,f),$cruLoadEvents(),s&&(window.location.href=s)},$cruLoadRequests=()=>{$crus("[c-delete]:not(.loaded)").forEach(e=>{e.classList.add("loaded"),e.addEventListener("click",async t=>{cruRequest(e,"delete")})}),$crus("[c-put]:not(.loaded)").forEach(e=>{e.classList.add("loaded"),e.addEventListener("click",async t=>{cruRequest(e,"put")})}),$crus("[c-get]:not(.loaded)").forEach(e=>{e.classList.add("loaded"),e.addEventListener("click",async t=>{cruRequest(e,"get")})}),$crus("[c-post]:not(.loaded)").forEach(e=>{e.classList.add("loaded"),e.addEventListener("click",async t=>{cruRequest(e,"post")})})},$cruLoadFormIntercept=()=>{$crus(".c-form:not(.loaded)").forEach(e=>{e.classList.add("loaded"),e.addEventListener("submit",async t=>{t.preventDefault();const r=e.getAttribute("action"),c=e.getAttribute("method").toUpperCase()||"POST",a=e.getAttribute("c-type")||"html",n=e.getAttribute("c-append")||!1,o=e.getAttribute("c-prepend")||!1,s=e.getAttribute("c-redirect")||!1,i=e.getAttribute("c-reset")||!1,d=e.getAttribute("c-swap")||!1,u=e.getAttribute("c-target")||!1,l=e.getAttribute("c-reload-container")||!1,$=e.getAttribute("c-callback")||!1,g=$cruIsRead(c),L=Object.fromEntries(new FormData(t.target).entries()),f=cruFormatURL(r,g,L),b=await fetch(f,{method:c,headers:$cruConfig.headers,body:g?null:JSON.stringify(L)}),p=await $cruTypeResponse(a,b);d&&($cru(d).outerHTML=p),n&&$cru(n).insertAdjacentHTML("beforeend",p),o&&$cru(o).insertAdjacentHTML("afterbegin",p),u&&($cru(u).innerHTML=p),i&&e.reset(),l&&$cruLoadContainer(e),$&&$cruConfig.callbacks[$]({status:b.status,data:p},e),$cruLoadEvents(),s&&(window.location.href=s)})})},cruFormatURL=(e,t,r)=>{let c=$cruConfig.prefix_url+e;if(t)try{c=new URL(e)}catch(t){try{c=new URL(window.location.origin+e)}catch(t){throw e}}finally{c.search=new URLSearchParams(r).toString(),c=c.href}return c},$cruCallback=(e,t)=>{$cruConfig.callbacks[e]=t},$cruIsRead=e=>["GET","HEAD"].includes(e),$cruTypeResponse=async(e,t)=>"html"==e?await t.text():await t.json();$C();
+const $cru = (el) => document.querySelector(el)
+const $crus = (el) => document.querySelectorAll(el)
+
+const $cruConfig = {
+    'prefix_url': '', // '/api/v1',
+    'headers': {'Content-Type': 'application/json'},
+    'callbacks': {},
+}
+
+const $C = (config = false) => {
+    if (config) {
+        for (let key of Object.keys(config)) {
+            $cruConfig[key] = config[key]
+        }
+    }
+    $cruLoadEvents()
+}
+
+const $cruLoadEvents = () => {
+    $cruLoadRequests()
+    $cruLoadFormIntercept()
+    $cruLoadAllContainers()
+}
+
+const $cruLoadContainer = async (el) => {
+    el.classList.add('loaded')
+    const container = el.closest('[c-container]') || el
+    const url = container.getAttribute('c-container')
+    const target = container.getAttribute('c-target') || false
+    const type = container.getAttribute('c-type') || 'html'
+    const callback = container.getAttribute('c-callback') || false
+
+    const response = await fetch($cruConfig['prefix_url'] + url, {
+        method: 'GET', 
+        headers: $cruConfig['headers']
+    })
+    const content = await $cruTypeResponse(type, response)
+    const $target = target ? $cru(target):container
+
+    if (target || target != 'off') {
+        if(target)$target.innerHTML = content
+        else if (type == 'html') $target.innerHTML = content
+    }
+    if (callback) {
+        $cruConfig['callbacks'][callback](content, $target)
+    }
+
+    $cruLoadEvents()
+}
+
+const $cruLoadAllContainers = async () => {
+
+    $crus('[c-container]:not(.loaded)').forEach( async (el) => {
+        el.classList.add('loaded')
+        $cruLoadContainer(el)
+    })
+    $crus('[c-reload]:not(.loaded)').forEach( async (el) => {
+        el.classList.add('loaded')
+        el.addEventListener('click', (ev) => $cruLoadContainer(el))
+    })
+}
+
+const cruRequest = async (el, method) => {
+    const url = el.getAttribute(`c-${method}`)
+    const type = el.getAttribute('c-type') || 'html'
+    const reloadContainer = el.getAttribute('c-reload-container') || false;
+    const removeClosest = el.getAttribute('c-remove-closest') || false
+    const selfRemove = el.getAttribute('c-self-remove') || false
+    const redirect = el.getAttribute('c-redirect') || false
+    const swap = el.getAttribute('c-swap') || false;
+    const append = el.getAttribute('c-append') || false;
+    const prepend = el.getAttribute('c-prepend') || false;
+    const callback = el.getAttribute('c-callback') || false
+    const target = el.getAttribute('c-target') || false;
+
+    const response = await fetch($cruConfig['prefix_url'] + url, {
+        method: method, 
+        headers: $cruConfig['headers']
+    })
+    const content = await $cruTypeResponse(type, response)
+    const $target = target ? $cru(target):false
+
+    if (removeClosest) el.closest(removeClosest).remove()
+    if (selfRemove) el.remove()
+    if (swap) $cru(swap).outerHTML = content
+    if (append) $cru(append).insertAdjacentHTML('beforeend', content)
+    if (prepend) $cru(prepend).insertAdjacentHTML('afterbegin', content)
+    if (reloadContainer) $cruLoadContainer(el)
+    
+    if ($target) {
+        if ($target) {
+            $target.innerHTML = content
+        } else if (type == 'html') {
+            el.innerHTML = content
+        }
+    }
+    if (callback) $cruConfig['callbacks'][callback](content, $target)
+    $cruLoadEvents()
+    if (redirect) {
+        window.location.href = redirect
+    }
+}
+
+const $cruLoadRequests = () => {
+    $crus('[c-delete]:not(.loaded)').forEach( (el) => {
+        el.classList.add('loaded')
+        el.addEventListener('click', async (e) => {
+            cruRequest(el, 'delete')
+        })
+    })
+    $crus('[c-put]:not(.loaded)').forEach( (el) => {
+        el.classList.add('loaded')
+        el.addEventListener('click', async (e) => {
+            cruRequest(el, 'put')
+        })
+    })
+    $crus('[c-get]:not(.loaded)').forEach( (el) => {
+        el.classList.add('loaded')
+        el.addEventListener('click', async (e) => {
+            cruRequest(el, 'get')
+        })
+    })
+    $crus('[c-post]:not(.loaded)').forEach( (el) => {
+        el.classList.add('loaded')
+        el.addEventListener('click', async (e) => {
+            cruRequest(el, 'post')
+        })
+    })
+}
+
+const $cruLoadFormIntercept = () => {
+    $crus('.c-form:not(.loaded)').forEach((form) => {
+        form.classList.add('loaded')
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault()
+            const url = form.getAttribute('action')
+            const method = form.getAttribute('method').toUpperCase() || 'POST'
+            const type = form.getAttribute('c-type') || 'html';
+            const append = form.getAttribute('c-append') || false;
+            const prepend = form.getAttribute('c-prepend') || false;
+            const redirect = form.getAttribute('c-redirect') || false;
+            const reset = form.getAttribute('c-reset') || false;
+            const swap = form.getAttribute('c-swap') || false;
+            const target = form.getAttribute('c-target') || false;
+            const reloadContainer = form.getAttribute('c-reload-container') || false;
+            const callback = form.getAttribute('c-callback') || false
+            const isRead = $cruIsRead(method)
+
+            const data = Object.fromEntries(new FormData(e.target).entries());
+
+            const url_formatted = cruFormatURL(url, isRead, data)
+
+            const response = await fetch(url_formatted, {
+                method: method,
+                headers: $cruConfig['headers'],
+                body: isRead ? null:JSON.stringify(data)
+            })
+            const content = await $cruTypeResponse(type, response)
+
+            if (swap) $cru(swap).outerHTML = content
+            if (append) $cru(append).insertAdjacentHTML('beforeend', content)
+            if (prepend) $cru(prepend).insertAdjacentHTML('afterbegin', content)
+            if (target) $cru(target).innerHTML = content
+            if (reset) form.reset()
+            if (reloadContainer) {
+                $cruLoadContainer(form)
+            }
+            if (callback) $cruConfig['callbacks'][callback]({status: response.status, data: content}, form)
+            $cruLoadEvents()
+            if (redirect) {
+                window.location.href = redirect
+            }
+        })
+    })
+}
+
+const cruFormatURL = (url, isRead, data) => {
+    let url_format = $cruConfig['prefix_url'] + url
+    if (isRead) {
+        try {
+            url_format = new URL(url)
+        } catch(e) {
+            try { url_format = new URL(window.location.origin + url) }
+            catch(e) { throw("Wrong URL: ", url)}
+        } finally {
+            url_format.search = new URLSearchParams(data).toString();
+            url_format = url_format.href
+        }
+    }
+    return url_format
+}
+
+const $cruCallback = (name, callback) => {
+    $cruConfig['callbacks'][name] = callback
+}
+
+const $cruIsRead = (method) => ['GET', 'HEAD'].includes(method)
+
+const $cruTypeResponse = async (type, response) => 
+    type == 'html' ? await response.text():await response.json()
+
+$C()
