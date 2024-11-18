@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request, send_file
+from flask import Blueprint, render_template, request, send_file, jsonify
 from database.models.norma import Norma
 
 norma_route = Blueprint('norma', __name__)
@@ -74,3 +74,29 @@ def deletar_norma(norma_id):
     norma = Norma.get_by_id(norma_id)
     norma.delete_instance()
     return{'deleted': 'ok'}
+
+# API
+
+@norma_route.route('/api/normas', methods=['GET'])
+def get_normas():
+
+    normas = Norma.select(
+        Norma.id,
+        Norma.codigo,
+        Norma.descricao,
+        Norma.ano_norma,
+        Norma.situacao,
+        Norma.data_ultima_verificacao
+    )
+
+    list_normas = []
+
+    for norma in normas:
+        list_normas.append({"id":norma.id,"codigo":norma.codigo, "descricao":norma.descricao, "ano":norma.ano_norma, "situacao":norma.situacao, "data_verificacao":norma.data_ultima_verificacao})
+
+    return jsonify(list_normas)
+
+@norma_route.route('/api/normas', methods=['POST'])
+def create_norma():
+    norma = request.json
+    return norma
