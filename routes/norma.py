@@ -86,17 +86,21 @@ def get_normas():
         Norma.descricao,
         Norma.ano_norma,
         Norma.situacao,
-        Norma.data_ultima_verificacao
+        Norma.data_ultima_verificacao,
+        Norma.tag_main,
+        Norma.part_main,
+        Norma.number_main,
+        Norma.link
     )
 
     list_normas = []
 
     for norma in normas:
-        list_normas.append({"id":norma.id,"codigo":norma.codigo, "descricao":norma.descricao, "ano":norma.ano_norma, "situacao":norma.situacao, "data_verificacao":norma.data_ultima_verificacao})
+        list_normas.append({"id":norma.id,"codigo":norma.codigo, "descricao":norma.descricao, "ano":norma.ano_norma, "situacao":norma.situacao, "data_verificacao":norma.data_ultima_verificacao, "link":norma.link, "tag_main": norma.tag_main, "part_main": norma.part_main, "number_main": norma.number_main})
 
     return jsonify(list_normas)
 
-@norma_route.route('/api/normas', methods=['POST'])
+@norma_route.route('/api/normas/edit<int:norma_id>', methods=['POST'])
 def create_norma():
     norma = request.json
     return norma
