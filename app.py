@@ -1,12 +1,17 @@
 from flask import Flask, Response, request, render_template
 from flask_sqlalchemy import SQLAlchemy
-from configuration import configure_all
+from config_blueprints import configure_all
 from flask_cors import CORS
+import config
+
 
 app = Flask(__name__)
 
-CORS(app, origins="http://localhost:3000")
+app.config.from_object(config)
+
+CORS(app, resources={r"/*": {"origins": app.config['CORS_ORIGINS']}})
 
 configure_all(app)
 
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=app.config['DEBUG'])

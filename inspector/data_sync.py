@@ -1,4 +1,4 @@
-import configuration
+import config_blueprints
 from database.models.norma import Norma
 import datetime
 

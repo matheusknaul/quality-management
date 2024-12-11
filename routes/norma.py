@@ -1,5 +1,9 @@
-from flask import Blueprint, render_template, request, send_file, jsonify
+from flask import Blueprint, render_template, request, send_file, jsonify, flash, redirect, url_for, current_app
 from database.models.norma import Norma
+from werkzeug.utils import secure_filename
+import os
+
+ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
 
 norma_route = Blueprint('norma', __name__)
 
@@ -104,3 +108,26 @@ def get_normas():
 def create_norma():
     norma = request.json
     return norma
+
+def allowed_file(filename):
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
+@norma_route.route('/importscope', methods=['POST'])
+def upload_scope():
+    if 'file' not in request.files:
+        return jsonify({'error': 'Nenhum arquivo enviado'}), 400
+
+    file = request.files['file']
+    
+    if file.filename == '':
+        return jsonify({'error': 'Nenhum arquivo selecionado'}), 400
+
+    if file and allowed_file(file.filename):
+        filename = secure_filename(file.filename)
+        upload_folder = current_app.config.get('UPLOAD_FOLDER', './uploads')
+        os.makedirs(upload_folder, exist_ok=True)  # Garante que o diretório existe
+        file.save(os.path.join(upload_folder, filename))
+        return jsonify({'message': 'Arquivo enviado com sucesso', 'filename': filename}), 200
+
+    return jsonify({'error': 'Extensão de arquivo não permitida'}), 400
